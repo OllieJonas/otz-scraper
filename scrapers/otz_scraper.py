@@ -1,94 +1,11 @@
 from typing import Dict
 
+import constants
 import util
 
 from cell import Cell
 
 CHARACTER_TYPES = ["killer", "survivor"]
-
-CHARACTERS_PER_ROW = 5
-CHARACTER_COL_SKIP = 4
-CHARACTER_ROW_SKIP = 13
-
-# -------------------- SPREADSHEET CONSTANTS --------------------
-PERK_TIER_COLOUR_MAP = {
-    "a": "weak",
-    "b": "situational",
-    "c": "strong",
-    "d": "meta"
-}
-
-GLOBAL_CONSTANTS = {
-    "col_skip": 4,
-    "row_skip": 13,
-    "base_perks_start_row": 21,
-}
-
-SURVIVOR_CONSTANTS = GLOBAL_CONSTANTS | {
-    "sheet_name": "Survivor Info",
-
-    "start": 19,
-    "character_row_skip": 12,
-    "base_perks_start_col": 'X'
-}
-
-KILLER_CONSTANTS = GLOBAL_CONSTANTS | {
-    "sheet_name": "Killer Info",
-
-    "start": 20,
-    "base_perks_start_col": 'W',
-    "character_row_skip": 13,
-    "quiz_cell": Cell('N', 8),
-    "latest_tier_list_cell": Cell('N', 5)
-}
-
-SPREADSHEET_CONSTANTS = {
-
-}
-
-
-def _get_cells_for_character(start: Cell, is_survivor: bool) -> util.BiDict:
-    # see Cell for operator overloading info and how this works
-    cells = util.BiDict({
-        "name": start,
-        "availability": start + 9,
-        "perk_tiers": ((start >> 1) + 1).range(6, skip=3),
-        "perk_names": ((start >> 2) + 2).range(6, skip=3)
-    })
-
-    if is_survivor:
-        cells["stealth"] = start + 10
-        cells["noise"] = (start >> 1) + 10
-        cells["cries"] = (start >> 2) + 10
-    else:
-        cells["movement_speed"] = start + 10
-        cells["terror_radius"] = (start >> 2) + 10
-
-    return cells
-
-
-def _get_next_character_start(curr: Cell, index: int, col_skip: int = CHARACTER_COL_SKIP,
-                              row_skip: int = CHARACTER_ROW_SKIP, characters_per_row: int = CHARACTERS_PER_ROW) -> Cell:
-    if index == 0:
-        return curr
-
-    return curr >> col_skip if index % characters_per_row != 0 \
-        else (curr << (col_skip * (characters_per_row - 1))) + row_skip
-
-
-def _get_next_request(curr: Cell, index: int, is_survivor: bool, row_skip: int):
-    start_cell = _get_next_character_start(curr, index, row_skip=row_skip)
-    cells = _get_cells_for_character(curr, is_survivor)
-
-    # this is weird but honestly the best solution imo here is to just get the entire character window (including
-    # blank spaces) and deal with them in our code
-
-    cells_ranges = util.flatten_list(list(cells.values()))
-
-    cell_min = min(cells_ranges)
-    cell_max = max(cells_ranges)
-
-    return (cell_min, cell_max), start_cell, cells
 
 
 def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters: int, min_universals) -> Dict:
@@ -101,12 +18,8 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     universal_perks_info = _scrape_universal_perks(service, spreadsheet_id, is_survivor, min_universals)
 
 
-def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min_universals: int) -> Dict:
-    pass
-
-
 def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_characters: int) -> Dict:
-    sheet_constants = SURVIVOR_CONSTANTS if is_survivor else KILLER_CONSTANTS
+    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
 
     sheet_name = sheet_constants['sheet_name']
 
@@ -136,7 +49,8 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
     characters_info = {}
     curr = start_cell
 
-    for i, (character_relevant_cells, character_response_data) in enumerate(zip(character_cells.values(), response_data)):
+    for i, (character_relevant_cells, character_response_data) in enumerate(
+            zip(character_cells.values(), response_data)):
         character_name = ''
         character_info = {}
 
@@ -180,3 +94,65 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
         characters_info[character_name] = character_info
 
     return characters_info
+
+
+def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min_universals: int) -> Dict:
+    pass
+
+
+def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool):
+    pass
+
+
+def _get_cell_for_universal(start: Cell) -> util.BiDict:
+    return util.BiDict({
+        "perk_tier": start,
+        "perk_name": start >> 1
+    })
+
+
+def _get_cells_for_character(start: Cell, is_survivor: bool) -> util.BiDict:
+    # see Cell for operator overloading info and how this works
+    cells = util.BiDict({
+        "name": start,
+        "availability": start + 9,
+        "perk_tiers": ((start >> 1) + 1).range(6, skip=3),
+        "perk_names": ((start >> 2) + 2).range(6, skip=3)
+    })
+
+    if is_survivor:
+        cells["stealth"] = start + 10
+        cells["noise"] = (start >> 1) + 10
+        cells["cries"] = (start >> 2) + 10
+    else:
+        cells["movement_speed"] = start + 10
+        cells["terror_radius"] = (start >> 2) + 10
+
+    return cells
+
+
+def _get_next_character_start(curr: Cell,
+                              index: int,
+                              col_skip: int = constants.CHARACTER_COL_SKIP,
+                              row_skip: int = constants.CHARACTER_ROW_SKIP,
+                              characters_per_row: int = constants.CHARACTERS_PER_ROW) -> Cell:
+    if index == 0:
+        return curr
+
+    return curr >> col_skip if index % characters_per_row != 0 \
+        else (curr << (col_skip * (characters_per_row - 1))) + row_skip
+
+
+def _get_next_request(curr: Cell, index: int, is_survivor: bool, row_skip: int):
+    start_cell = _get_next_character_start(curr, index, row_skip=row_skip)
+    cells = _get_cells_for_character(curr, is_survivor)
+
+    # this is weird but honestly the best solution imo here is to just get the entire character window (including
+    # blank spaces) and deal with them in our code
+
+    cells_ranges = util.flatten_list(list(cells.values()))
+
+    cell_min = min(cells_ranges)
+    cell_max = max(cells_ranges)
+
+    return (cell_min, cell_max), start_cell, cells
