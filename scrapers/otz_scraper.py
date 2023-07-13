@@ -62,7 +62,7 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
                          cell_dict_func=_get_cells_for_character,
                          key_req_func=key_req_func,
                          key_extract_func=key_extract_func,
-                         handling_func=data_extract_func
+                         data_extract_func=data_extract_func
                          )
 
 
@@ -88,7 +88,7 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
                          }),
                          key_req_func=lambda _: None,
                          key_extract_func=lambda cell: cell['perk_name'],
-                         handling_func=data_extract_func
+                         data_extract_func=data_extract_func
                          )
 
 
@@ -109,9 +109,9 @@ def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_am
                   cell_dict_func: Callable[[Cell, bool], util.BiDict],
                   key_req_func: Callable[[dict], str | None],
                   key_extract_func: Callable[[dict], str | None],
-                  handling_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
+                  data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
                   ) -> Dict:
-    # wow this is alot of refactoring lmao
+    # wow, this is alot of refactoring lmao
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
 
     response, cell_structure = _send_request(service=service,
@@ -128,7 +128,7 @@ def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_am
                                                   start=start,
                                                   cell_structure=cell_structure,
                                                   next_start_func=next_start_func,
-                                                  handling_func=handling_func,
+                                                  data_extract_func=data_extract_func,
                                                   key_func=key_extract_func
                                                   )
 
@@ -210,7 +210,7 @@ def _extract_data_from_response(response: dict,
                                 start: Cell,
                                 cell_structure: dict,
                                 next_start_func: Callable[[Cell, int], Cell],
-                                handling_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
+                                data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
                                 key_func: Callable[[dict], str | None]) -> dict:
     characters_info = {}
 
@@ -230,7 +230,7 @@ def _extract_data_from_response(response: dict,
                 curr_cell = (curr >> col_idx) + row_idx
                 if curr_cell in relevant_cells:
                     data_type = relevant_cells[curr_cell]
-                    extracted, type_ = handling_func(data_type, col)
+                    extracted, type_ = data_extract_func(data_type, col)
 
                     if type_ == list:
                         character_info.setdefault(data_type, []).append(extracted)
@@ -254,7 +254,7 @@ def _get_cell_for_universal(start: Cell) -> util.BiDict:
 def _get_next_character_start(curr: Cell,
                               index: int,
                               row_skip: int,
-                              col_skip: int = 4,
+                              col_skip: int = constants.CHARACTER_COL_SKIP,
                               characters_per_row: int = constants.CHARACTERS_PER_ROW) -> Cell:
     return curr >> col_skip if (index + 1) % characters_per_row != 0 \
         else (curr << (col_skip * (characters_per_row - 1))) + row_skip

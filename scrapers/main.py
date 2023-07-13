@@ -56,7 +56,7 @@ def parse_args() -> argparse.Namespace:
                         type=str,
                         help='service account credentials path (for google sheets API)')
 
-    # The Google Sheets API has a rate limit of 60 reqs/min. Unfortunately, we don't necessarily know how many
+    # The Google Sheets API has a rate limit of 60 reqs/min per user. Unfortunately, we don't necessarily know how many
     # characters there are on the sheet. At time of writing (10/7/23), there are 32 killers and 32 survivors.
     # 32 killers + 32 survivors = 64 characters > 60 reqs/min, so we need to do some kind of batching.
 
@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
     # updating this each time.
 
     # We could figure this out by scraping a list of characters off the wiki, but this is a lot of effort, the sheet
-    # may not be up-to-date, and (most importantly), it would create a dependency on the Characters' wiki page.
+    # may not be up-to-date, and, most importantly, it would create a dependency on the Characters' wiki page.
 
     # We could use the perk_scraper to figure it out, but I don't really want one scraper to be dependent on another.
 

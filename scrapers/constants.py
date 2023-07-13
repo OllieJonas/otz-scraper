@@ -1,6 +1,7 @@
 from scrapers.cell import Cell
 
 CHARACTERS_PER_ROW = 5
+CHARACTER_COL_SKIP = 4
 
 CHARACTER_TYPES = ["killer", "survivor"]
 
