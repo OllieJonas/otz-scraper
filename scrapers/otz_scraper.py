@@ -244,13 +244,6 @@ def _extract_data_from_response(response: dict,
     return characters_info
 
 
-def _get_cell_for_universal(start: Cell) -> util.BiDict:
-    return util.BiDict({
-        "perk_tier": start,
-        "perk_name": start >> 1
-    })
-
-
 def _get_next_character_start(curr: Cell,
                               index: int,
                               row_skip: int,
