@@ -1,6 +1,6 @@
 import argparse
+import json
 import os
-
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -48,11 +48,17 @@ def main():
     survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
                                            args.min_characters, args.min_universals)
 
+    save_json("killer_perks.json", killer_perks)
+    save_json("survivor_perks.json", survivor_perks)
+
+    save_json("killer_spreadsheet.json", killer_spreadsheet_info)
+    save_json("survivor_spreadsheet.json", survivor_spreadsheet_info)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=None)
     parser.add_argument("--creds_path",
-                        default=f"{os.path.abspath(os.path.join(__file__ ,'../..'))}/credentials.json",
+                        default=f"{util.one_dir_up()}/credentials.json",
                         type=str,
                         help='service account credentials path (for google sheets API)')
 
@@ -81,6 +87,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-universals", default=12, type=int,
                         help='the minimum amount of universal (base) perks to search for on the Otz spreadsheet.')
     return parser.parse_args()
+
+
+def save_json(file_name, content):
+    with open(f'{util.one_dir_up()}/out/{file_name}', 'w', encoding='utf-8') as f:
+        json.dump(content, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from typing import ValuesView
 
 import requests
@@ -59,26 +60,5 @@ def pretty_print(obj):
     print(json.dumps(obj, sort_keys=True, indent=4))
 
 
-def shape(arr):
-    rows = len(arr)
-    cols = len(arr[0]) if rows > 0 else 0
-    return rows, cols
-
-
-def simplify_sheets_request(ranges):
-    ranges = sorted(set(ranges))
-    print(f"r: {ranges}")
-    prev_col, prev_row = -1, -1
-
-    curr_range = []
-
-    for cell in ranges:
-        col, row = cell.col, cell.row
-        prev_col = col
-        prev_row = row
-
-    return None
-
-
-def strip_mini_icons(soup):
-    pass
+def one_dir_up():
+    return os.path.abspath(os.path.join(__file__, '../..'))

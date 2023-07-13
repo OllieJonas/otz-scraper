@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import functools
 from typing import Dict, Callable, Type, List, Tuple
 
 import constants
@@ -18,12 +17,13 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     characters_info = _scrape_characters(service, spreadsheet_id, is_survivor, min_characters)
     universal_perks_info = _scrape_universal_perks(service, spreadsheet_id, is_survivor, min_universals)
     guides_info = _scrape_guide_links(service, spreadsheet_id, is_survivor)
-    misc_info = _scrape_misc(service, spreadsheet_id, is_survivor)
+
+    return {"characters": characters_info} | {"universals": universal_perks_info} | {"guides": guides_info}
 
 
 def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_characters: int) -> Dict:
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
-    start = Cell('B', sheet_constants['start'])
+    start = Cell(sheet_constants['character_col_start'], sheet_constants['start'])
 
     # closure (why do you need to make the row skip for killers and survivors different otz, why :(( )
     def next_start_func(cell, i):
@@ -53,9 +53,11 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
     def key_req_func(d):
         return d['name']
 
-    return _scrape_perks(service=service,
+    return _scrape_sheet(service=service,
                          spreadsheet_id=spreadsheet_id,
                          is_survivor=is_survivor,
+                         sheet_name=sheet_constants['sheet_name'],
+                         search_for_unknown=True,
                          min_search_amount=min_characters,
                          start=start,
                          next_start_func=next_start_func,
@@ -76,9 +78,11 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
         elif dt == "perk_name":
             return c['effectiveValue']['stringValue'], str
 
-    return _scrape_perks(service=service,
+    return _scrape_sheet(service=service,
                          spreadsheet_id=spreadsheet_id,
                          is_survivor=is_survivor,
+                         sheet_name=sheet_constants['sheet_name'],
+                         search_for_unknown=True,
                          min_search_amount=min_universals,
                          start=start,
                          next_start_func=lambda cell, _: cell + 1,
@@ -94,17 +98,30 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
 
 def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
+    guides = sheet_constants['guides']
 
-    return {}
+    sheet_name = 'Survivor Sound & Stealth' if is_survivor else 'Killer Info'
+
+    return _scrape_sheet(service=service,
+                         spreadsheet_id=spreadsheet_id,
+                         is_survivor=is_survivor,
+                         sheet_name=sheet_name,
+                         search_for_unknown=False,
+                         min_search_amount=1,
+                         start=min(list(guides.values())),
+                         next_start_func=lambda cell, _: cell,  # don't need this, so might as well make it identity
+                         cell_dict_func=lambda cell, _: guides,
+                         key_req_func=lambda cell: None,
+                         key_extract_func=lambda cell: None,
+                         data_extract_func=lambda dt, c: (c['hyperlink'], str)
+                         )[0]
 
 
-def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
-    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
-
-    return {}
-
-
-def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_amount: int, start: Cell,
+def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
+                  sheet_name: str,
+                  search_for_unknown: bool,
+                  min_search_amount: int,
+                  start: Cell,
                   next_start_func: Callable[[Cell, int], Cell],
                   cell_dict_func: Callable[[Cell, bool], util.BiDict],
                   key_req_func: Callable[[dict], str | None],
@@ -117,44 +134,42 @@ def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_am
     response, cell_structure = _send_request(service=service,
                                              spreadsheet_id=spreadsheet_id,
                                              start=start,
-                                             sheet_constants=sheet_constants,
-                                             min_search_amount=min_search_amount,
+                                             sheet_name=sheet_name,
+                                             search_for_unknown=search_for_unknown,
+                                             min_known_search_size=min_search_amount,
                                              is_survivor=is_survivor,
                                              next_start_func=next_start_func,
                                              cell_dict_func=cell_dict_func,
                                              key_func=key_req_func)
 
-    characters_info = _extract_data_from_response(response=response,
-                                                  start=start,
-                                                  cell_structure=cell_structure,
-                                                  next_start_func=next_start_func,
-                                                  data_extract_func=data_extract_func,
-                                                  key_func=key_extract_func
-                                                  )
+    info = _extract_data_from_response(response=response,
+                                       start=start,
+                                       cell_structure=cell_structure,
+                                       next_start_func=next_start_func,
+                                       data_extract_func=data_extract_func,
+                                       key_func=key_extract_func
+                                       )
 
-    return characters_info
+    return info
 
 
-def _send_request(service, spreadsheet_id: str, start: Cell, sheet_constants: dict,
-                  min_search_amount: int, is_survivor: bool,
+def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, search_for_unknown: bool,
+                  min_known_search_size: int, is_survivor: bool,
                   next_start_func: Callable[[Cell, int], Cell],
                   cell_dict_func: Callable[[Cell, bool], util.BiDict],
                   key_func: Callable[[dict], str | None]
                   ):
     # I've tried other ways of doing this, being more "economical" in terms of specifying which cells are requested,
     # but this genuinely seems like the best solution for reducing API calls (for each character there's 2 cells wasted)
-
-    sheet_name = sheet_constants['sheet_name']
-
     request = []
-    character_cells = {}
+    relevant_cells = {}
 
     curr = start
 
     i = 0
 
     # "known"
-    for i in range(min_search_amount):
+    for i in range(min_known_search_size):
         cells = cell_dict_func(curr, is_survivor)
 
         cell_ranges = util.flatten_list(cells.values())
@@ -164,23 +179,19 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_constants: di
         request.append(f"{sheet_name}!{cell_min}:{cell_max}")
 
         assignment = key_func(cells)
-
-        if assignment is None:
-            assignment = i
-
-        character_cells[assignment] = cells
+        relevant_cells[assignment if assignment is not None else i] = cells
         curr = next_start_func(curr, i)
 
     response = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=request,
                                           includeGridData=True).execute()
+
     response = response['sheets'][0]['data']
 
     # "unknown"
-    empty = False
     i += 1
 
     # TODO: Refactor below code and above into functions for re-use (the two look suspiciously similar...)
-    while not empty:
+    while search_for_unknown:
         cells = cell_dict_func(curr, is_survivor)
         cell_ranges = util.flatten_list(cells.values())
         cell_min, cell_max = min(cell_ranges), max(cell_ranges)
@@ -188,22 +199,19 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_constants: di
         request = [f"{sheet_name}!{cell_min}:{cell_max}"]
         resp = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=request, includeGridData=True).execute()
 
-        if 'effectiveValue' in resp['sheets'][0]['data'][0]['rowData'][0]['values'][0]:
-            response = response + resp['sheets'][0]['data']
+        if 'effectiveValue' not in resp['sheets'][0]['data'][0]['rowData'][0]['values'][0]:  # jesus christ google lmao
+            search_for_unknown = False
+            break
 
-            assignment = key_func(cells)
+        response = response + resp['sheets'][0]['data']
 
-            if assignment is None:
-                assignment = i
+        assignment = key_func(cells)
+        relevant_cells[assignment if assignment is not None else i] = cells
+        curr = next_start_func(curr, i)
 
-            character_cells[assignment] = cells
-            curr = next_start_func(curr, i)
+        i += 1
 
-            i += 1
-        else:
-            empty = True
-
-    return response, character_cells
+    return response, relevant_cells
 
 
 def _extract_data_from_response(response: dict,
@@ -212,13 +220,13 @@ def _extract_data_from_response(response: dict,
                                 next_start_func: Callable[[Cell, int], Cell],
                                 data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
                                 key_func: Callable[[dict], str | None]) -> dict:
-    characters_info = {}
+    infos = {}
 
     curr = start
 
     for i, (relevant_cells, character_response_data) in enumerate(
             zip(cell_structure.values(), response)):
-        character_info = {}
+        info = {}
 
         relevant_cells = relevant_cells.inverse
 
@@ -228,27 +236,28 @@ def _extract_data_from_response(response: dict,
             row = row['values']
             for col_idx, col in enumerate(row):
                 curr_cell = (curr >> col_idx) + row_idx
+
                 if curr_cell in relevant_cells:
                     data_type = relevant_cells[curr_cell]
                     extracted, type_ = data_extract_func(data_type, col)
 
                     if type_ == list:
-                        character_info.setdefault(data_type, []).append(extracted)
+                        info.setdefault(data_type, []).append(extracted)
                     else:
-                        character_info[data_type] = extracted
+                        info[data_type] = extracted
 
-        assignment = key_func(character_info)
-        characters_info[assignment if assignment is not None else i] = character_info
+        assignment = key_func(info)
+        infos[assignment if assignment is not None else i] = info
         curr = next_start_func(curr, i)
 
-    return characters_info
+    return infos
 
 
 def _get_next_character_start(curr: Cell,
                               index: int,
                               row_skip: int,
-                              col_skip: int = constants.CHARACTER_COL_SKIP,
-                              characters_per_row: int = constants.CHARACTERS_PER_ROW) -> Cell:
+                              col_skip: int = constants.GLOBAL_CONSTANTS['col_skip'],
+                              characters_per_row: int = constants.GLOBAL_CONSTANTS['characters_per_row']) -> Cell:
     return curr >> col_skip if (index + 1) % characters_per_row != 0 \
         else (curr << (col_skip * (characters_per_row - 1))) + row_skip
 
