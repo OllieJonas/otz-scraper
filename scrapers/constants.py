@@ -16,14 +16,14 @@ SURVIVOR_CONSTANTS = GLOBAL_CONSTANTS | {
 
     "start": 19,
     "character_row_skip": 12,
-    "base_perks_start_col": 'X'
+    "base_perks_start_col": 'W'
 }
 
 KILLER_CONSTANTS = GLOBAL_CONSTANTS | {
     "sheet_name": "Killer Info",
 
     "start": 20,
-    "base_perks_start_col": 'W',
+    "base_perks_start_col": 'V',
     "character_row_skip": 13,
     "quiz_cell": Cell('N', 8),
     "latest_tier_list_cell": Cell('N', 5)

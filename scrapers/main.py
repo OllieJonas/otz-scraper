@@ -1,6 +1,7 @@
 import argparse
 import os
 
+
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
@@ -43,14 +44,16 @@ def main():
 
     killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
                                          args.min_characters, args.min_universals)
-
-    survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
-                                           3, args.min_universals)
+    #
+    # survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+    #                                        3, args.min_universals)
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=None)
-    parser.add_argument("--creds_path", default=f"{os.getcwd()}/credentials.json", type=str,
+    parser.add_argument("--creds_path",
+                        default=f"{os.path.abspath(os.path.join(__file__ ,'../..'))}/credentials.json",
+                        type=str,
                         help='service account credentials path (for google sheets API)')
 
     # The Google Sheets API has a rate limit of 60 reqs/min. Unfortunately, we don't necessarily know how many
