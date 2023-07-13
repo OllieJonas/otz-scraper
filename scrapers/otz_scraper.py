@@ -87,8 +87,8 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
                          start=start,
                          next_start_func=lambda cell, _: cell + 1,
                          cell_dict_func=lambda cell, _: util.BiDict({
+                             "perk_name": cell >> 1,
                              "perk_tier": cell,
-                             "perk_name": cell >> 1
                          }),
                          key_req_func=lambda _: None,
                          key_extract_func=lambda cell: cell['perk_name'],
