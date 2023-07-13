@@ -73,7 +73,7 @@ def parse_args() -> argparse.Namespace:
     # and check whether anything is there.
 
     # The solution I've come up with is to specify a minimum number of characters, which will be checked no matter
-    # what in a batch request, and then check for any additional ones beyond that.
+    # what (referred to as "known"), and then check for any additional ones beyond that (referred to as "unknown").
 
     # Is it hacky? Yes. Does it scale? Absolutely not, but given DBD adds ~2 characters/month, it will work for now.
     parser.add_argument("--min-characters", default=32, type=int,

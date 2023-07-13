@@ -17,10 +17,8 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
 
     characters_info = _scrape_characters(service, spreadsheet_id, is_survivor, min_characters)
     universal_perks_info = _scrape_universal_perks(service, spreadsheet_id, is_survivor, min_universals)
-
-    util.pretty_print(characters_info)
-
     guides_info = _scrape_guide_links(service, spreadsheet_id, is_survivor)
+    misc_info = _scrape_misc(service, spreadsheet_id, is_survivor)
 
 
 def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_characters: int) -> Dict:
@@ -49,9 +47,11 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
         else:
             return c['effectiveValue']['stringValue'].replace("TR", "").strip(), str
 
-    def key_extract_func(cell): return cell['name'].removeprefix("The ")
+    def key_extract_func(cell):
+        return cell['name'].removeprefix("The ")
 
-    def key_req_func(d): return d['name']
+    def key_req_func(d):
+        return d['name']
 
     return _scrape_perks(service=service,
                          spreadsheet_id=spreadsheet_id,
@@ -83,13 +83,25 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
                          start=start,
                          next_start_func=lambda cell, _: cell + 1,
                          cell_dict_func=lambda cell, _: util.BiDict({
-                            "perk_tier": cell,
-                            "perk_name": cell >> 1
+                             "perk_tier": cell,
+                             "perk_name": cell >> 1
                          }),
                          key_req_func=lambda _: None,
                          key_extract_func=lambda cell: cell['perk_name'],
                          handling_func=data_extract_func
                          )
+
+
+def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
+    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
+
+    return {}
+
+
+def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
+    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
+
+    return {}
 
 
 def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_amount: int, start: Cell,
@@ -98,7 +110,7 @@ def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_am
                   key_req_func: Callable[[dict], str | None],
                   key_extract_func: Callable[[dict], str | None],
                   handling_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
-                  ):
+                  ) -> Dict:
     # wow this is alot of refactoring lmao
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
 
@@ -121,12 +133,6 @@ def _scrape_perks(service, spreadsheet_id: str, is_survivor: bool, min_search_am
                                                   )
 
     return characters_info
-
-
-def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool):
-    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
-
-    return {}
 
 
 def _send_request(service, spreadsheet_id: str, start: Cell, sheet_constants: dict,
@@ -169,7 +175,7 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_constants: di
                                           includeGridData=True).execute()
     response = response['sheets'][0]['data']
 
-    # "unknown" characters beyond this
+    # "unknown"
     empty = False
     i += 1
 
