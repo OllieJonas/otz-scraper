@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 import json
+from typing import ValuesView
 
 import requests
 from bs4 import BeautifulSoup
@@ -36,7 +39,7 @@ class BiDict(dict):
         super(BiDict, self).__delitem__(key)
 
 
-def flatten_list(lst: list) -> list:
+def flatten_list(lst: list | ValuesView) -> list:
     return [item for sublist in lst for item in (sublist if isinstance(sublist, list) else [sublist])]
 
 

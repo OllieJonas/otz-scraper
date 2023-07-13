@@ -44,9 +44,9 @@ def main():
 
     killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
                                          args.min_characters, args.min_universals)
-    #
-    # survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
-    #                                        3, args.min_universals)
+
+    survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+                                           args.min_characters, args.min_universals)
 
 
 def parse_args() -> argparse.Namespace:
