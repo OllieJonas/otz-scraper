@@ -32,6 +32,8 @@ def scrape_perks(url: str, remove_desc_html: bool = True, remove_mini_perk_icons
         }
     }
     """
+    print(f"Starting scraping Wiki ({url}) for Perks...")
+
     soup = util.get_content(url)
 
     perks = {}

@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+from datetime import datetime
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -35,26 +36,29 @@ def main():
     """
     args = parse_args()
 
-    # killer_perks = scrape_perks(KILLER_PERKS_URL)
-    # survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
+    killer_perks = scrape_perks(KILLER_PERKS_URL)
+    survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
     killer_characters = scrape_characters("Killers")
     survivor_characters = scrape_characters("Survivors")
 
-    # credentials = Credentials.from_service_account_file(args.creds_path)
-    # service = build('sheets', 'v4', credentials=credentials)
-    #
-    # killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
-    #                                      args.min_characters, args.min_universals)
-    #
-    # survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
-    #                                        args.min_characters, args.min_universals)
-    #
-    # save_json("killer_perks.json", killer_perks)
-    # save_json("survivor_perks.json", survivor_perks)
-    #
-    # save_json("killer_spreadsheet.json", killer_spreadsheet_info)
-    # save_json("survivor_spreadsheet.json", survivor_spreadsheet_info)
+    credentials = Credentials.from_service_account_file(args.creds_path)
+    service = build('sheets', 'v4', credentials=credentials)
+
+    killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
+                                         args.min_characters, args.min_universals)
+
+    survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+                                           args.min_characters, args.min_universals)
+
+    save_json("killer_perks", killer_perks)
+    save_json("survivor_perks", survivor_perks)
+
+    save_json("killer_spreadsheet", killer_spreadsheet_info)
+    save_json("survivor_spreadsheet", survivor_spreadsheet_info)
+
+    save_json("killer_characters", killer_characters)
+    save_json("survivor_characters", survivor_characters)
 
 
 def parse_args() -> argparse.Namespace:
@@ -92,7 +96,12 @@ def parse_args() -> argparse.Namespace:
 
 
 def save_json(file_name, content):
-    with open(f'{util.one_dir_up()}/out/{file_name}', 'w', encoding='utf-8') as f:
+    current_date = datetime.now().strftime('%d-%m-%Y')
+
+    with open(f'{util.one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
+        json.dump(content, f, ensure_ascii=False, indent=4)
+
+    with open(f'{util.one_dir_up()}/out/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
 

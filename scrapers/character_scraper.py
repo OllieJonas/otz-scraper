@@ -34,11 +34,13 @@ def _build_killer_json():
 def scrape_characters(character_type):
     url = f"https://deadbydaylight.fandom.com/wiki/{character_type}"
 
+    print(f"Starting scraping Character Wiki for {character_type}...")
+
     wiki_links = _scrape_wiki_links(url, character_type)
     # character = _scrape_character(wiki_links[1], character_type)
-    characters = [print(i, _scrape_character(wl, character_type)) for i, wl in enumerate(wiki_links)]
+    characters = [_scrape_character(wl, character_type) for i, wl in enumerate(wiki_links)]
 
-    return
+    return characters
 
 
 def _scrape_wiki_links(url, character_type):

@@ -12,6 +12,8 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     if character_type not in constants.CHARACTER_TYPES:
         raise ValueError(f'character_type must be in {constants.CHARACTER_TYPES}!')
 
+    print(f"Starting scraping Otzdarva spreadsheet for {character_type.capitalize()}...")
+
     is_survivor = character_type == 'survivor'
 
     characters_info = _scrape_characters(service, spreadsheet_id, is_survivor, min_characters)
