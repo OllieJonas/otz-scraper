@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from typing import ValuesView
 
 import requests
@@ -47,11 +48,16 @@ def get_content(url: str) -> BeautifulSoup:
     return BeautifulSoup(req.content, 'html.parser')
 
 
-def replace_all_wiki_links(soup: BeautifulSoup, wiki_base_link: str = "https://deadbydaylight.fandom.com/wiki/") -> BeautifulSoup:
+def replace_all_wiki_links(soup: BeautifulSoup,
+                           wiki_base_link: str = "https://deadbydaylight.fandom.com/wiki/") -> BeautifulSoup:
     for a in soup.find_all('a'):
         a['href'] = a['href'].replace('/wiki/', wiki_base_link)
 
     return soup
+
+
+def remove_excessive_whitespace(text: str) -> str:
+    return re.sub(r'\s+', ' ', text)
 
 
 def pretty_print(obj):

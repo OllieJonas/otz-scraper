@@ -35,8 +35,8 @@ def main():
     """
     args = parse_args()
 
-    killer_perks = scrape_perks(KILLER_PERKS_URL)
-    survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
+    # killer_perks = scrape_perks(KILLER_PERKS_URL)
+    # survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
     killer_characters = scrape_characters("Killers")
     survivor_characters = scrape_characters("Survivors")
