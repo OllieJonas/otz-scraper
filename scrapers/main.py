@@ -6,8 +6,10 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 import util
+
 from otz_scraper import scrape_otz
 from perk_scraper import scrape_perks
+from character_scraper import scrape_characters
 
 KILLER_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Killer_Perks"
 SURVIVOR_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Survivor_Perks"
@@ -36,23 +38,23 @@ def main():
     killer_perks = scrape_perks(KILLER_PERKS_URL)
     survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
-    # killer_characters = scrape_characters(KILLER_CHARACTERS_URL)
-    # survivor_characters = scrape_characters(SURVIVOR_CHARACTERS_URL)
+    killer_characters = scrape_characters("Killers")
+    survivor_characters = scrape_characters("Survivors")
 
-    credentials = Credentials.from_service_account_file(args.creds_path)
-    service = build('sheets', 'v4', credentials=credentials)
-
-    killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
-                                         args.min_characters, args.min_universals)
-
-    survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
-                                           args.min_characters, args.min_universals)
-
-    save_json("killer_perks.json", killer_perks)
-    save_json("survivor_perks.json", survivor_perks)
-
-    save_json("killer_spreadsheet.json", killer_spreadsheet_info)
-    save_json("survivor_spreadsheet.json", survivor_spreadsheet_info)
+    # credentials = Credentials.from_service_account_file(args.creds_path)
+    # service = build('sheets', 'v4', credentials=credentials)
+    #
+    # killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
+    #                                      args.min_characters, args.min_universals)
+    #
+    # survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+    #                                        args.min_characters, args.min_universals)
+    #
+    # save_json("killer_perks.json", killer_perks)
+    # save_json("survivor_perks.json", survivor_perks)
+    #
+    # save_json("killer_spreadsheet.json", killer_spreadsheet_info)
+    # save_json("survivor_spreadsheet.json", survivor_spreadsheet_info)
 
 
 def parse_args() -> argparse.Namespace:
@@ -64,7 +66,7 @@ def parse_args() -> argparse.Namespace:
 
     # The Google Sheets API has a rate limit of 60 reqs/min per user. Unfortunately, we don't necessarily know how many
     # characters there are on the sheet. At time of writing (10/7/23), there are 32 killers and 32 survivors.
-    # 32 killers + 32 survivors = 64 characters > 60 reqs/min, so we need to do some kind of batching.
+    # 32 killers + 38 survivors = 70 characters > 60 reqs/min, so we need to do some kind of batching.
 
     # We could update how many characters there are manually, but I don't really want to HAVE to keep
     # updating this each time.

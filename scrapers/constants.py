@@ -3,6 +3,9 @@ import util
 
 CHARACTER_TYPES = ["killer", "survivor"]
 
+DBD_WIKI_BASE_LINK = 'https://deadbydaylight.fandom.com/wiki/'
+
+
 GLOBAL_CONSTANTS = {
     "character_col_start": 'B',
     "characters_per_row": 5,

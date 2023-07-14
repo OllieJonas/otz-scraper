@@ -165,7 +165,6 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
     relevant_cells = {}
 
     curr = start
-
     i = 0
 
     # "known"

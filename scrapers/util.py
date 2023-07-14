@@ -7,8 +7,6 @@ from typing import ValuesView
 import requests
 from bs4 import BeautifulSoup
 
-DBD_WIKI_BASE_LINK = 'https://deadbydalight.fandom.com/wiki/'
-
 
 class BiDict(dict):
     """
@@ -49,7 +47,7 @@ def get_content(url: str) -> BeautifulSoup:
     return BeautifulSoup(req.content, 'html.parser')
 
 
-def replace_all_wiki_links(soup: BeautifulSoup, wiki_base_link: str = DBD_WIKI_BASE_LINK) -> BeautifulSoup:
+def replace_all_wiki_links(soup: BeautifulSoup, wiki_base_link: str = "https://deadbydaylight.fandom.com/wiki/") -> BeautifulSoup:
     for a in soup.find_all('a'):
         a['href'] = a['href'].replace('/wiki/', wiki_base_link)
 
