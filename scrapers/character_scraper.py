@@ -6,6 +6,7 @@ def _build_survivor_json():
     return {
         "name": "",
         "icon": "",
+        "image_full": "",
         "lore": "",
     }
 
@@ -15,6 +16,7 @@ def _build_killer_json():
         "killer_name": "",
         "former_name": "",
         "icon": "",
+        "image_full": "",
         "lore": "",
         "height": "",
         "power": {
