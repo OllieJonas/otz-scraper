@@ -11,19 +11,23 @@
                     {
                         "name": "Bond",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a0/IconPerks_bond.png/revision/latest?cb=20160605204830"
                     },
                     {
                         "name": "Prove Thyself",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_proveThyself.png/revision/latest?cb=20160605205049"
                     },
                     {
                         "name": "Leader",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/IconPerks_leader.png/revision/latest?cb=20160605204957"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8c/S01_charSelect_portrait.png/revision/latest?cb=20230705190630"
             },
             "Meg": {
                 "name": "Meg",
@@ -35,19 +39,23 @@
                     {
                         "name": "Quick & Quiet",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_quickAndQuiet.png/revision/latest?cb=20160605205055"
                     },
                     {
                         "name": "Sprint Burst",
                         "is_exhaustion_perk": true,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e4/IconPerks_sprintBurst.png/revision/latest?cb=20160605205153"
                     },
                     {
                         "name": "Adrenaline",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/IconPerks_adrenaline.png/revision/latest?cb=20160605204801"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/77/S02_charSelect_portrait.png/revision/latest?cb=20230705190636"
             },
             "Claudette": {
                 "name": "Claudette",
@@ -59,19 +67,23 @@
                     {
                         "name": "Empathy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ae/IconPerks_empathy.png/revision/latest?cb=20160605204916"
                     },
                     {
                         "name": "Botany Knowledge",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1e/IconPerks_botanyKnowledge.png/revision/latest?cb=20160605204836"
                     },
                     {
                         "name": "Self Care",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/IconPerks_self-Care.png/revision/latest?cb=20160605205112"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/65/S03_charSelect_portrait.png/revision/latest?cb=20230705190641"
             },
             "Jake": {
                 "name": "Jake",
@@ -83,19 +95,23 @@
                     {
                         "name": "Iron Will",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/IconPerks_ironWill.png/revision/latest?cb=20160605204945"
                     },
                     {
                         "name": "Calm Spirit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6c/IconPerks_calmSpirit.png/revision/latest?cb=20160605204847"
                     },
                     {
                         "name": "Saboteur",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0e/IconPerks_saboteur.png/revision/latest?cb=20200220105714"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cb/S04_charSelect_portrait.png/revision/latest?cb=20230705190646"
             },
             "Nea": {
                 "name": "Nea",
@@ -107,19 +123,23 @@
                     {
                         "name": "Balanced Landing",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5e/IconPerks_balancedLanding.png/revision/latest?cb=20160821133918"
                     },
                     {
                         "name": "Urban Evasion",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/IconPerks_urbanEvasion.png/revision/latest?cb=20160821134257"
                     },
                     {
                         "name": "Streetwise",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/IconPerks_streetwise.png/revision/latest?cb=20160821134155"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/S05_charSelect_portrait.png/revision/latest?cb=20230705185446"
             },
             "David": {
                 "name": "David",
@@ -131,19 +151,23 @@
                     {
                         "name": "We're Gonna Live Forever",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b8/IconPerks_wereGonnaLiveForever.png/revision/latest?cb=20170727160948"
                     },
                     {
                         "name": "Dead Hard",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png/revision/latest?cb=20170727160956"
                     },
                     {
                         "name": "No Mither",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_noMither.png/revision/latest?cb=20170727161003"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/S10_charSelect_portrait.png/revision/latest?cb=20230705191257"
             },
             "Bill": {
                 "name": "Bill",
@@ -155,19 +179,23 @@
                     {
                         "name": "Left Behind",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_leftBehind.png/revision/latest?cb=20170308184910"
                     },
                     {
                         "name": "Borrowed Time",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/IconPerks_borrowedTime.png/revision/latest?cb=20170308184730"
                     },
                     {
                         "name": "Unbreakable",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4a/IconPerks_unbreakable.png/revision/latest?cb=20170308184922"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/66/S08_charSelect_portrait.png/revision/latest?cb=20230705190755"
             },
             "Ace": {
                 "name": "Ace",
@@ -179,19 +207,23 @@
                     {
                         "name": "Open-Handed",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_open-Handed.png/revision/latest?cb=20161210091243"
                     },
                     {
                         "name": "Up the Ante",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/IconPerks_upTheAnte.png/revision/latest?cb=20161210091356"
                     },
                     {
                         "name": "Ace in the Hole",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/24/IconPerks_aceInTheHole.png/revision/latest?cb=20161208214510"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9f/S07_charSelect_portrait.png/revision/latest?cb=20230705190028"
             },
             "Feng": {
                 "name": "Feng",
@@ -203,19 +235,23 @@
                     {
                         "name": "Technician",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/62/IconPerks_technician.png/revision/latest?cb=20170511153221"
                     },
                     {
                         "name": "Lithe",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cc/IconPerks_lithe.png/revision/latest?cb=20170511153301"
                     },
                     {
                         "name": "Alert",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/71/IconPerks_alert.png/revision/latest?cb=20170511153335"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/S09_charSelect_portrait.png/revision/latest?cb=20230705190922"
             },
             "Laurie": {
                 "name": "Laurie",
@@ -227,19 +263,23 @@
                     {
                         "name": "Sole Survivor",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8e/IconPerks_soleSurvivor.png/revision/latest?cb=20161023113045"
                     },
                     {
                         "name": "Object of Obsession",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2b/IconPerks_objectOfObsession.png/revision/latest?cb=20161023112952"
                     },
                     {
                         "name": "Decisive Strike",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_decisiveStrike.png/revision/latest?cb=20161023112852"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cc/S06_charSelect_portrait.png/revision/latest?cb=20230705185657"
             },
             "Quentin": {
                 "name": "Quentin",
@@ -251,19 +291,23 @@
                     {
                         "name": "Wake up!",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/IconPerks_wakeUp.png/revision/latest?cb=20171026230520"
                     },
                     {
                         "name": "Pharmacy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f1/IconPerks_pharmacy.png/revision/latest?cb=20171026230450"
                     },
                     {
                         "name": "Vigil",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/IconPerks_vigil.png/revision/latest?cb=20171026230511"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/S11_charSelect_portrait.png/revision/latest?cb=20230705185224"
             },
             "Tapp": {
                 "name": "Tapp",
@@ -275,19 +319,23 @@
                     {
                         "name": "Tenacity",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9d/IconPerks_tenacity.png/revision/latest?cb=20180123224404"
                     },
                     {
                         "name": "Detective's Hunch",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7b/IconPerks_detectivesHunch.png/revision/latest?cb=20180123224231"
                     },
                     {
                         "name": "Stake Out",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cd/IconPerks_stakeOut.png/revision/latest?cb=20180123224338"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/15/S12_charSelect_portrait.png/revision/latest?cb=20230705191928"
             },
             "Kate": {
                 "name": "Kate",
@@ -299,19 +347,23 @@
                     {
                         "name": "Dance With Me",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/17/IconPerks_danceWithMe.png/revision/latest?cb=20180529195003"
                     },
                     {
                         "name": "Windows of Opportunity",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/17/IconPerks_windowsOfOpportunity.png/revision/latest?cb=20180529195008"
                     },
                     {
                         "name": "Boil Over",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_boilOver.png/revision/latest?cb=20180529195012"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/S13_charSelect_portrait.png/revision/latest?cb=20230705192155"
             },
             "Adam": {
                 "name": "Adam",
@@ -323,19 +375,23 @@
                     {
                         "name": "Diversion",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a6/IconPerks_diversion.png/revision/latest?cb=20180828172956"
                     },
                     {
                         "name": "Deliverance",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7e/IconPerks_deliverance.png/revision/latest?cb=20180828173004"
                     },
                     {
                         "name": "Autodidact",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/96/IconPerks_autodidact.png/revision/latest?cb=20180828173011"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/S14_charSelect_portrait.png/revision/latest?cb=20230705193718"
             },
             "Jeff": {
                 "name": "Jeff",
@@ -347,19 +403,23 @@
                     {
                         "name": "Breakdown",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6c/IconPerks_breakdown.png/revision/latest?cb=20181128100926"
                     },
                     {
                         "name": "Aftercare",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/IconPerks_aftercare.png/revision/latest?cb=20181128100931"
                     },
                     {
                         "name": "Distortion",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/41/IconPerks_distortion.png/revision/latest?cb=20181128100914"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b9/S15_charSelect_portrait.png/revision/latest?cb=20230705193545"
             },
             "Jane": {
                 "name": "Jane",
@@ -371,19 +431,23 @@
                     {
                         "name": "Solidarity",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9e/IconPerks_solidarity.png/revision/latest?cb=20190308175435"
                     },
                     {
                         "name": "Poised",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_poised.png/revision/latest?cb=20190308175429"
                     },
                     {
                         "name": "Head On",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cb/IconPerks_headOn.png/revision/latest?cb=20190308175420"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d7/S16_charSelect_portrait.png/revision/latest?cb=20230705194401"
             },
             "Ash": {
                 "name": "Ash",
@@ -395,19 +459,23 @@
                     {
                         "name": "Flip-Flop",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_flip-Flop.png/revision/latest?cb=20190402180450"
                     },
                     {
                         "name": "Buckle Up",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/74/IconPerks_buckleUp.png/revision/latest?cb=20190402180455"
                     },
                     {
                         "name": "Mettle of  Man",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_mettleOfMan.png/revision/latest?cb=20190402180459"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/78/S17_charSelect_portrait.png/revision/latest?cb=20230705191651"
             },
             "Steve": {
                 "name": "Steve",
@@ -419,19 +487,23 @@
                     {
                         "name": "Guardian",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_guardian.png/revision/latest?cb=20210930143606"
                     },
                     {
                         "name": "Kinship",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_camaraderie.png/revision/latest?cb=20190903175027"
                     },
                     {
                         "name": "Renewal",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7b/IconPerks_renewal.png/revision/latest?cb=20210930143608"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/S19_charSelect_portrait.png/revision/latest?cb=20230705183809"
             },
             "Nancy": {
                 "name": "Nancy",
@@ -443,19 +515,23 @@
                     {
                         "name": "Situational Awareness",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/da/IconPerks_situationalAwareness.png/revision/latest?cb=20210930143608"
                     },
                     {
                         "name": "Self-Aware",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7c/IconPerks_fixated.png/revision/latest?cb=20190903175127"
                     },
                     {
                         "name": "Inner Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/df/IconPerks_innerHealing.png/revision/latest?cb=20210930143608"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0e/S18_charSelect_portrait.png/revision/latest?cb=20230705184019"
             },
             "Yui": {
                 "name": "Yui",
@@ -467,19 +543,23 @@
                     {
                         "name": "Lucky Break",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a7/IconPerks_luckyBreak.png/revision/latest?cb=20191126213558"
                     },
                     {
                         "name": "Any Means Necessary",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_anyMeansNecessary.png/revision/latest?cb=20191126213542"
                     },
                     {
                         "name": "Breakout",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d0/IconPerks_breakout.png/revision/latest?cb=20191126213552"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/35/S20_charSelect_portrait.png/revision/latest?cb=20230705193537"
             },
             "Zarina": {
                 "name": "Zarina",
@@ -491,19 +571,23 @@
                     {
                         "name": "Off the Record",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9e/IconPerks_offTheRecord.png/revision/latest?cb=20200218172747"
                     },
                     {
                         "name": "Red Herring",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_redHerring.png/revision/latest?cb=20200218172728"
                     },
                     {
                         "name": "For The People",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_forThePeople.png/revision/latest?cb=20200218172919"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/S21_charSelect_portrait.png/revision/latest?cb=20230705194316"
             },
             "Cheryl": {
                 "name": "Cheryl",
@@ -515,19 +599,23 @@
                     {
                         "name": "Soul Guard",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a5/IconPerks_soulGuard.png/revision/latest?cb=20200526201807"
                     },
                     {
                         "name": "Blood Pact",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c9/IconPerks_bloodPact.png/revision/latest?cb=20200526201448"
                     },
                     {
                         "name": "Repressed Alliance",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_repressedAlliance.png/revision/latest?cb=20200526201745"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/38/S22_charSelect_portrait.png/revision/latest?cb=20230705193841"
             },
             "Felix": {
                 "name": "Felix",
@@ -539,22 +627,26 @@
                     {
                         "name": "Visionary",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7c/IconPerks_visionary.png/revision/latest?cb=20200819113857"
                     },
                     {
                         "name": "Desperate Measures",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/IconPerks_desperateMeasures.png/revision/latest?cb=20200819113949"
                     },
                     {
                         "name": "Built to Last",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_builtToLast.png/revision/latest?cb=20200819114105"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2e/S23_charSelect_portrait.png/revision/latest?cb=20230705194042"
             },
-            "Élodie": {
-                "name": "Élodie",
+            "Elodie": {
+                "name": "Elodie",
                 "availability": "500 AC / 9,000 IS",
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -563,19 +655,23 @@
                     {
                         "name": "Appraisal",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c1/IconPerks_appraisal.png/revision/latest?cb=20201112095004"
                     },
                     {
                         "name": "Deception",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_deception.png/revision/latest?cb=20201112095028"
                     },
                     {
                         "name": "Power Struggle",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4b/IconPerks_powerStruggle.png/revision/latest?cb=20201112095050"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/S24_charSelect_portrait.png/revision/latest?cb=20230705193628"
             },
             "Yun-Jin Lee": {
                 "name": "Yun-Jin Lee",
@@ -587,19 +683,23 @@
                     {
                         "name": "Fast Track",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_fastTrack.png/revision/latest?cb=20210302172243"
                     },
                     {
                         "name": "Smash Hit",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e0/IconPerks_smashHit.png/revision/latest?cb=20210302172407"
                     },
                     {
                         "name": "Self-Preservation",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/43/IconPerks_self-Preservation.png/revision/latest?cb=20210302172351"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/S25_charSelect_portrait.png/revision/latest?cb=20230705194144"
             },
             "Jill": {
                 "name": "Jill",
@@ -611,19 +711,23 @@
                     {
                         "name": "Counterforce",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d1/IconPerks_counterforce.png/revision/latest?cb=20210526103441"
                     },
                     {
                         "name": "Resurgence",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f3/IconPerks_resurgence.png/revision/latest?cb=20210526103300"
                     },
                     {
                         "name": "Blast Mine",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_blastMine.png/revision/latest?cb=20210526102812"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/99/S26_charSelect_portrait.png/revision/latest?cb=20230705184445"
             },
             "Leon": {
                 "name": "Leon",
@@ -635,19 +739,23 @@
                     {
                         "name": "Bite the Bullet",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a5/IconPerks_biteTheBullet.png/revision/latest?cb=20210526102647"
                     },
                     {
                         "name": "Flashbang",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/db/IconPerks_flashbang.png/revision/latest?cb=20210526102947"
                     },
                     {
                         "name": "Rookie Spirit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2f/IconPerks_rookieSpirit.png/revision/latest?cb=20210526103548"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/S27_charSelect_portrait.png/revision/latest?cb=20230705184450"
             },
             "Mikaela": {
                 "name": "Mikaela",
@@ -659,19 +767,23 @@
                     {
                         "name": "Clairvoyance",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/IconPerks_clairvoyance.png/revision/latest?cb=20210929054440"
                     },
                     {
                         "name": "Boon: Circle of Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/54/IconPerks_boonCircleOfHealing.png/revision/latest?cb=20210929054308"
                     },
                     {
                         "name": "Boon: Shadow Step",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/IconPerks_boonShadowStep.png/revision/latest?cb=20210929054304"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/42/S28_charSelect_portrait.png/revision/latest?cb=20230705191728"
             },
             "Jonah": {
                 "name": "Jonah",
@@ -683,19 +795,23 @@
                     {
                         "name": "Overcome",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/82/IconPerks_overcome.png/revision/latest?cb=20211109180747"
                     },
                     {
                         "name": "Corrective Action",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4f/IconPerks_correctiveAction.png/revision/latest?cb=20211109180717"
                     },
                     {
                         "name": "Boon: Exponential",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/76/IconPerks_boonExponential.png/revision/latest?cb=20211109175033"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/S29_charSelect_portrait.png/revision/latest?cb=20230705194007"
             },
             "Yoichi": {
                 "name": "Yoichi",
@@ -707,19 +823,23 @@
                     {
                         "name": "Parental Guidance",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/IconPerks_parentalGuidance.png/revision/latest?cb=20220216120019"
                     },
                     {
                         "name": "Empathic Connection",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_empathicConnection.png/revision/latest?cb=20220216115951"
                     },
                     {
                         "name": "Boon: Dark Theory",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/60/IconPerks_boonDarkTheory.png/revision/latest?cb=20220216115947"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/S30_charSelect_portrait.png/revision/latest?cb=20230705193929"
             },
             "Haddie": {
                 "name": "Haddie",
@@ -731,19 +851,23 @@
                     {
                         "name": "Inner Focus",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7e/IconPerks_innerFocus.png/revision/latest?cb=20220518112819"
                     },
                     {
                         "name": "Residual Manifest",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d0/IconPerks_residualManifest.png/revision/latest?cb=20220518112819"
                     },
                     {
                         "name": "Overzealous",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/99/IconPerks_overzealous.png/revision/latest?cb=20220518112819"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/97/S31_charSelect_portrait.png/revision/latest?cb=20230705194521"
             },
             "Ada": {
                 "name": "Ada",
@@ -755,19 +879,23 @@
                     {
                         "name": "Wiretap",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_wiretap.png/revision/latest?cb=20220815051906"
                     },
                     {
                         "name": "Reactive Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_reactiveHealing.png/revision/latest?cb=20220815051757"
                     },
                     {
                         "name": "Low Profile",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fb/IconPerks_lowProfile.png/revision/latest?cb=20220815051740"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/S32_charSelect_portrait.png/revision/latest?cb=20230705184840"
             },
             "Rebecca": {
                 "name": "Rebecca",
@@ -779,19 +907,23 @@
                     {
                         "name": "Better than New",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b1/IconPerks_betterThanNew.png/revision/latest?cb=20220815051705"
                     },
                     {
                         "name": "Reassurance",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5b/IconPerks_reassurance.png/revision/latest?cb=20220815051841"
                     },
                     {
                         "name": "Hyperfocus",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_hyperfocus.png/revision/latest?cb=20220815051721"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/93/S33_charSelect_portrait.png/revision/latest?cb=20230705184830"
             },
             "Vittorio": {
                 "name": "Vittorio",
@@ -803,19 +935,23 @@
                     {
                         "name": "Potential Energy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/IconPerks_potentialEnergy.png/revision/latest?cb=20221102143127"
                     },
                     {
                         "name": "Fogwise",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/90/IconPerks_fogwise.png/revision/latest?cb=20221102143122"
                     },
                     {
                         "name": "Quick Gambit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/IconPerks_quickGambit.png/revision/latest?cb=20221102143123"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/64/S34_charSelect_portrait.png/revision/latest?cb=20230705194225"
             },
             "Thalita": {
                 "name": "Thalita",
@@ -827,19 +963,23 @@
                     {
                         "name": "Friendly Competition",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_friendlyCompetition.png/revision/latest?cb=20230218135316"
                     },
                     {
                         "name": "Teamwork: Power of Two",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2b/IconPerks_teamworkPowerOfTwo.png/revision/latest?cb=20230218135319"
                     },
                     {
                         "name": "Cut Loose",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/02/IconPerks_cutLoose.png/revision/latest?cb=20230218135315"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/20/S35_charSelect_portrait.png/revision/latest?cb=20230705194105"
             },
             "Renato": {
                 "name": "Renato",
@@ -851,19 +991,23 @@
                     {
                         "name": "Blood Rush",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2c/IconPerks_bloodRush.png/revision/latest?cb=20230218135314"
                     },
                     {
                         "name": "Teamwork: Collective Stealth",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c"
+                        "tier": "#85200c",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a0/IconPerks_teamworkCollectiveStealth.png/revision/latest?cb=20230218135318"
                     },
                     {
                         "name": "Background Player",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e8/IconPerks_backgroundPlayer.png/revision/latest?cb=20230218135313"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/59/S36_charSelect_portrait.png/revision/latest?cb=20230705193833"
             },
             "Gabriel": {
                 "name": "Gabriel",
@@ -875,19 +1019,23 @@
                     {
                         "name": "Troubleshooter",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/IconPerks_troubleshooter.png/revision/latest?cb=20230524205359"
                     },
                     {
                         "name": "Made for This",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c0/IconPerks_madeForThis.png/revision/latest?cb=20230524205724"
                     },
                     {
                         "name": "Scavenger",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_scavenger.png/revision/latest?cb=20230524205539"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b3/S37_charSelect_portrait.png/revision/latest?cb=20230705194559"
             }
         },
         "universals": {
@@ -955,17 +1103,21 @@
                 "perks": [
                     {
                         "name": "Unnerving Presence",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a4/IconPerks_unnervingPresence.png/revision/latest?cb=20160605205217"
                     },
                     {
                         "name": "Agitation",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/IconPerks_agitation.png/revision/latest?cb=20160605204807"
                     },
                     {
                         "name": "Brutal Strength",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/IconPerks_brutalStrength.png/revision/latest?cb=20160605204842"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9f/K01_charSelect_portrait.png/revision/latest?cb=20230705190250"
             },
             "Wraith": {
                 "name": "The Wraith",
@@ -975,17 +1127,21 @@
                 "perks": [
                     {
                         "name": "Predator",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/73/IconPerks_predator.png/revision/latest?cb=20160605205037"
                     },
                     {
                         "name": "Bloodhound",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e0/IconPerks_bloodhound.png/revision/latest?cb=20160605204825"
                     },
                     {
                         "name": "Shadowborn",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/IconPerks_shadowborn.png/revision/latest?cb=20160605205118"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/K02_charSelect_portrait.png/revision/latest?cb=20230705190257"
             },
             "Hillbilly": {
                 "name": "The Hillbilly",
@@ -995,17 +1151,21 @@
                 "perks": [
                     {
                         "name": "Enduring",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_enduring.png/revision/latest?cb=20160605204922"
                     },
                     {
                         "name": "Lightborn",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/48/IconPerks_lightborn.png/revision/latest?cb=20160605205002"
                     },
                     {
                         "name": "Tinkerer",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d9/IconPerks_tinkerer.png/revision/latest?cb=20160605205204"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/K03_charSelect_portrait.png/revision/latest?cb=20230705190303"
             },
             "Nurse": {
                 "name": "The Nurse",
@@ -1015,17 +1175,21 @@
                 "perks": [
                     {
                         "name": "Stridor",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/32/IconPerks_stridor.png/revision/latest?cb=20160820085653"
                     },
                     {
                         "name": "Thanatophobia",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_thanatophobia.png/revision/latest?cb=20160820090639"
                     },
                     {
                         "name": "A Nurse's Calling",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_aNursesCalling.png/revision/latest?cb=20160820090103"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/K04_charSelect_portrait.png/revision/latest?cb=20230705185442"
             },
             "Huntress": {
                 "name": "The Huntress",
@@ -1035,17 +1199,21 @@
                 "perks": [
                     {
                         "name": "Beast of Prey",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/77/IconPerks_beastOfPrey.png/revision/latest?cb=20170727160820"
                     },
                     {
                         "name": "Territorial Imperative",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2a/IconPerks_territorialImperative.png/revision/latest?cb=20170727160846"
                     },
                     {
                         "name": "Hex: Huntress Lullaby",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/11/IconPerks_hexHuntressLullaby.png/revision/latest?cb=20170727160900"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1a/K08_charSelect_portrait.png/revision/latest?cb=20230705191247"
             },
             "Shape": {
                 "name": "The Shape",
@@ -1055,17 +1223,21 @@
                 "perks": [
                     {
                         "name": "Save the Best for Last",
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6a/IconPerks_saveTheBestForLast.png/revision/latest?cb=20161023113950"
                     },
                     {
                         "name": "Play With Your Food",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_playWithYourFood.png/revision/latest?cb=20161023113758"
                     },
                     {
                         "name": "Dying Light",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/48/IconPerks_dyingLight.png/revision/latest?cb=20161023113257"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/04/K05_charSelect_portrait.png/revision/latest?cb=20230705185703"
             },
             "Hag": {
                 "name": "The Hag",
@@ -1075,17 +1247,21 @@
                 "perks": [
                     {
                         "name": "Hex: The Third Seal",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/36/IconPerks_hexTheThirdSeal.png/revision/latest?cb=20161210091328"
                     },
                     {
                         "name": "Hex: Ruin",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_hexRuin.png/revision/latest?cb=20161209193143"
                     },
                     {
                         "name": "Hex: Devour Hope",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c9/IconPerks_hexDevourHope.png/revision/latest?cb=20161209192341"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b4/K06_charSelect_portrait.png/revision/latest?cb=20230705190017"
             },
             "Doctor": {
                 "name": "The Doctor",
@@ -1095,17 +1271,21 @@
                 "perks": [
                     {
                         "name": "Overwhelming Presence",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_overwhelmingPresence.png/revision/latest?cb=20170511153235"
                     },
                     {
                         "name": "Monitor & Abuse",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/60/IconPerks_monitorAndAbuse.png/revision/latest?cb=20170511153248"
                     },
                     {
                         "name": "Overcharge",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_overcharge.png/revision/latest?cb=20170511153315"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ad/K07_charSelect_portrait.png/revision/latest?cb=20230705190852"
             },
             "Cannibal": {
                 "name": "The Cannibal",
@@ -1115,17 +1295,21 @@
                 "perks": [
                     {
                         "name": "Knockout",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_knockOut.png/revision/latest?cb=20170914173607"
                     },
                     {
                         "name": "Barbecue and Chilli",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/51/IconPerks_barbecueAndChilli.png/revision/latest?cb=20170914173637"
                     },
                     {
                         "name": "Franklin's Demise",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/IconPerks_franklinsDemise.png/revision/latest?cb=20170914173626"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/K09_charSelect_portrait.png/revision/latest?cb=20230705182429"
             },
             "Nightmare": {
                 "name": "The Nightmare",
@@ -1135,17 +1319,21 @@
                 "perks": [
                     {
                         "name": "Fire Up",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5c/IconPerks_fireUp.png/revision/latest?cb=20171026225645"
                     },
                     {
                         "name": "Remember Me",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/62/IconPerks_rememberMe.png/revision/latest?cb=20171026225659"
                     },
                     {
                         "name": "Blood Warden",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_bloodWarden.png/revision/latest?cb=20171026225711"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/K10_charSelect_portrait.png/revision/latest?cb=20230705185229"
             },
             "Pig": {
                 "name": "The Pig",
@@ -1155,17 +1343,21 @@
                 "perks": [
                     {
                         "name": "Hangman's Trick",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_scourgeHookHangmansTrick.png/revision/latest?cb=20180123224254"
                     },
                     {
                         "name": "Surveillance",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_surveillance.png/revision/latest?cb=20180123224351"
                     },
                     {
                         "name": "Make Your Choice",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6b/IconPerks_makeYourChoice.png/revision/latest?cb=20180123224326"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/K11_charSelect_portrait.png/revision/latest?cb=20230705191844"
             },
             "Clown": {
                 "name": "The Clown",
@@ -1175,17 +1367,21 @@
                 "perks": [
                     {
                         "name": "Bamboozle",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7a/IconPerks_bamboozle.png/revision/latest?cb=20180529205216"
                     },
                     {
                         "name": "Coulrophobia",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/IconPerks_coulrophobia.png/revision/latest?cb=20180529205206"
                     },
                     {
                         "name": "Pop Goes The Weasel",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_popGoesTheWeasel.png/revision/latest?cb=20180529205138"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/K12_charSelect_portrait.png/revision/latest?cb=20230705192149"
             },
             "Spirit": {
                 "name": "The Spirit",
@@ -1195,17 +1391,21 @@
                 "perks": [
                     {
                         "name": "Spirit Fury",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a6/IconPerks_spiritFury.png/revision/latest?cb=20180828172940"
                     },
                     {
                         "name": "Hex: Haunted Ground",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c4/IconPerks_hexHauntedGround.png/revision/latest?cb=20180828172944"
                     },
                     {
                         "name": "Rancor",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_rancor.png/revision/latest?cb=20180828172949"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/K13_charSelect_portrait.png/revision/latest?cb=20230705192259"
             },
             "Legion": {
                 "name": "The Legion",
@@ -1215,17 +1415,21 @@
                 "perks": [
                     {
                         "name": "Discordance",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/82/IconPerks_discordance.png/revision/latest?cb=20181128100920"
                     },
                     {
                         "name": "Mad Grit",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/da/IconPerks_madGrit.png/revision/latest?cb=20181128100906"
                     },
                     {
                         "name": "Iron Maiden",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/IconPerks_ironMaiden.png/revision/latest?cb=20181128100910"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/K14_charSelect_portrait.png/revision/latest?cb=20230705192404"
             },
             "Plague": {
                 "name": "The Plague",
@@ -1235,17 +1439,21 @@
                 "perks": [
                     {
                         "name": "Corrupt Intervention",
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/10/IconPerks_corruptIntervention.png/revision/latest?cb=20190306195826"
                     },
                     {
                         "name": "Infectious Fright",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/IconPerks_infectiousFright.png/revision/latest?cb=20190306195819"
                     },
                     {
                         "name": "Dark Devotion",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4f/IconPerks_darkDevotion.png/revision/latest?cb=20190306195813"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/68/K15_charSelect_portrait.png/revision/latest?cb=20230705192442"
             },
             "Ghost Face": {
                 "name": "The Ghost Face",
@@ -1255,17 +1463,21 @@
                 "perks": [
                     {
                         "name": "I'm All Ears",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e3/IconPerks_imAllEars.png/revision/latest?cb=20190606094404"
                     },
                     {
                         "name": "Thrilling Tremors",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b8/IconPerks_thrillingTremors.png/revision/latest?cb=20190606094359"
                     },
                     {
                         "name": "Furtive Chase",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_furtiveChase.png/revision/latest?cb=20190606094409"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/K16_charSelect_portrait.png/revision/latest?cb=20230705191613"
             },
             "Demogorgon": {
                 "name": "The Demogorgon",
@@ -1275,17 +1487,21 @@
                 "perks": [
                     {
                         "name": "Jolt",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_surge.png/revision/latest?cb=20190903175259"
                     },
                     {
                         "name": "Fearmonger",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_mindbreaker.png/revision/latest?cb=20190903175217"
                     },
                     {
                         "name": "Claustrophobia",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_cruelLimits.png/revision/latest?cb=20190903175111"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/K17_charSelect_portrait.png/revision/latest?cb=20230705183602"
             },
             "Oni": {
                 "name": "The Oni",
@@ -1295,17 +1511,21 @@
                 "perks": [
                     {
                         "name": "Zanshin Tactics",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d3/IconPerks_zanshinTactics.png/revision/latest?cb=20191126213608"
                     },
                     {
                         "name": "Blood Echo",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_bloodEcho.png/revision/latest?cb=20191126213547"
                     },
                     {
                         "name": "Nemesis",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/33/IconPerks_nemesis.png/revision/latest?cb=20191126213602"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c5/K18_charSelect_portrait.png/revision/latest?cb=20230705192610"
             },
             "Deathslinger": {
                 "name": "The Deathslinger",
@@ -1315,17 +1535,21 @@
                 "perks": [
                     {
                         "name": "Gearhead",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/IconPerks_gearhead.png/revision/latest?cb=20200218172900"
                     },
                     {
                         "name": "Dead Man's Switch",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_deadMansSwitch.png/revision/latest?cb=20200218172942"
                     },
                     {
                         "name": "Hex: Retribution",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ab/IconPerks_hexRetribution.png/revision/latest?cb=20200218172811"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/K19_charSelect_portrait.png/revision/latest?cb=20230705192709"
             },
             "Executioner": {
                 "name": "The Executioner",
@@ -1335,17 +1559,21 @@
                 "perks": [
                     {
                         "name": "Forced Penance",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_forcedPenance.png/revision/latest?cb=20200526201518"
                     },
                     {
                         "name": "Trail of Torment",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_trailOfTorment.png/revision/latest?cb=20200526201821"
                     },
                     {
                         "name": "Deathbound",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e7/IconPerks_deathbound.png/revision/latest?cb=20200526201504"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/95/K20_charSelect_portrait.png/revision/latest?cb=20230705192739"
             },
             "Blight": {
                 "name": "The Blight",
@@ -1355,17 +1583,21 @@
                 "perks": [
                     {
                         "name": "Dragon's Grip",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/IconPerks_dragonsGrip.png/revision/latest?cb=20200819113412"
                     },
                     {
                         "name": "Hex: Blood Favor",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6b/IconPerks_hexBloodFavour.png/revision/latest?cb=20200819113451"
                     },
                     {
                         "name": "Hex: Undying",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_hexUndying.png/revision/latest?cb=20200819113555"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0b/K21_charSelect_portrait.png/revision/latest?cb=20230705192806"
             },
             "Twins": {
                 "name": "The Twins",
@@ -1375,17 +1607,21 @@
                 "perks": [
                     {
                         "name": "Hoarder",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_hoarder.png/revision/latest?cb=20201112100327"
                     },
                     {
                         "name": "Oppression",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a1/IconPerks_oppression.png/revision/latest?cb=20201112095043"
                     },
                     {
                         "name": "Coup de Grâce",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/IconPerks_coupDeGr%C3%A2ce.png/revision/latest?cb=20201112095015"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/03/K22_charSelect_portrait.png/revision/latest?cb=20230705192835"
             },
             "Trickster": {
                 "name": "The Trickster",
@@ -1395,17 +1631,21 @@
                 "perks": [
                     {
                         "name": "Starstruck",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6e/IconPerks_starstruck.png/revision/latest?cb=20210302172426"
                     },
                     {
                         "name": "Hex: Crowd Control",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f1/IconPerks_hexCrowdControl.png/revision/latest?cb=20210302172300"
                     },
                     {
                         "name": "No Way Out",
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_noWayOut.png/revision/latest?cb=20210302172337"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3e/K23_charSelect_portrait.png/revision/latest?cb=20230705192915"
             },
             "Nemesis": {
                 "name": "The Nemesis",
@@ -1415,17 +1655,21 @@
                 "perks": [
                     {
                         "name": "Lethal Pursuer",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/61/IconPerks_lethalPursuer.png/revision/latest?cb=20210526103144"
                     },
                     {
                         "name": "Hysteria",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3a/IconPerks_hysteria.png/revision/latest?cb=20210526103043"
                     },
                     {
                         "name": "Eruption",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dd/IconPerks_eruption.png/revision/latest?cb=20210526102859"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/K24_charSelect_portrait.png/revision/latest?cb=20230705184123"
             },
             "Cenobite": {
                 "name": "The Cenobite",
@@ -1435,17 +1679,21 @@
                 "perks": [
                     {
                         "name": "Deadlock",
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d3/IconPerks_deadlock.png/revision/latest?cb=20210819105650"
                     },
                     {
                         "name": "Hex: Plaything",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hexPlaything.png/revision/latest?cb=20210819105650"
                     },
                     {
                         "name": "Gift of Pain",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/26/IconPerks_scourgeHookGiftOfPain.png/revision/latest?cb=20210819105650"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/35/K25_charSelect_portrait.png/revision/latest?cb=20230705185010"
             },
             "Artist": {
                 "name": "The Artist",
@@ -1455,17 +1703,21 @@
                 "perks": [
                     {
                         "name": "Grim Embrace",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_grimEmbrace.png/revision/latest?cb=20211109180734"
                     },
                     {
                         "name": "Pain Resonance",
-                        "tier": "#1155cc"
+                        "tier": "#1155cc",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_scourgeHookPainResonance.png/revision/latest?cb=20211109180802"
                     },
                     {
                         "name": "Hex: Pentimento",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_hexPentimento.png/revision/latest?cb=20211109175002"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/K26_charSelect_portrait.png/revision/latest?cb=20230705192947"
             },
             "Onryo": {
                 "name": "The Onryo",
@@ -1475,17 +1727,21 @@
                 "perks": [
                     {
                         "name": "Call of Brine",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_callOfBrine.png/revision/latest?cb=20220216115938"
                     },
                     {
                         "name": "Floods of Rage",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_scourgeHookFloodsOfRage.png/revision/latest?cb=20220216120003"
                     },
                     {
                         "name": "Merciless Storm",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/36/IconPerks_mercilessStorm.png/revision/latest?cb=20220216120012"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e2/K27_charSelect_portrait.png/revision/latest?cb=20230705193018"
             },
             "Dredge": {
                 "name": "The Dredge",
@@ -1495,17 +1751,21 @@
                 "perks": [
                     {
                         "name": "Dissolution",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_dissolution.png/revision/latest?cb=20220518112819"
                     },
                     {
                         "name": "Darkness Revealed",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ed/IconPerks_darknessRevealed.png/revision/latest?cb=20220518112818"
                     },
                     {
                         "name": "Septic Touch",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d8/IconPerks_septicTouch.png/revision/latest?cb=20220518112819"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/49/K28_charSelect_portrait.png/revision/latest?cb=20230705193055"
             },
             "Mastermind": {
                 "name": "The Mastermind",
@@ -1515,17 +1775,21 @@
                 "perks": [
                     {
                         "name": "Superior Anatomy",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4a/IconPerks_superiorAnatomy.png/revision/latest?cb=20220815051818"
                     },
                     {
                         "name": "Awakened Awareness",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/97/IconPerks_awakenedAwareness.png/revision/latest?cb=20220815051648"
                     },
                     {
                         "name": "Terminus",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_terminus.png/revision/latest?cb=20220815051853"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/87/K29_charSelect_portrait.png/revision/latest?cb=20230705184825"
             },
             "Knight": {
                 "name": "The Knight",
@@ -1535,17 +1799,21 @@
                 "perks": [
                     {
                         "name": "Nowhere to Hide",
-                        "tier": "#38761d"
+                        "tier": "#38761d",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/29/IconPerks_nowhereToHide.png/revision/latest?cb=20221102143126"
                     },
                     {
                         "name": "Hex: Face the Darkness",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/IconPerks_hexFaceTheDarkness.png/revision/latest?cb=20221102143124"
                     },
                     {
                         "name": "Hubris",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/aa/IconPerks_hubris.png/revision/latest?cb=20221102143125"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/44/K30_charSelect_portrait.png/revision/latest?cb=20230705193151"
             },
             "Skull Merchant": {
                 "name": "The Skull Merchant",
@@ -1555,17 +1823,21 @@
                 "perks": [
                     {
                         "name": "THWACK!",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_thwack.png/revision/latest?cb=20230218135321"
                     },
                     {
                         "name": "Leverage",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_leverage.png/revision/latest?cb=20230218135317"
                     },
                     {
                         "name": "Game Afoot",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/53/IconPerks_gameAfoot.png/revision/latest?cb=20230218135317"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/K31_charSelect_portrait.png/revision/latest?cb=20230705193235"
             },
             "Singularity": {
                 "name": "The Singularity",
@@ -1575,17 +1847,21 @@
                 "perks": [
                     {
                         "name": "Genetic Limits",
-                        "tier": "#5b0f00"
+                        "tier": "#5b0f00",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/IconPerks_geneticLimits.png/revision/latest?cb=20230524214956"
                     },
                     {
                         "name": "Forced Hesitation",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_forcedHesitation.png/revision/latest?cb=20230524214839"
                     },
                     {
                         "name": "Machine Learning",
-                        "tier": "#bf9000"
+                        "tier": "#bf9000",
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/01/IconPerks_machineLearning.png/revision/latest?cb=20230524214741"
                     }
-                ]
+                ],
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/K32_charSelect_portrait.png/revision/latest?cb=20230705193241"
             }
         },
         "universals": {

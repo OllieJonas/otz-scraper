@@ -40,6 +40,7 @@ def scrape_characters(character_type):
     wiki_links = _scrape_wiki_links(url, character_type)
     # character = _scrape_character(wiki_links[1], character_type)
     characters = [_scrape_character(wl, character_type) for i, wl in enumerate(wiki_links)]
+    characters = {ch['name']: ch for ch in characters}
 
     return characters
 
@@ -61,7 +62,7 @@ def _scrape_character(url, character_type):
 
     info = _build_killer_json() if is_killer else _build_survivor_json()
     name, icon = _scrape_name_and_icon(soup)
-    info['name'] = name
+    info['name'] = unidecode(name).replace("The ", "")
     info['icon'] = icon
 
     lore, image_full = _scrape_lore_and_image_full(soup)

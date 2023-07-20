@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 from datetime import datetime
 from typing import Tuple
 
@@ -10,10 +9,9 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 import util
-
+from character_scraper import scrape_characters
 from otz_scraper import scrape_otz
 from perk_scraper import scrape_perks
-from character_scraper import scrape_characters
 
 KILLER_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Killer_Perks"
 SURVIVOR_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Survivor_Perks"
@@ -24,6 +22,23 @@ SURVIVOR_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Survivors"
 
 OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
 TEST_SPREADSHEET_ID = "1aNc3RqnjkAkxYX2msRzHahFVszkvCJl5PpR4ept7lpI"
+
+
+# differences in names between Otz's spreadsheet and the Wiki.
+SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
+    # killer
+    "Play With Your Food": "Play with Your Food",  # shape
+    "Knockout": "Knock Out",  # cannibal
+    "Barbecue and Chilli": "Barbecue & Chilli",  # cannibal
+    "Pop Goes The Weasel": "Pop Goes the Weasel",  # clown
+    "Hex: Blood Favor": "Hex: Blood Favour",  # blight
+
+    # survivor
+    "Self Care": "Self-Care",  # claudette
+    "Wake up!": "Wake Up!",  # quentin
+    "Mettle of  Man": "Mettle of Man",  # ash, 2 spaces between "of" and "Man"
+    "For The People": "For the People",
+})
 
 
 def main():
@@ -89,10 +104,62 @@ def main():
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
                     killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict) -> Tuple[dict, dict, dict]:
-    # print("perks", survivor_perks)
-    # print("characters", survivor_characters)
+    """
+    prepare Spreadsheet JSON for usage on the front-end.
+    The idea of doing this here is to ensure that each scraper can act independently; this just does some extra
+    processing once all of them have been scraped, and isn't necessary for this application to produce
+    "correct" outputs.
+    """
     surv = "survivors"
     kill = "killers"
+
+    def create_character_from(perks, new_name, perk1, perk2, perk3, old_name="All", replace=False):
+        perks[new_name] = {perk1: perks[old_name][perk1]} \
+                          | {perk2: perks[old_name][perk2]} \
+                          | {perk3: perks[old_name][perk3]}
+
+        if replace:
+            del perks[old_name][perk1]
+            del perks[old_name][perk2]
+            del perks[old_name][perk3]
+
+    # add the stranger thing characters as their own unique perks
+    create_character_from(killer_perks, "Demogorgon", "Jolt", "Fearmonger", "Claustrophobia")
+    create_character_from(survivor_perks, "Steve", "Guardian", "Kinship", "Renewal")
+    create_character_from(survivor_perks, "Nancy", "Situational Awareness", "Self-Aware", "Inner Healing")
+
+    # Tapp gets saved with David (isn't it like writing rule no 1 not to have characters w/ the same name smh BHVR)
+    create_character_from(survivor_perks, "Tapp", "Tenacity", "Detective's Hunch", "Stake Out", old_name="David",
+                          replace=True)
+
+    # otz only uses the first names of survivors (with some exceptions)
+    for old_key, value in survivor_characters.copy().items():
+
+        if old_key == "David Tapp":  # david tapp is Tapp on the sheet, David in perks and David Tapp in chars. help :(
+            new_key = old_key.split(" ")[1]
+        else:
+            new_key = old_key.split(" ")[0]
+
+        survivor_characters[new_key] = value
+        del survivor_characters[old_key]
+
+    def transform_spreadsheet(perks, characters, spreadsheet):
+        for name, sheet_character in spreadsheet['characters'].items():
+
+            # this is bad
+            if name == "Yun-Jin Lee":
+                name = "Yun-Jin"
+
+            for perk in sheet_character['perks']:
+                # perk comes from otz spreadsheet
+                # perk name is used to access otz spreadsheet
+                perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
+                perk['icon'] = perks[name][perk_name]['icon']
+
+            sheet_character['icon'] = characters[name]['icon']
+
+    transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
+    transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
 
     return {surv: survivor_perks} | {kill: killer_perks}, \
            {surv: survivor_characters} | {kill: killer_characters}, \
@@ -132,7 +199,7 @@ def parse_args() -> argparse.Namespace:
                         help='the minimum amount of universal (base) perks to search for on the Otz spreadsheet.')
     parser.add_argument("--scrape-perks", default=True, type=bool,
                         help="Whether to scrape the perks wiki page")
-    parser.add_argument("--scrape-characters", default=False, type=bool,
+    parser.add_argument("--scrape-characters", default=True, type=bool,
                         help="Whether to scrape the characters wiki page")
     parser.add_argument("--scrape-spreadsheet", default=True, type=bool,
                         help="Whether to scrape the Otzdarva spreadsheet")

@@ -5,6 +5,8 @@ from typing import Dict, Callable, Type, List, Tuple
 import constants
 import util
 
+from unidecode import unidecode
+
 from cell import Cell
 
 
@@ -47,7 +49,7 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
             return return_dict, list
 
         else:
-            return c['effectiveValue']['stringValue'].replace("TR", "").strip(), str
+            return unidecode(c['effectiveValue']['stringValue'].replace("TR", "").strip()), str
 
     def key_extract_func(cell):
         return cell['name'].removeprefix("The ")
