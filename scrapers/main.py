@@ -209,10 +209,10 @@ def parse_args() -> argparse.Namespace:
 def save_json(file_name, content):
     current_date = datetime.now().strftime('%d-%m-%Y')
 
-    with open(f'{util.one_dir_up()}/out/archive/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
+    with open(f'{util.one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
-    with open(f'{util.one_dir_up()}/out/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
+    with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
 
