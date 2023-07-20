@@ -891,52 +891,52 @@
     },
     "universals": {
         "Dark Sense": {
-            "perk_tier": "#38761d",
-            "perk_name": "Dark Sense"
+            "tier": "#38761d",
+            "name": "Dark Sense"
         },
         "Déjà Vu": {
-            "perk_tier": "#38761d",
-            "perk_name": "Déjà Vu"
+            "tier": "#38761d",
+            "name": "Déjà Vu"
         },
         "Hope": {
-            "perk_tier": "#1155cc",
-            "perk_name": "Hope"
+            "tier": "#1155cc",
+            "name": "Hope"
         },
         "Kindred": {
-            "perk_tier": "#1155cc",
-            "perk_name": "Kindred"
+            "tier": "#1155cc",
+            "name": "Kindred"
         },
         "Lightweight": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Lightweight"
+            "tier": "#bf9000",
+            "name": "Lightweight"
         },
         "No One Left Behind": {
-            "perk_tier": "#38761d",
-            "perk_name": "No One Left Behind"
+            "tier": "#38761d",
+            "name": "No One Left Behind"
         },
         "Plunderer's Instinct": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Plunderer's Instinct"
+            "tier": "#bf9000",
+            "name": "Plunderer's Instinct"
         },
         "Premonition": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Premonition"
+            "tier": "#5b0f00",
+            "name": "Premonition"
         },
         "Resilience": {
-            "perk_tier": "#38761d",
-            "perk_name": "Resilience"
+            "tier": "#38761d",
+            "name": "Resilience"
         },
         "Slippery Meat": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Slippery Meat"
+            "tier": "#5b0f00",
+            "name": "Slippery Meat"
         },
         "Small Game": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Small Game"
+            "tier": "#bf9000",
+            "name": "Small Game"
         },
         "Spine Chill": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Spine Chill"
+            "tier": "#bf9000",
+            "name": "Spine Chill"
         }
     },
     "guides": {

@@ -643,52 +643,52 @@
     },
     "universals": {
         "Bitter Murmur": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Bitter Murmur"
+            "tier": "#bf9000",
+            "name": "Bitter Murmur"
         },
         "Deerstalker": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Deerstalker"
+            "tier": "#5b0f00",
+            "name": "Deerstalker"
         },
         "Distressing": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Distressing"
+            "tier": "#5b0f00",
+            "name": "Distressing"
         },
         "Hex: No One Escapes Death": {
-            "perk_tier": "#38761d",
-            "perk_name": "Hex: No One Escapes Death"
+            "tier": "#38761d",
+            "name": "Hex: No One Escapes Death"
         },
         "Hex: Thrill of the Hunt": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Hex: Thrill of the Hunt"
+            "tier": "#bf9000",
+            "name": "Hex: Thrill of the Hunt"
         },
         "Insidious": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Insidious"
+            "tier": "#5b0f00",
+            "name": "Insidious"
         },
         "Iron Grasp": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Iron Grasp"
+            "tier": "#5b0f00",
+            "name": "Iron Grasp"
         },
         "Monstrous Shrine": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Monstrous Shrine"
+            "tier": "#5b0f00",
+            "name": "Monstrous Shrine"
         },
         "Sloppy Butcher": {
-            "perk_tier": "#38761d",
-            "perk_name": "Sloppy Butcher"
+            "tier": "#38761d",
+            "name": "Sloppy Butcher"
         },
         "Shattered Hope": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Shattered Hope"
+            "tier": "#5b0f00",
+            "name": "Shattered Hope"
         },
         "Spies from the Shadows": {
-            "perk_tier": "#bf9000",
-            "perk_name": "Spies from the Shadows"
+            "tier": "#bf9000",
+            "name": "Spies from the Shadows"
         },
         "Unrelenting": {
-            "perk_tier": "#5b0f00",
-            "perk_name": "Unrelenting"
+            "tier": "#5b0f00",
+            "name": "Unrelenting"
         }
     },
     "guides": {

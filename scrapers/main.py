@@ -23,7 +23,6 @@ SURVIVOR_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Survivors"
 OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
 TEST_SPREADSHEET_ID = "1aNc3RqnjkAkxYX2msRzHahFVszkvCJl5PpR4ept7lpI"
 
-
 # differences in names between Otz's spreadsheet and the Wiki.
 SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
     # killer
@@ -144,8 +143,8 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
         del survivor_characters[old_key]
 
     def transform_spreadsheet(perks, characters, spreadsheet):
+        # character perks
         for name, sheet_character in spreadsheet['characters'].items():
-
             # this is bad
             if name == "Yun-Jin Lee":
                 name = "Yun-Jin"
@@ -157,6 +156,10 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
                 perk['icon'] = perks[name][perk_name]['icon']
 
             sheet_character['icon'] = characters[name]['icon']
+
+        for name, perk in spreadsheet['universals'].items():
+            perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
+            perk['icon'] = perks['All'][perk_name]['icon']
 
     transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
     transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
@@ -209,10 +212,10 @@ def parse_args() -> argparse.Namespace:
 def save_json(file_name, content):
     current_date = datetime.now().strftime('%d-%m-%Y')
 
-    with open(f'{util.one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
+    with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
-    with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
+    with open(f'{util.one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
 

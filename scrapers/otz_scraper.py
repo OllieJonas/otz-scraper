@@ -71,7 +71,8 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
                           data_extract_func=data_extract_func
                           )
 
-    # grouping perk_tiers and perk_names
+    # grouping perk_tiers and perk_names, could probably rework code to make this work but that's more effort than
+    # just hacking it at the end lmao
     for name, character in sheet.items():
         perks = []
         for tier, info in zip(character['perk_tiers'], character['perk_names']):
@@ -90,9 +91,9 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
     start = Cell(sheet_constants['base_perks_start_col'], sheet_constants['base_perks_start_row'])
 
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
-        if dt == "perk_tier":
+        if dt == "tier":
             return perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), str
-        elif dt == "perk_name":
+        elif dt == "name":
             return c['effectiveValue']['stringValue'], str
 
     return _scrape_sheet(service=service,
@@ -104,11 +105,11 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
                          start=start,
                          next_start_func=lambda cell, _: cell + 1,
                          cell_dict_func=lambda cell, _: util.BiDict({
-                             "perk_name": cell >> 1,
-                             "perk_tier": cell,
+                             "name": cell >> 1,
+                             "tier": cell,
                          }),
                          key_req_func=lambda _: None,
-                         key_extract_func=lambda cell: cell['perk_name'],
+                         key_extract_func=lambda cell: cell['name'],
                          data_extract_func=data_extract_func
                          )
 
