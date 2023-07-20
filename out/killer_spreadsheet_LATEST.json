@@ -2,1299 +2,692 @@
     "characters": {
         "Trapper": {
             "name": "The Trapper",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Unnerving Presence"
-                },
-                {
-                    "value": "Agitation"
-                },
-                {
-                    "value": "Brutal Strength"
-                }
-            ],
             "availability": "Free",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Unnerving Presence"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Agitation"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Brutal Strength"
+                }
+            ]
         },
         "Wraith": {
             "name": "The Wraith",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Predator"
-                },
-                {
-                    "value": "Bloodhound"
-                },
-                {
-                    "value": "Shadowborn"
-                }
-            ],
             "availability": "Free",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Predator"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Bloodhound"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Shadowborn"
+                }
+            ]
         },
         "Hillbilly": {
             "name": "The Hillbilly",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Enduring"
-                },
-                {
-                    "value": "Lightborn"
-                },
-                {
-                    "value": "Tinkerer"
-                }
-            ],
             "availability": "Free",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Enduring"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Lightborn"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Tinkerer"
+                }
+            ]
         },
         "Nurse": {
             "name": "The Nurse",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Stridor"
-                },
-                {
-                    "value": "Thanatophobia"
-                },
-                {
-                    "value": "A Nurse's Calling"
-                }
-            ],
             "availability": "Free",
             "movement_speed": "96.25% | 3.85m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Stridor"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Thanatophobia"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "A Nurse's Calling"
+                }
+            ]
         },
         "Huntress": {
             "name": "The Huntress",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Beast of Prey"
-                },
-                {
-                    "value": "Territorial Imperative"
-                },
-                {
-                    "value": "Hex: Huntress Lullaby"
-                }
-            ],
             "availability": "Free",
             "movement_speed": "110% | 4.4m/s",
-            "terror_radius": "20m  + lullaby"
+            "terror_radius": "20m  + lullaby",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Beast of Prey"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Territorial Imperative"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: Huntress Lullaby"
+                }
+            ]
         },
         "Shape": {
             "name": "The Shape",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.06666667,
-                        "green": 0.33333334,
-                        "blue": 0.8
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Save the Best for Last"
-                },
-                {
-                    "value": "Play With Your Food"
-                },
-                {
-                    "value": "Dying Light"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "105-115% | 4.6m/s",
-            "terror_radius": "0-16-32m"
+            "terror_radius": "0-16-32m",
+            "perks": [
+                {
+                    "tier": "#1155cc",
+                    "name": "Save the Best for Last"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Play With Your Food"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Dying Light"
+                }
+            ]
         },
         "Hag": {
             "name": "The Hag",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Hex: The Third Seal"
-                },
-                {
-                    "value": "Hex: Ruin"
-                },
-                {
-                    "value": "Hex: Devour Hope"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "110% | 4.4m/s",
-            "terror_radius": "24m"
+            "terror_radius": "24m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: The Third Seal"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: Ruin"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Devour Hope"
+                }
+            ]
         },
         "Doctor": {
             "name": "The Doctor",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Overwhelming Presence"
-                },
-                {
-                    "value": "Monitor & Abuse"
-                },
-                {
-                    "value": "Overcharge"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Overwhelming Presence"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Monitor & Abuse"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Overcharge"
+                }
+            ]
         },
         "Cannibal": {
             "name": "The Cannibal",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Knockout"
-                },
-                {
-                    "value": "Barbecue and Chilli"
-                },
-                {
-                    "value": "Franklin's Demise"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Knockout"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Barbecue and Chilli"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Franklin's Demise"
+                }
+            ]
         },
         "Nightmare": {
             "name": "The Nightmare",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Fire Up"
-                },
-                {
-                    "value": "Remember Me"
-                },
-                {
-                    "value": "Blood Warden"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m  or lullaby"
+            "terror_radius": "32m  or lullaby",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Fire Up"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Remember Me"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Blood Warden"
+                }
+            ]
         },
         "Pig": {
             "name": "The Pig",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Hangman's Trick"
-                },
-                {
-                    "value": "Surveillance"
-                },
-                {
-                    "value": "Make Your Choice"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Hangman's Trick"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Surveillance"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Make Your Choice"
+                }
+            ]
         },
         "Clown": {
             "name": "The Clown",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Bamboozle"
-                },
-                {
-                    "value": "Coulrophobia"
-                },
-                {
-                    "value": "Pop Goes The Weasel"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#38761d",
+                    "name": "Bamboozle"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Coulrophobia"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Pop Goes The Weasel"
+                }
+            ]
         },
         "Spirit": {
             "name": "The Spirit",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Spirit Fury"
-                },
-                {
-                    "value": "Hex: Haunted Ground"
-                },
-                {
-                    "value": "Rancor"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "110% | 4.4m/s",
-            "terror_radius": "24m"
+            "terror_radius": "24m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Spirit Fury"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Haunted Ground"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Rancor"
+                }
+            ]
         },
         "Legion": {
             "name": "The Legion",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Discordance"
-                },
-                {
-                    "value": "Mad Grit"
-                },
-                {
-                    "value": "Iron Maiden"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#38761d",
+                    "name": "Discordance"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Mad Grit"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Iron Maiden"
+                }
+            ]
         },
         "Plague": {
             "name": "The Plague",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.06666667,
-                        "green": 0.33333334,
-                        "blue": 0.8
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Corrupt Intervention"
-                },
-                {
-                    "value": "Infectious Fright"
-                },
-                {
-                    "value": "Dark Devotion"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#1155cc",
+                    "name": "Corrupt Intervention"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Infectious Fright"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Dark Devotion"
+                }
+            ]
         },
         "Ghost Face": {
             "name": "The Ghost Face",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "I'm All Ears"
-                },
-                {
-                    "value": "Thrilling Tremors"
-                },
-                {
-                    "value": "Furtive Chase"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "I'm All Ears"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Thrilling Tremors"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Furtive Chase"
+                }
+            ]
         },
         "Demogorgon": {
             "name": "The Demogorgon",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Jolt"
-                },
-                {
-                    "value": "Fearmonger"
-                },
-                {
-                    "value": "Claustrophobia"
-                }
-            ],
             "availability": "Not Available",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#38761d",
+                    "name": "Jolt"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Fearmonger"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Claustrophobia"
+                }
+            ]
         },
         "Oni": {
             "name": "The Oni",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Zanshin Tactics"
-                },
-                {
-                    "value": "Blood Echo"
-                },
-                {
-                    "value": "Nemesis"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Zanshin Tactics"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Blood Echo"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Nemesis"
+                }
+            ]
         },
         "Deathslinger": {
             "name": "The Deathslinger",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Gearhead"
-                },
-                {
-                    "value": "Dead Man's Switch"
-                },
-                {
-                    "value": "Hex: Retribution"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "110% | 4.4m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Gearhead"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Dead Man's Switch"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: Retribution"
+                }
+            ]
         },
         "Executioner": {
             "name": "The Executioner",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Forced Penance"
-                },
-                {
-                    "value": "Trail of Torment"
-                },
-                {
-                    "value": "Deathbound"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Forced Penance"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Trail of Torment"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Deathbound"
+                }
+            ]
         },
         "Blight": {
             "name": "The Blight",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Dragon's Grip"
-                },
-                {
-                    "value": "Hex: Blood Favor"
-                },
-                {
-                    "value": "Hex: Undying"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Dragon's Grip"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Blood Favor"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Undying"
+                }
+            ]
         },
         "Twins": {
             "name": "The Twins",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Hoarder"
-                },
-                {
-                    "value": "Oppression"
-                },
-                {
-                    "value": "Coup de Grâce"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Hoarder"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Oppression"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Coup de Grâce"
+                }
+            ]
         },
         "Trickster": {
             "name": "The Trickster",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.06666667,
-                        "green": 0.33333334,
-                        "blue": 0.8
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Starstruck"
-                },
-                {
-                    "value": "Hex: Crowd Control"
-                },
-                {
-                    "value": "No Way Out"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "110% | 4.4m/s",
-            "terror_radius": "24m  + lullaby"
+            "terror_radius": "24m  + lullaby",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Starstruck"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: Crowd Control"
+                },
+                {
+                    "tier": "#1155cc",
+                    "name": "No Way Out"
+                }
+            ]
         },
         "Nemesis": {
             "name": "The Nemesis",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Lethal Pursuer"
-                },
-                {
-                    "value": "Hysteria"
-                },
-                {
-                    "value": "Eruption"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#38761d",
+                    "name": "Lethal Pursuer"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Hysteria"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Eruption"
+                }
+            ]
         },
         "Cenobite": {
             "name": "The Cenobite",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.06666667,
-                        "green": 0.33333334,
-                        "blue": 0.8
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Deadlock"
-                },
-                {
-                    "value": "Hex: Plaything"
-                },
-                {
-                    "value": "Gift of Pain"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#1155cc",
+                    "name": "Deadlock"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Plaything"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Gift of Pain"
+                }
+            ]
         },
         "Artist": {
             "name": "The Artist",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.06666667,
-                        "green": 0.33333334,
-                        "blue": 0.8
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Grim Embrace"
-                },
-                {
-                    "value": "Pain Resonance"
-                },
-                {
-                    "value": "Hex: Pentimento"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Grim Embrace"
+                },
+                {
+                    "tier": "#1155cc",
+                    "name": "Pain Resonance"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Hex: Pentimento"
+                }
+            ]
         },
         "Onryo": {
             "name": "The Onryo",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Call of Brine"
-                },
-                {
-                    "value": "Floods of Rage"
-                },
-                {
-                    "value": "Merciless Storm"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "24m"
+            "terror_radius": "24m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Call of Brine"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Floods of Rage"
+                },
+                {
+                    "tier": "#38761d",
+                    "name": "Merciless Storm"
+                }
+            ]
         },
         "Dredge": {
             "name": "The Dredge",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Dissolution"
-                },
-                {
-                    "value": "Darkness Revealed"
-                },
-                {
-                    "value": "Septic Touch"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "Dissolution"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Darkness Revealed"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Septic Touch"
+                }
+            ]
         },
         "Mastermind": {
             "name": "The Mastermind",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Superior Anatomy"
-                },
-                {
-                    "value": "Awakened Awareness"
-                },
-                {
-                    "value": "Terminus"
-                }
-            ],
             "availability": "500 AC",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "40m"
+            "terror_radius": "40m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Superior Anatomy"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Awakened Awareness"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Terminus"
+                }
+            ]
         },
         "Knight": {
             "name": "The Knight",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.21960784,
-                        "green": 0.4627451,
-                        "blue": 0.11372549
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Nowhere to Hide"
-                },
-                {
-                    "value": "Hex: Face the Darkness"
-                },
-                {
-                    "value": "Hubris"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#38761d",
+                    "name": "Nowhere to Hide"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Hex: Face the Darkness"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Hubris"
+                }
+            ]
         },
         "Skull Merchant": {
             "name": "The Skull Merchant",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "THWACK!"
-                },
-                {
-                    "value": "Leverage"
-                },
-                {
-                    "value": "Game Afoot"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#bf9000",
+                    "name": "THWACK!"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Leverage"
+                },
+                {
+                    "tier": "#5b0f00",
+                    "name": "Game Afoot"
+                }
+            ]
         },
         "Singularity": {
             "name": "The Singularity",
-            "perk_tiers": [
-                {
-                    "value": {
-                        "red": 0.35686275,
-                        "green": 0.05882353
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                },
-                {
-                    "value": {
-                        "red": 0.7490196,
-                        "green": 0.5647059
-                    }
-                }
-            ],
-            "perk_names": [
-                {
-                    "value": "Genetic Limits"
-                },
-                {
-                    "value": "Forced Hesitation"
-                },
-                {
-                    "value": "Machine Learning"
-                }
-            ],
             "availability": "500 AC / 9,000 IS",
             "movement_speed": "115% | 4.6m/s",
-            "terror_radius": "32m"
+            "terror_radius": "32m",
+            "perks": [
+                {
+                    "tier": "#5b0f00",
+                    "name": "Genetic Limits"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Forced Hesitation"
+                },
+                {
+                    "tier": "#bf9000",
+                    "name": "Machine Learning"
+                }
+            ]
         }
     },
     "universals": {
         "Bitter Murmur": {
-            "perk_tier": {
-                "red": 0.7490196,
-                "green": 0.5647059
-            },
+            "perk_tier": "#bf9000",
             "perk_name": "Bitter Murmur"
         },
         "Deerstalker": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Deerstalker"
         },
         "Distressing": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Distressing"
         },
         "Hex: No One Escapes Death": {
-            "perk_tier": {
-                "red": 0.21960784,
-                "green": 0.4627451,
-                "blue": 0.11372549
-            },
+            "perk_tier": "#38761d",
             "perk_name": "Hex: No One Escapes Death"
         },
         "Hex: Thrill of the Hunt": {
-            "perk_tier": {
-                "red": 0.7490196,
-                "green": 0.5647059
-            },
+            "perk_tier": "#bf9000",
             "perk_name": "Hex: Thrill of the Hunt"
         },
         "Insidious": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Insidious"
         },
         "Iron Grasp": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Iron Grasp"
         },
         "Monstrous Shrine": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Monstrous Shrine"
         },
         "Sloppy Butcher": {
-            "perk_tier": {
-                "red": 0.21960784,
-                "green": 0.4627451,
-                "blue": 0.11372549
-            },
+            "perk_tier": "#38761d",
             "perk_name": "Sloppy Butcher"
         },
         "Shattered Hope": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Shattered Hope"
         },
         "Spies from the Shadows": {
-            "perk_tier": {
-                "red": 0.7490196,
-                "green": 0.5647059
-            },
+            "perk_tier": "#bf9000",
             "perk_name": "Spies from the Shadows"
         },
         "Unrelenting": {
-            "perk_tier": {
-                "red": 0.35686275,
-                "green": 0.05882353
-            },
+            "perk_tier": "#5b0f00",
             "perk_name": "Unrelenting"
         }
     },

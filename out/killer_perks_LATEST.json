@@ -194,7 +194,7 @@
         },
         "Nemesis": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/33/IconPerks_nemesis.png/revision/latest?cb=20191126213602",
-            "description": "You seek retribution on those who have wronged you.\n\nAny Survivor who blinds you or stuns you using a Pallet becomes the Obsession.\nAnytime your Obsession switches to another Survivor by any means, that Survivor then suffers from the Oblivious Status Effect for 40/50/60 seconds and their Aura is revealed to you for 4 seconds.\nYou can only be obsessed with one Survivor at a time.\n\"Only a fool would spit in a demon's face and declare victory.\" — Renjiro's Doctrine 4:9",
+            "description": "You seek retribution on those who have wronged you.\n\nAny Survivor who blinds you or stuns you using a Pallet or a Locker becomes the Obsession.\nAnytime your Obsession switches to another Survivor by any means, that Survivor then suffers from the Oblivious Status Effect for 40/50/60 seconds and their Aura is revealed to you for 4 seconds.\nYou can only be obsessed with one Survivor at a time.\n\"Only a fool would spit in a demon's face and declare victory.\" — Renjiro's Doctrine 4:9",
             "is_upcoming_patch": false
         },
         "Zanshin Tactics": {
@@ -229,7 +229,7 @@
         },
         "Predator": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/73/IconPerks_predator.png/revision/latest?cb=20160605205037",
-            "description": "Your acute tracking ability allows you to hone in on disturbances left by running Survivors.\nThe Scratch Marks left by Survivors spawn slightly'/moderately/considerably ' closer together.\n\"Never stop moving and hope you're always two steps ahead of the beast.\" — Unknown, Notebook",
+            "description": "Your acute tracking ability allows you to hone in on disturbances left by running Survivors.\nThe Scratch Marks left by Survivors spawn slightly/moderately/considerably  closer together.\n\"Never stop moving and hope you're always two steps ahead of the beast.\" — Unknown, Notebook",
             "is_upcoming_patch": false
         },
         "Shadowborn": {
@@ -238,7 +238,7 @@
             "is_upcoming_patch": false
         }
     },
-    "Onryō": {
+    "Onryo": {
         "Call of Brine": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_callOfBrine.png/revision/latest?cb=20220216115938",
             "description": "Your psychic abilities influence technology in devastating ways.\nAfter performing the Damage Generator Action on a Generator, Call of Brine activates for 60 seconds.\n\nThe damaged Generator regresses at 115/120/125 % of the normal Regression speed and its Aura is highlighted to you in yellow.\nReceive a Loud Noise Notification each time a Survivor hits a Good Skill Check on the affected Generator.\n",
@@ -372,7 +372,7 @@
         },
         "Mad Grit": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/da/IconPerks_madGrit.png/revision/latest?cb=20181128100906",
-            "description": "While carrying a Survivor, you suffer no cool-down on missed attacks.\nSuccessfully hitting a Survivor will pause the carried Survivor's Wiggling Progression for 2/3/4 seconds.\n\"There's no getting out of this now. We're too good at it.\" — The Legion",
+            "description": "Whenever you are carrying a Survivor, Mad Grit activates:\nRemoves the Cool-down of missed Basic Attacks.\nPauses the Wiggle Progression of the carried Survivor for 2/3/4 seconds each time you successfully hit another Survivor.\n\"There's no getting out of this now. We're too good at it.\" — The Legion",
             "is_upcoming_patch": false
         }
     },
@@ -498,8 +498,9 @@
     "Artist": {
         "Grim Embrace": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_grimEmbrace.png/revision/latest?cb=20211109180734",
-            "description": "Your act of servitude to The Entity has not gone unnoticed.\nEach time a Survivor is hooked for the first time, Grim Embrace gains a Token.Upon reaching 4 Tokens Grim Embrace activates:\n\nThe Entity blocks all Generators for 30/35/40 seconds.\nThe Aura of the Obsession is revealed to you for 5 seconds.\n\"Are we nothing but prisoners to our sorrow?\" — Carmina Mora",
-            "is_upcoming_patch": false
+            "description": "This description is based on the changes featured in the upcoming Patch: 7.1.0\nYour act of servitude to The Entity has not gone unnoticed.\nEach time a Survivor is hooked for the first time, Grim Embrace gains 1 Token.\nUpon reaching 4 Tokens, Grim Embrace activates:\nBlocks all Generators for 30/35/40 seconds.\nThe Aura of the Obsession is revealed to you for 6 seconds.\n\"Are we nothing but prisoners to our sorrow?\" — Carmina Mora",
+            "is_upcoming_patch": true,
+            "patch_ver": "7.1.0"
         },
         "Hex: Pentimento": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_hexPentimento.png/revision/latest?cb=20211109175002",
@@ -515,7 +516,7 @@
     "Trickster": {
         "Hex: Crowd Control": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f1/IconPerks_hexCrowdControl.png/revision/latest?cb=20210302172300",
-            "description": "This description is based on the changes featured in the upcoming Patch: 7.1.0\nA Hex that ensures those lesser than you are properly herded.Whenever a Survivor performs a rushed vault through a Window, Hex: Crowd Control triggers its effect:\nBlocks the vaulted Window to every Survivor for the next 40/50/60 seconds.\n\n\nAll effects of the Hex Perk persist until its Hex Totem is cleansed or blessed.\n\"You have no control. People like you never did.\" — Ji-Woon Hak",
+            "description": "This description is based on the changes featured in the upcoming Patch: 7.1.0\nA Hex that ensures those lesser than you are properly herded.\nWhenever a Survivor performs a rushed vault through a Window, Hex: Crowd Control triggers its effect:\nBlocks the vaulted Window to every Survivor for the next 40/50/60 seconds.\nAll effects of the Hex Perk persist until its Hex Totem is cleansed or blessed.\n\"You have no control. People like you never did.\" — Ji-Woon Hak",
             "is_upcoming_patch": true,
             "patch_ver": "7.1.0"
         },

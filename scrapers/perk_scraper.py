@@ -1,4 +1,5 @@
 import util
+from unidecode import unidecode
 
 
 def _build_perk_json() -> dict:
@@ -48,7 +49,7 @@ def scrape_perks(url: str, remove_desc_html: bool = True, remove_mini_perk_icons
 
         icon = headers[0].find('a')['href']
         perk_name = headers[1].text.strip()
-        character_name = headers[2].text.replace('.', '').strip()  # idk why but 'All' has a '.' in front of it
+        character_name = unidecode(headers[2].text.replace('.', '').strip())  # 'All' has a '.' in front of it
 
         description = row.find('td').find('div', class_='formattedPerkDesc')
         description = util.replace_all_wiki_links(description)

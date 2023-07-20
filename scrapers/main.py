@@ -36,29 +36,59 @@ def main():
     """
     args = parse_args()
 
-    killer_perks = scrape_perks(KILLER_PERKS_URL)
-    survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
+    killer_perks = None
+    survivor_perks = None
 
-    killer_characters = scrape_characters("Killers")
-    survivor_characters = scrape_characters("Survivors")
+    killer_characters = None
+    survivor_characters = None
 
-    credentials = Credentials.from_service_account_file(args.creds_path)
-    service = build('sheets', 'v4', credentials=credentials)
+    killer_spreadsheet = None
+    survivor_spreadsheet = None
 
-    killer_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
-                                         args.min_characters, args.min_universals)
+    if args.scrape_perks:
+        killer_perks = scrape_perks(KILLER_PERKS_URL)
+        survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
-    survivor_spreadsheet_info = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
-                                           args.min_characters, args.min_universals)
+        save_json("killer_perks", killer_perks)
+        save_json("survivor_perks", survivor_perks)
 
-    save_json("killer_perks", killer_perks)
-    save_json("survivor_perks", survivor_perks)
+    if args.scrape_characters:
+        killer_characters = scrape_characters("Killers")
+        survivor_characters = scrape_characters("Survivors")
 
-    save_json("killer_spreadsheet", killer_spreadsheet_info)
-    save_json("survivor_spreadsheet", survivor_spreadsheet_info)
+        save_json("killer_characters", killer_characters)
+        save_json("survivor_characters", survivor_characters)
 
-    save_json("killer_characters", killer_characters)
-    save_json("survivor_characters", survivor_characters)
+    if args.scrape_spreadsheet:
+        credentials = Credentials.from_service_account_file(args.creds_path)
+        service = build('sheets', 'v4', credentials=credentials)
+
+        killer_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
+                                        args.min_characters, args.min_universals)
+
+        survivor_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+                                          args.min_characters, args.min_universals)
+
+        save_json("killer_spreadsheet", killer_spreadsheet)
+        save_json("survivor_spreadsheet", survivor_spreadsheet)
+
+    transform_dicts(survivor_perks=survivor_perks,
+                    survivor_characters=survivor_characters,
+                    survivor_spreadsheet=survivor_spreadsheet,
+                    killer_perks=killer_perks,
+                    killer_characters=killer_characters,
+                    killer_spreadsheet=killer_spreadsheet)
+
+
+def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
+                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict) -> dict:
+    # print("perks", survivor_perks)
+    # print("characters", survivor_characters)
+    final_dict = {}
+
+    print(survivor_spreadsheet['characters']['Dwight']['perks'])
+
+    return final_dict
 
 
 def parse_args() -> argparse.Namespace:
@@ -92,6 +122,12 @@ def parse_args() -> argparse.Namespace:
                         help='the minimum amount of characters to search for on the Otz spreadsheet.')
     parser.add_argument("--min-universals", default=12, type=int,
                         help='the minimum amount of universal (base) perks to search for on the Otz spreadsheet.')
+    parser.add_argument("--scrape-perks", default=True, type=bool,
+                        help="Whether to scrape the perks wiki page")
+    parser.add_argument("--scrape-characters", default=False, type=bool,
+                        help="Whether to scrape the characters wiki page")
+    parser.add_argument("--scrape-spreadsheet", default=True, type=bool,
+                        help="Whether to scrape the Otzdarva spreadsheet")
     return parser.parse_args()
 
 

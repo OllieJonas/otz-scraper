@@ -8,7 +8,7 @@ import util
 from cell import Cell
 
 
-def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters: int, min_universals) -> Dict:
+def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters: int, min_universals: int) -> Dict:
     if character_type not in constants.CHARACTER_TYPES:
         raise ValueError(f'character_type must be in {constants.CHARACTER_TYPES}!')
 
@@ -34,11 +34,11 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
 
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
         if dt == "perk_tiers":
-            return {'value': c['userEnteredFormat']['backgroundColorStyle']['rgbColor']}, list
+            return perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), list
 
         elif dt == "perk_names":
             return_dict = {
-                'value': c['effectiveValue']['stringValue']
+                'name': c['effectiveValue']['stringValue']
             }
 
             if is_survivor:
@@ -55,19 +55,32 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
     def key_req_func(d):
         return d['name']
 
-    return _scrape_sheet(service=service,
-                         spreadsheet_id=spreadsheet_id,
-                         is_survivor=is_survivor,
-                         sheet_name=sheet_constants['sheet_name'],
-                         search_for_unknown=True,
-                         min_search_amount=min_characters,
-                         start=start,
-                         next_start_func=next_start_func,
-                         cell_dict_func=_get_cells_for_character,
-                         key_req_func=key_req_func,
-                         key_extract_func=key_extract_func,
-                         data_extract_func=data_extract_func
-                         )
+    sheet = _scrape_sheet(service=service,
+                          spreadsheet_id=spreadsheet_id,
+                          is_survivor=is_survivor,
+                          sheet_name=sheet_constants['sheet_name'],
+                          search_for_unknown=True,
+                          min_search_amount=min_characters,
+                          start=start,
+                          next_start_func=next_start_func,
+                          cell_dict_func=_get_cells_for_character,
+                          key_req_func=key_req_func,
+                          key_extract_func=key_extract_func,
+                          data_extract_func=data_extract_func
+                          )
+
+    # grouping perk_tiers and perk_names
+    for name, character in sheet.items():
+        perks = []
+        for tier, info in zip(character['perk_tiers'], character['perk_names']):
+            perks.append({**info, 'tier': tier})
+
+        character['perks'] = perks
+
+        del character['perk_tiers']
+        del character['perk_names']
+
+    return sheet
 
 
 def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min_universals: int) -> Dict:
@@ -76,7 +89,7 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
 
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
         if dt == "perk_tier":
-            return c['userEnteredFormat']['backgroundColorStyle']['rgbColor'], str
+            return perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), str
         elif dt == "perk_name":
             return c['effectiveValue']['stringValue'], str
 
@@ -281,3 +294,7 @@ def _get_cells_for_character(start: Cell, is_survivor: bool) -> util.BiDict:
         cells["terror_radius"] = (start >> 2) + 10
 
     return cells
+
+
+def perk_colour_to_hex(perk_colour: dict) -> str:
+    return util.rgb_to_hex(perk_colour.get('red', 0.0), perk_colour.get('green', 0.0), perk_colour.get('blue', 0.0))

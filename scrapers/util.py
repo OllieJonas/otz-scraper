@@ -66,3 +66,8 @@ def pretty_print(obj):
 
 def one_dir_up():
     return os.path.abspath(os.path.join(__file__, '../..'))
+
+
+def rgb_to_hex(red: float, green: float, blue: float) -> str:
+    """ from here: https://stackoverflow.com/questions/214359/converting-hex-color-to-rgb-and-vice-versa """
+    return '#%02x%02x%02x' % (round(red * 255), round(green * 255), round(blue * 255))

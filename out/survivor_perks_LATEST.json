@@ -85,7 +85,7 @@
             "is_upcoming_patch": false
         }
     },
-    "Élodie": {
+    "Elodie": {
         "Appraisal": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c1/IconPerks_appraisal.png/revision/latest?cb=20201112095004",
             "description": "You have a careful eye that notices what many overlook.\nStart the Trial with 3 Tokens:\n\nWhen a Chest has already been opened, consume 1 Token to rummage through it for an Item.\nRummage through Chests 40/60/80 % faster.\nRummaging is only available once per Chest.",
@@ -183,7 +183,7 @@
         },
         "Rookie Spirit": {
             "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2f/IconPerks_rookieSpirit.png/revision/latest?cb=20210526103548",
-            "description": "You keep a careful eye on objectives when they are slipping away.\nWhile repairing Generators, complete 5'/4/3 ' Good or Great Skill Checks to activate Rookie Spirit for the remainder of the Trial:\nOnce active, the Auras of any regressing Generators are revealed to you.\n\"I'll stop this, lieutenant. I promise.\" — Leon Scott Kennedy",
+            "description": "You keep a careful eye on objectives when they are slipping away.\nWhile repairing Generators, succeed 5/4/3  Good or Great Skill Checks to activate Rookie Spirit for the remainder of the Trial:\nOnce active, the Auras of any regressing Generators are revealed to you.\n\"I'll stop this, lieutenant. I promise.\" — Leon Scott Kennedy",
             "is_upcoming_patch": false
         }
     },

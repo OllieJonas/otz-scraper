@@ -1,5 +1,6 @@
 import util
 from scrapers import constants
+from unidecode import unidecode
 
 
 def _build_survivor_json():
