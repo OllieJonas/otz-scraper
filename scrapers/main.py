@@ -1,7 +1,10 @@
+from __future__ import annotations
+
 import argparse
 import json
 import os
 from datetime import datetime
+from typing import Tuple
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -36,14 +39,14 @@ def main():
     """
     args = parse_args()
 
-    killer_perks = None
-    survivor_perks = None
+    killer_perks = {}
+    survivor_perks = {}
 
-    killer_characters = None
-    survivor_characters = None
+    killer_characters = {}
+    survivor_characters = {}
 
-    killer_spreadsheet = None
-    survivor_spreadsheet = None
+    killer_spreadsheet = {}
+    survivor_spreadsheet = {}
 
     if args.scrape_perks:
         killer_perks = scrape_perks(KILLER_PERKS_URL)
@@ -72,23 +75,28 @@ def main():
         save_json("killer_spreadsheet", killer_spreadsheet)
         save_json("survivor_spreadsheet", survivor_spreadsheet)
 
-    transform_dicts(survivor_perks=survivor_perks,
-                    survivor_characters=survivor_characters,
-                    survivor_spreadsheet=survivor_spreadsheet,
-                    killer_perks=killer_perks,
-                    killer_characters=killer_characters,
-                    killer_spreadsheet=killer_spreadsheet)
+    perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
+                                                      survivor_characters=survivor_characters,
+                                                      survivor_spreadsheet=survivor_spreadsheet,
+                                                      killer_perks=killer_perks,
+                                                      killer_characters=killer_characters,
+                                                      killer_spreadsheet=killer_spreadsheet)
+
+    save_json('perks', killer_perks)
+    save_json('characters', killer_characters)
+    save_json('spreadsheet', spreadsheets)
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
-                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict) -> dict:
+                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict) -> Tuple[dict, dict, dict]:
     # print("perks", survivor_perks)
     # print("characters", survivor_characters)
-    final_dict = {}
+    surv = "survivors"
+    kill = "killers"
 
-    print(survivor_spreadsheet['characters']['Dwight']['perks'])
-
-    return final_dict
+    return {surv: survivor_perks} | {kill: killer_perks}, \
+           {surv: survivor_characters} | {kill: killer_characters}, \
+           {surv: survivor_spreadsheet} | {kill: killer_spreadsheet}
 
 
 def parse_args() -> argparse.Namespace:

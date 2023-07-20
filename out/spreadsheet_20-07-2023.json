@@ -1,0 +1,1646 @@
+{
+    "survivors": {
+        "characters": {
+            "Dwight": {
+                "name": "Dwight",
+                "availability": "Free",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Bond",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Prove Thyself",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Leader",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Meg": {
+                "name": "Meg",
+                "availability": "Free",
+                "stealth": "Good Stealth",
+                "noise": "Medium",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Quick & Quiet",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Sprint Burst",
+                        "is_exhaustion_perk": true,
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Adrenaline",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    }
+                ]
+            },
+            "Claudette": {
+                "name": "Claudette",
+                "availability": "Free",
+                "stealth": "Good Stealth",
+                "noise": "Quiet",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Empathy",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Botany Knowledge",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Self Care",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Jake": {
+                "name": "Jake",
+                "availability": "Free",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Iron Will",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Calm Spirit",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Saboteur",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Nea": {
+                "name": "Nea",
+                "availability": "Free",
+                "stealth": "Good Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Balanced Landing",
+                        "is_exhaustion_perk": true,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Urban Evasion",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Streetwise",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "David": {
+                "name": "David",
+                "availability": "Free",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "We're Gonna Live Forever",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Dead Hard",
+                        "is_exhaustion_perk": true,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "No Mither",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Bill": {
+                "name": "Bill",
+                "availability": "Free",
+                "stealth": "Bad Stealth",
+                "noise": "Loud",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Left Behind",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Borrowed Time",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Unbreakable",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    }
+                ]
+            },
+            "Ace": {
+                "name": "Ace",
+                "availability": "Free (Console)",
+                "stealth": "Good Stealth",
+                "noise": "Quiet",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Open-Handed",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Up the Ante",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Ace in the Hole",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Feng": {
+                "name": "Feng",
+                "availability": "Free (Console)",
+                "stealth": "Good Stealth",
+                "noise": "Loud",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Technician",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Lithe",
+                        "is_exhaustion_perk": true,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Alert",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Laurie": {
+                "name": "Laurie",
+                "availability": "500 AC",
+                "stealth": "Bad Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Sole Survivor",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Object of Obsession",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Decisive Strike",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Quentin": {
+                "name": "Quentin",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Wake up!",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Pharmacy",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Vigil",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Tapp": {
+                "name": "Tapp",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Tenacity",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Detective's Hunch",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Stake Out",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Kate": {
+                "name": "Kate",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Good Stealth",
+                "noise": "Medium",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Dance With Me",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Windows of Opportunity",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Boil Over",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Adam": {
+                "name": "Adam",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Good Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Diversion",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Deliverance",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Autodidact",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Jeff": {
+                "name": "Jeff",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Bad Stealth",
+                "noise": "Loud",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Breakdown",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Aftercare",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Distortion",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Jane": {
+                "name": "Jane",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Solidarity",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Poised",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Head On",
+                        "is_exhaustion_perk": true,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Ash": {
+                "name": "Ash",
+                "availability": "500 AC",
+                "stealth": "Bad Stealth",
+                "noise": "Loud",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Flip-Flop",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Buckle Up",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Mettle of  Man",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Steve": {
+                "name": "Steve",
+                "availability": "Not Available",
+                "stealth": "Medium Stealth",
+                "noise": "Loud",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Guardian",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Kinship",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Renewal",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Nancy": {
+                "name": "Nancy",
+                "availability": "Not Available",
+                "stealth": "Good Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Situational Awareness",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Self-Aware",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Inner Healing",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Yui": {
+                "name": "Yui",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Lucky Break",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Any Means Necessary",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Breakout",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Zarina": {
+                "name": "Zarina",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Good Stealth",
+                "noise": "Medium",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Off the Record",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Red Herring",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "For The People",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Cheryl": {
+                "name": "Cheryl",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Soul Guard",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Blood Pact",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Repressed Alliance",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Felix": {
+                "name": "Felix",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Visionary",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Desperate Measures",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Built to Last",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Élodie": {
+                "name": "Élodie",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Appraisal",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Deception",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Power Struggle",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Yun-Jin Lee": {
+                "name": "Yun-Jin Lee",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Fast Track",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Smash Hit",
+                        "is_exhaustion_perk": true,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Self-Preservation",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Jill": {
+                "name": "Jill",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Counterforce",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Resurgence",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Blast Mine",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Leon": {
+                "name": "Leon",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Bite the Bullet",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Flashbang",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Rookie Spirit",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Mikaela": {
+                "name": "Mikaela",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Clairvoyance",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Boon: Circle of Healing",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Boon: Shadow Step",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Jonah": {
+                "name": "Jonah",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Overcome",
+                        "is_exhaustion_perk": true,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Corrective Action",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Boon: Exponential",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Yoichi": {
+                "name": "Yoichi",
+                "availability": "500 AC",
+                "stealth": "Bad Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Parental Guidance",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Empathic Connection",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Boon: Dark Theory",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Haddie": {
+                "name": "Haddie",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Loud cries",
+                "perks": [
+                    {
+                        "name": "Inner Focus",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Residual Manifest",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Overzealous",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Ada": {
+                "name": "Ada",
+                "availability": "500 AC",
+                "stealth": "Bad Stealth",
+                "noise": "Quiet",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Wiretap",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Reactive Healing",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Low Profile",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Rebecca": {
+                "name": "Rebecca",
+                "availability": "500 AC",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Better than New",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Reassurance",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Hyperfocus",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Vittorio": {
+                "name": "Vittorio",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Potential Energy",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Fogwise",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Quick Gambit",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Thalita": {
+                "name": "Thalita",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Bad Stealth",
+                "noise": "Quiet",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Friendly Competition",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Teamwork: Power of Two",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Cut Loose",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    }
+                ]
+            },
+            "Renato": {
+                "name": "Renato",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Bad Stealth",
+                "noise": "Quiet",
+                "cries": "Medium cries",
+                "perks": [
+                    {
+                        "name": "Blood Rush",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Teamwork: Collective Stealth",
+                        "is_exhaustion_perk": false,
+                        "tier": "#85200c"
+                    },
+                    {
+                        "name": "Background Player",
+                        "is_exhaustion_perk": true,
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Gabriel": {
+                "name": "Gabriel",
+                "availability": "500 AC / 9,000 IS",
+                "stealth": "Medium Stealth",
+                "noise": "Quiet",
+                "cries": "Quiet cries",
+                "perks": [
+                    {
+                        "name": "Troubleshooter",
+                        "is_exhaustion_perk": false,
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Made for This",
+                        "is_exhaustion_perk": false,
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Scavenger",
+                        "is_exhaustion_perk": false,
+                        "tier": "#bf9000"
+                    }
+                ]
+            }
+        },
+        "universals": {
+            "Dark Sense": {
+                "perk_tier": "#38761d",
+                "perk_name": "Dark Sense"
+            },
+            "Déjà Vu": {
+                "perk_tier": "#38761d",
+                "perk_name": "Déjà Vu"
+            },
+            "Hope": {
+                "perk_tier": "#1155cc",
+                "perk_name": "Hope"
+            },
+            "Kindred": {
+                "perk_tier": "#1155cc",
+                "perk_name": "Kindred"
+            },
+            "Lightweight": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Lightweight"
+            },
+            "No One Left Behind": {
+                "perk_tier": "#38761d",
+                "perk_name": "No One Left Behind"
+            },
+            "Plunderer's Instinct": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Plunderer's Instinct"
+            },
+            "Premonition": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Premonition"
+            },
+            "Resilience": {
+                "perk_tier": "#38761d",
+                "perk_name": "Resilience"
+            },
+            "Slippery Meat": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Slippery Meat"
+            },
+            "Small Game": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Small Game"
+            },
+            "Spine Chill": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Spine Chill"
+            }
+        },
+        "guides": {
+            "sounds_survivor_pov": "https://youtu.be/NsmXuzal1Kk",
+            "sounds_killer_pov": "https://youtu.be/E-SmIJu5Kcw"
+        }
+    },
+    "killers": {
+        "characters": {
+            "Trapper": {
+                "name": "The Trapper",
+                "availability": "Free",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Unnerving Presence",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Agitation",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Brutal Strength",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Wraith": {
+                "name": "The Wraith",
+                "availability": "Free",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Predator",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Bloodhound",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Shadowborn",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Hillbilly": {
+                "name": "The Hillbilly",
+                "availability": "Free",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Enduring",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Lightborn",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Tinkerer",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Nurse": {
+                "name": "The Nurse",
+                "availability": "Free",
+                "movement_speed": "96.25% | 3.85m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Stridor",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Thanatophobia",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "A Nurse's Calling",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Huntress": {
+                "name": "The Huntress",
+                "availability": "Free",
+                "movement_speed": "110% | 4.4m/s",
+                "terror_radius": "20m  + lullaby",
+                "perks": [
+                    {
+                        "name": "Beast of Prey",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Territorial Imperative",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Hex: Huntress Lullaby",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Shape": {
+                "name": "The Shape",
+                "availability": "500 AC",
+                "movement_speed": "105-115% | 4.6m/s",
+                "terror_radius": "0-16-32m",
+                "perks": [
+                    {
+                        "name": "Save the Best for Last",
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Play With Your Food",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Dying Light",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Hag": {
+                "name": "The Hag",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "110% | 4.4m/s",
+                "terror_radius": "24m",
+                "perks": [
+                    {
+                        "name": "Hex: The Third Seal",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hex: Ruin",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hex: Devour Hope",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Doctor": {
+                "name": "The Doctor",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Overwhelming Presence",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Monitor & Abuse",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Overcharge",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Cannibal": {
+                "name": "The Cannibal",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Knockout",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Barbecue and Chilli",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Franklin's Demise",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Nightmare": {
+                "name": "The Nightmare",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m  or lullaby",
+                "perks": [
+                    {
+                        "name": "Fire Up",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Remember Me",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Blood Warden",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Pig": {
+                "name": "The Pig",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Hangman's Trick",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Surveillance",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Make Your Choice",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Clown": {
+                "name": "The Clown",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Bamboozle",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Coulrophobia",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Pop Goes The Weasel",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Spirit": {
+                "name": "The Spirit",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "110% | 4.4m/s",
+                "terror_radius": "24m",
+                "perks": [
+                    {
+                        "name": "Spirit Fury",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hex: Haunted Ground",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Rancor",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Legion": {
+                "name": "The Legion",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Discordance",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Mad Grit",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Iron Maiden",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Plague": {
+                "name": "The Plague",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Corrupt Intervention",
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Infectious Fright",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Dark Devotion",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Ghost Face": {
+                "name": "The Ghost Face",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "I'm All Ears",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Thrilling Tremors",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Furtive Chase",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Demogorgon": {
+                "name": "The Demogorgon",
+                "availability": "Not Available",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Jolt",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Fearmonger",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Claustrophobia",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Oni": {
+                "name": "The Oni",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Zanshin Tactics",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Blood Echo",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Nemesis",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Deathslinger": {
+                "name": "The Deathslinger",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "110% | 4.4m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Gearhead",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Dead Man's Switch",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Hex: Retribution",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Executioner": {
+                "name": "The Executioner",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Forced Penance",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Trail of Torment",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Deathbound",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Blight": {
+                "name": "The Blight",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Dragon's Grip",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hex: Blood Favor",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Hex: Undying",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Twins": {
+                "name": "The Twins",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Hoarder",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Oppression",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Coup de Grâce",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Trickster": {
+                "name": "The Trickster",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "110% | 4.4m/s",
+                "terror_radius": "24m  + lullaby",
+                "perks": [
+                    {
+                        "name": "Starstruck",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hex: Crowd Control",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "No Way Out",
+                        "tier": "#1155cc"
+                    }
+                ]
+            },
+            "Nemesis": {
+                "name": "The Nemesis",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Lethal Pursuer",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Hysteria",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Eruption",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Cenobite": {
+                "name": "The Cenobite",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Deadlock",
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Hex: Plaything",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Gift of Pain",
+                        "tier": "#bf9000"
+                    }
+                ]
+            },
+            "Artist": {
+                "name": "The Artist",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Grim Embrace",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Pain Resonance",
+                        "tier": "#1155cc"
+                    },
+                    {
+                        "name": "Hex: Pentimento",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Onryo": {
+                "name": "The Onryo",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "24m",
+                "perks": [
+                    {
+                        "name": "Call of Brine",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Floods of Rage",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Merciless Storm",
+                        "tier": "#38761d"
+                    }
+                ]
+            },
+            "Dredge": {
+                "name": "The Dredge",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Dissolution",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Darkness Revealed",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Septic Touch",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Mastermind": {
+                "name": "The Mastermind",
+                "availability": "500 AC",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "40m",
+                "perks": [
+                    {
+                        "name": "Superior Anatomy",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Awakened Awareness",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Terminus",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Knight": {
+                "name": "The Knight",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Nowhere to Hide",
+                        "tier": "#38761d"
+                    },
+                    {
+                        "name": "Hex: Face the Darkness",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Hubris",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Skull Merchant": {
+                "name": "The Skull Merchant",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "THWACK!",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Leverage",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Game Afoot",
+                        "tier": "#5b0f00"
+                    }
+                ]
+            },
+            "Singularity": {
+                "name": "The Singularity",
+                "availability": "500 AC / 9,000 IS",
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32m",
+                "perks": [
+                    {
+                        "name": "Genetic Limits",
+                        "tier": "#5b0f00"
+                    },
+                    {
+                        "name": "Forced Hesitation",
+                        "tier": "#bf9000"
+                    },
+                    {
+                        "name": "Machine Learning",
+                        "tier": "#bf9000"
+                    }
+                ]
+            }
+        },
+        "universals": {
+            "Bitter Murmur": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Bitter Murmur"
+            },
+            "Deerstalker": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Deerstalker"
+            },
+            "Distressing": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Distressing"
+            },
+            "Hex: No One Escapes Death": {
+                "perk_tier": "#38761d",
+                "perk_name": "Hex: No One Escapes Death"
+            },
+            "Hex: Thrill of the Hunt": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Hex: Thrill of the Hunt"
+            },
+            "Insidious": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Insidious"
+            },
+            "Iron Grasp": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Iron Grasp"
+            },
+            "Monstrous Shrine": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Monstrous Shrine"
+            },
+            "Sloppy Butcher": {
+                "perk_tier": "#38761d",
+                "perk_name": "Sloppy Butcher"
+            },
+            "Shattered Hope": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Shattered Hope"
+            },
+            "Spies from the Shadows": {
+                "perk_tier": "#bf9000",
+                "perk_name": "Spies from the Shadows"
+            },
+            "Unrelenting": {
+                "perk_tier": "#5b0f00",
+                "perk_name": "Unrelenting"
+            }
+        },
+        "guides": {
+            "latest_tier_list": "https://youtu.be/whmrILaplk8",
+            "which_killer": "https://otzdarva.com/whichkiller"
+        }
+    }
+}
