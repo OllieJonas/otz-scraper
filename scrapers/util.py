@@ -71,3 +71,7 @@ def one_dir_up():
 def rgb_to_hex(red: float, green: float, blue: float) -> str:
     """ from here: https://stackoverflow.com/questions/214359/converting-hex-color-to-rgb-and-vice-versa """
     return '#%02x%02x%02x' % (round(red * 255), round(green * 255), round(blue * 255))
+
+
+def strip_revision_from_url(url: str) -> str:
+    return url.split(".png")[0] + ".png"

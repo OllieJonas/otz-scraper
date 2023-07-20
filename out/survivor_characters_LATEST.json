@@ -1,7 +1,7 @@
 {
     "Dwight Fairfield": {
         "name": "Dwight Fairfield",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8c/S01_charSelect_portrait.png/revision/latest?cb=20230705190630",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8c/S01_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5c/New_Store_Dwight.png/revision/latest?cb=20220325045357",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/df/DwightStore.png/revision/latest?cb=20211201050315",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Dwight_Fairfield",
@@ -9,7 +9,7 @@
     },
     "Meg Thomas": {
         "name": "Meg Thomas",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/77/S02_charSelect_portrait.png/revision/latest?cb=20230705190636",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/77/S02_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c8/New_Store_Meg.png/revision/latest?cb=20220325045523",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b6/AS_MT_charPreview.png/revision/latest?cb=20211201050337",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Meg_Thomas",
@@ -17,7 +17,7 @@
     },
     "Claudette Morel": {
         "name": "Claudette Morel",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/65/S03_charSelect_portrait.png/revision/latest?cb=20230705190641",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/65/S03_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3f/New_Store_Claudette.png/revision/latest?cb=20220325045338",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fc/AS_CM_charPreview.png/revision/latest?cb=20211201050355",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Claudette_Morel",
@@ -25,7 +25,7 @@
     },
     "Jake Park": {
         "name": "Jake Park",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cb/S04_charSelect_portrait.png/revision/latest?cb=20230705190646",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cb/S04_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/04/New_Store_Jake.png/revision/latest?cb=20220325045435",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/JakeStore.png/revision/latest?cb=20211201050249",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Jake_Park",
@@ -33,7 +33,7 @@
     },
     "Nea Karlsson": {
         "name": "Nea Karlsson",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/S05_charSelect_portrait.png/revision/latest?cb=20230705185446",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/S05_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/ba/New_Store_Nea.png/revision/latest?cb=20220325045534",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/NeaStore.png/revision/latest?cb=20211201050406",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Nea_Karlsson",
@@ -41,7 +41,7 @@
     },
     "Laurie Strode": {
         "name": "Laurie Strode",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cc/S06_charSelect_portrait.png/revision/latest?cb=20230705185657",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cc/S06_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/90/New_Store_Laurie.png/revision/latest?cb=20220325045515",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5c/LaurieStore.png/revision/latest?cb=20211201050439",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Laurie_Strode",
@@ -49,7 +49,7 @@
     },
     "Ace Visconti": {
         "name": "Ace Visconti",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9f/S07_charSelect_portrait.png/revision/latest?cb=20230705190028",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9f/S07_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3e/New_Store_Ace.png/revision/latest?cb=20220325045215",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/40/DS_AV_charPreview.png/revision/latest?cb=20211201050457",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Ace_Visconti",
@@ -57,7 +57,7 @@
     },
     "Bill Overbeck": {
         "name": "Bill Overbeck",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/66/S08_charSelect_portrait.png/revision/latest?cb=20230705190755",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/66/S08_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/01/New_Store_Bill.png/revision/latest?cb=20220325045245",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/39/DS_BO_charPreview.png/revision/latest?cb=20211201050533",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/William_%22Bill%22_Overbeck",
@@ -65,7 +65,7 @@
     },
     "Feng Min": {
         "name": "Feng Min",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/S09_charSelect_portrait.png/revision/latest?cb=20230705190922",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/S09_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d9/New_Store_Feng.png/revision/latest?cb=20220325045426",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e8/FengStore.png/revision/latest?cb=20211201050203",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Feng_Min",
@@ -73,7 +73,7 @@
     },
     "David King": {
         "name": "David King",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/S10_charSelect_portrait.png/revision/latest?cb=20230705191257",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/S10_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/New_Store_David.png/revision/latest?cb=20220325045347",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/DavidStore.png/revision/latest?cb=20211201050548",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/David_King",
@@ -81,7 +81,7 @@
     },
     "Quentin Smith": {
         "name": "Quentin Smith",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/S11_charSelect_portrait.png/revision/latest?cb=20230705185224",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/S11_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/New_Store_Quentin.png/revision/latest?cb=20220325045543",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/15/QuentinStore.png/revision/latest?cb=20211201050555",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Quentin_Smith",
@@ -89,7 +89,7 @@
     },
     "David Tapp": {
         "name": "David Tapp",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/15/S12_charSelect_portrait.png/revision/latest?cb=20230705191928",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/15/S12_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/71/New_Store_Tapp.png/revision/latest?cb=20220325045550",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/74/FS_DT_charPreview.png/revision/latest?cb=20211201050624",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Detective_David_Tapp",
@@ -97,7 +97,7 @@
     },
     "Kate Denson": {
         "name": "Kate Denson",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/S13_charSelect_portrait.png/revision/latest?cb=20230705192155",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/S13_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/New_Store_Kate.png/revision/latest?cb=20220325045505",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4f/StoreBackground_GS.png/revision/latest?cb=20211130182125",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Kate_Denson",
@@ -105,7 +105,7 @@
     },
     "Adam Francis": {
         "name": "Adam Francis",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/S14_charSelect_portrait.png/revision/latest?cb=20230705193718",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/S14_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/05/New_Store_Adam.png/revision/latest?cb=20220325045225",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/StoreBackground_HS.png/revision/latest?cb=20211201050121",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Adam_Francis",
@@ -113,7 +113,7 @@
     },
     "Jeff Johansen": {
         "name": "Jeff Johansen",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b9/S15_charSelect_portrait.png/revision/latest?cb=20230705193545",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b9/S15_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7d/New_Store_Jeff.png/revision/latest?cb=20220325045454",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c1/StoreBackground_KS.png/revision/latest?cb=20211201050702",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Jeffrey_%22Jeff%22_Johansen",
@@ -121,7 +121,7 @@
     },
     "Jane Romero": {
         "name": "Jane Romero",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d7/S16_charSelect_portrait.png/revision/latest?cb=20230705194401",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d7/S16_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f4/New_Store_Jane.png/revision/latest?cb=20220325045446",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/24/JaneRomero_Lore.jpg/revision/latest?cb=20190313205013",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Jane_Romero",
@@ -129,7 +129,7 @@
     },
     "Ash Williams": {
         "name": "Ash Williams",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/78/S17_charSelect_portrait.png/revision/latest?cb=20230705191651",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/78/S17_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/43/New_Store_Ash.png/revision/latest?cb=20220325045235",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e7/StoreBackground_AW.png/revision/latest?cb=20211201050958",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Ashley_J._Williams",
@@ -137,7 +137,7 @@
     },
     "Nancy Wheeler": {
         "name": "Nancy Wheeler",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0e/S18_charSelect_portrait.png/revision/latest?cb=20230705184019",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0e/S18_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1e/New_Store_Nancy.png/revision/latest?cb=20220618144446",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6b/StoreBackground_QF.png/revision/latest?cb=20211201051035",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Nancy_Wheeler",
@@ -145,7 +145,7 @@
     },
     "Steve Harrington": {
         "name": "Steve Harrington",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/S19_charSelect_portrait.png/revision/latest?cb=20230705183809",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/S19_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/New_Store_Steve.png/revision/latest?cb=20220618144437",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2d/StoreBackground_QM.png/revision/latest?cb=20211207193044",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Steve_Harrington",
@@ -153,7 +153,7 @@
     },
     "Yui Kimura": {
         "name": "Yui Kimura",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/35/S20_charSelect_portrait.png/revision/latest?cb=20230705193537",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/35/S20_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0b/New_Store_Yui.png/revision/latest?cb=20220325045607",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d9/Yui_Lore2.png/revision/latest?cb=20191129230520",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Yui_Kimura",
@@ -161,7 +161,7 @@
     },
     "Zarina Kassir": {
         "name": "Zarina Kassir",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/S21_charSelect_portrait.png/revision/latest?cb=20230705194316",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/S21_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/61/New_Store_Zarina.png/revision/latest?cb=20220325045629",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/aa/Zarina_Lore1.jpg/revision/latest?cb=20200220160959",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Zarina_Kassir",
@@ -169,7 +169,7 @@
     },
     "Cheryl Mason": {
         "name": "Cheryl Mason",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/38/S22_charSelect_portrait.png/revision/latest?cb=20230705193841",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/38/S22_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/78/New_Store_Cheryl.png/revision/latest?cb=20220325045254",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/41/Cheryl_Lore1.jpg/revision/latest?cb=20200604155633",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Cheryl_Mason",
@@ -177,7 +177,7 @@
     },
     "Felix Richter": {
         "name": "Felix Richter",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2e/S23_charSelect_portrait.png/revision/latest?cb=20230705194042",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2e/S23_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/88/New_Store_Felix.png/revision/latest?cb=20220621144237",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/db/Felix_Lore1.jpg/revision/latest?cb=20200827153328",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Felix_Richter",
@@ -185,7 +185,7 @@
     },
     "Elodie Rakoto": {
         "name": "Elodie Rakoto",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/S24_charSelect_portrait.png/revision/latest?cb=20230705193628",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/S24_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/37/New_Store_Elodie.png/revision/latest?cb=20220325045411",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b5/%C3%89lodie_Lore1.jpg/revision/latest?cb=20201117162902",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/%C3%89lodie_Rakoto",
@@ -193,7 +193,7 @@
     },
     "Yun-Jin Lee": {
         "name": "Yun-Jin Lee",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/S25_charSelect_portrait.png/revision/latest?cb=20230705194144",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/S25_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/New_Store_Yun-Jin.png/revision/latest?cb=20220325045618",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/22/Yun-Jin_Lore1.jpg/revision/latest?cb=20210302220224",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Yun-Jin_Lee",
@@ -201,7 +201,7 @@
     },
     "Jill Valentine": {
         "name": "Jill Valentine",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/99/S26_charSelect_portrait.png/revision/latest?cb=20230705184445",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/99/S26_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fb/New_Store_Jill.png/revision/latest?cb=20220618144709",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/Jill_Lore1.png/revision/latest?cb=20210603194251",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Jill_Valentine",
@@ -209,7 +209,7 @@
     },
     "Leon Scott Kennedy": {
         "name": "Leon Scott Kennedy",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/S27_charSelect_portrait.png/revision/latest?cb=20230705184450",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/S27_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b3/New_Store_Leon.png/revision/latest?cb=20220618144716",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/86/Leon_Lore1.png/revision/latest?cb=20210601190547",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Leon_Scott_Kennedy",
@@ -217,7 +217,7 @@
     },
     "Mikaela Reid": {
         "name": "Mikaela Reid",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/42/S28_charSelect_portrait.png/revision/latest?cb=20230705191728",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/42/S28_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ed/New_Store_Mikaela.png/revision/latest?cb=20220618144730",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5e/Mikaela_Lore1.jpg/revision/latest?cb=20211005170423",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Mikaela_Reid",
@@ -225,7 +225,7 @@
     },
     "Jonah Vasquez": {
         "name": "Jonah Vasquez",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/S29_charSelect_portrait.png/revision/latest?cb=20230705194007",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/S29_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/New_Store_Jonah.png/revision/latest?cb=20220618144723",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/25/Jonah_Lore1.jpg/revision/latest?cb=20211116162327",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Jonah_Vasquez",
@@ -233,7 +233,7 @@
     },
     "Yoichi Asakawa": {
         "name": "Yoichi Asakawa",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/S30_charSelect_portrait.png/revision/latest?cb=20230705193929",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/S30_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f3/New_Store_Yoichi.png/revision/latest?cb=20220618144736",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/04/Yoichi_Lore1.jpg/revision/latest?cb=20220222173601",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Yoichi_Asakawa",
@@ -241,7 +241,7 @@
     },
     "Haddie Kaur": {
         "name": "Haddie Kaur",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/97/S31_charSelect_portrait.png/revision/latest?cb=20230705194521",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/97/S31_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/65/New_Store_Haddie.png/revision/latest?cb=20220607191731",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/Haddie_Lore1.jpg/revision/latest?cb=20220522030812",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Haddie_Kaur",
@@ -249,7 +249,7 @@
     },
     "Ada Wong": {
         "name": "Ada Wong",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/S32_charSelect_portrait.png/revision/latest?cb=20230705184840",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/S32_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d3/New_Store_Ada.png/revision/latest?cb=20220830161534",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/LoreKeyArt_ada.jpg/revision/latest?cb=20220817190756",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Ada_Wong",
@@ -257,7 +257,7 @@
     },
     "Rebecca Chambers": {
         "name": "Rebecca Chambers",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/93/S33_charSelect_portrait.png/revision/latest?cb=20230705184830",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/93/S33_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/New_Store_Rebecca.png/revision/latest?cb=20220830161525",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d8/LoreKeyArt_rebecca.jpg/revision/latest?cb=20220818153554",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Rebecca_Chambers",
@@ -265,7 +265,7 @@
     },
     "Vittorio Toscano": {
         "name": "Vittorio Toscano",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/64/S34_charSelect_portrait.png/revision/latest?cb=20230705194225",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/64/S34_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f2/Store_Vittorio.png/revision/latest?cb=20221122173820",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/LoreKeyArt_vittorio.jpg/revision/latest?cb=20221104164830",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Vittorio_Toscano",
@@ -273,7 +273,7 @@
     },
     "Thalita Lyra": {
         "name": "Thalita Lyra",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/20/S35_charSelect_portrait.png/revision/latest?cb=20230705194105",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/20/S35_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/Store_Thalita.png/revision/latest?cb=20230308040648",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/24/LoreKeyArt_thalita.jpg/revision/latest?cb=20230220081444",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Thalita_Lyra",
@@ -281,7 +281,7 @@
     },
     "Renato Lyra": {
         "name": "Renato Lyra",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/59/S36_charSelect_portrait.png/revision/latest?cb=20230705193833",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/59/S36_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/16/Store_Renato.png/revision/latest?cb=20230308040632",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bc/LoreKeyArt_renato.jpg/revision/latest?cb=20230220163753",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Renato_Lyra",
@@ -289,7 +289,7 @@
     },
     "Gabriel Soma": {
         "name": "Gabriel Soma",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b3/S37_charSelect_portrait.png/revision/latest?cb=20230705194559",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b3/S37_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/Store_Gabriel.png/revision/latest?cb=20230613171157",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/37/LoreKeyArt_gabrielSoma.jpg/revision/latest?cb=20230608201807",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Gabriel_Soma",
@@ -297,7 +297,7 @@
     },
     "Nicolas Cage": {
         "name": "Nicolas Cage",
-        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/16/S38_charSelect_portrait.png/revision/latest?cb=20230705182818",
+        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/16/S38_charSelect_portrait.png",
         "image_half": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/Store_Nicolas.png/revision/latest?cb=20230706022835",
         "image_full": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/60/LoreKeyArt_nicolasCage.jpg/revision/latest?cb=20230706162524",
         "wiki_link": "https://deadbydaylight.fandom.com/wiki/Nicolas_Cage",

@@ -48,7 +48,7 @@ def scrape_perks(url: str, remove_desc_html: bool = True, remove_mini_perk_icons
 
         headers = row.find_all('th')
 
-        icon = headers[0].find('a')['href']
+        icon = util.strip_revision_from_url(headers[0].find('a')['href'])
         perk_name = headers[1].text.strip()
         character_name = unidecode(headers[2].text.replace('.', '').strip())  # 'All' has a '.' in front of it
 

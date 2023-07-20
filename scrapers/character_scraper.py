@@ -114,7 +114,8 @@ def _scrape_killer(soup, info):
 def _scrape_name_and_icon(soup):
     info_table = soup.find("table", class_="infoboxtable")
     name = util.remove_excessive_whitespace(info_table.find('th', class_='center bold').text).strip()
-    icon = info_table.find('th', class_="center charInfoboxImage").find('a')['href'].strip()
+    icon = util.strip_revision_from_url(
+        info_table.find('th', class_="center charInfoboxImage").find('a')['href'].strip())
     return name, icon
 
 
