@@ -4,6 +4,7 @@ from unidecode import unidecode
 
 def _build_perk_json() -> dict:
     return {
+        "name": "",
         "icon": "",
         "description": "",
         "is_upcoming_patch": False
