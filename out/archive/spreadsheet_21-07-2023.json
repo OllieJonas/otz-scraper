@@ -1,6 +1,8 @@
 {
-    "application_last_updated": "21-07-2023",
-    "spreadsheet_last_updated": "21-07-2023",
+    "updates": {
+        "application": "21-07-2023",
+        "spreadsheet": "21-07-2023"
+    },
     "survivors": {
         "characters": {
             "Dwight": {

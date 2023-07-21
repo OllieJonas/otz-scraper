@@ -170,13 +170,12 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
     transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
 
-    sheet_last_updated = killer_spreadsheet['misc']['last_updated']
+    sheet_update = (datetime(1900, 1, 1) +
+                    timedelta(days=killer_spreadsheet['misc']['last_updated'] - 2)).strftime("%d-%m-%Y")
 
     return {surv: survivor_perks} | {kill: killer_perks}, \
            {surv: survivor_characters} | {kill: killer_characters}, \
-           {"application_last_updated": current_date,
-            "spreadsheet_last_updated":
-                (datetime(1900, 1, 1) + timedelta(days=sheet_last_updated - 2)).strftime("%d-%m-%Y")} | \
+           {"updates": {"application": current_date, "spreadsheet": sheet_update}} | \
            {surv: survivor_spreadsheet} | {kill: killer_spreadsheet}
 
 
