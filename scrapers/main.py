@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Tuple
 
 from google.oauth2.service_account import Credentials
@@ -31,6 +31,7 @@ SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
     "Barbecue and Chilli": "Barbecue & Chilli",  # cannibal
     "Pop Goes The Weasel": "Pop Goes the Weasel",  # clown
     "Hex: Blood Favor": "Hex: Blood Favour",  # blight
+    "Scourge Hook: Monstrous Shrine": "Monstrous Shrine",  # universal
 
     # survivor
     "Self Care": "Self-Care",  # claudette
@@ -53,6 +54,8 @@ def main():
     """
     args = parse_args()
 
+    current_date = datetime.now().strftime('%d-%m-%Y')
+
     killer_perks = {}
     survivor_perks = {}
 
@@ -66,15 +69,15 @@ def main():
         killer_perks = scrape_perks(KILLER_PERKS_URL)
         survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
-        save_json("killer_perks", killer_perks)
-        save_json("survivor_perks", survivor_perks)
+        # save_json("killer_perks", killer_perks, current_date)
+        # save_json("survivor_perks", survivor_perks, current_date)
 
     if args.scrape_characters:
         killer_characters = scrape_characters("Killers")
         survivor_characters = scrape_characters("Survivors")
 
-        save_json("killer_characters", killer_characters)
-        save_json("survivor_characters", survivor_characters)
+        # save_json("killer_characters", killer_characters, current_date)
+        # save_json("survivor_characters", survivor_characters, current_date)
 
     if args.scrape_spreadsheet:
         credentials = Credentials.from_service_account_file(args.creds_path)
@@ -86,23 +89,24 @@ def main():
         survivor_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
                                           args.min_characters, args.min_universals)
 
-        save_json("killer_spreadsheet", killer_spreadsheet)
-        save_json("survivor_spreadsheet", survivor_spreadsheet)
+        # save_json("killer_spreadsheet", killer_spreadsheet, current_date)
+        # save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
 
     perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
                                                       survivor_characters=survivor_characters,
                                                       survivor_spreadsheet=survivor_spreadsheet,
                                                       killer_perks=killer_perks,
                                                       killer_characters=killer_characters,
-                                                      killer_spreadsheet=killer_spreadsheet)
+                                                      killer_spreadsheet=killer_spreadsheet,
+                                                      current_date=current_date)
 
-    save_json('perks', killer_perks)
-    save_json('characters', killer_characters)
-    save_json('spreadsheet', spreadsheets)
+    save_json('perks', killer_perks, current_date)
+    save_json('characters', killer_characters, current_date)
+    save_json('spreadsheet', spreadsheets, current_date)
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
-                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict) -> Tuple[dict, dict, dict]:
+                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict, current_date) -> Tuple[dict, dict, dict]:
     """
     prepare Spreadsheet JSON for usage on the front-end.
     The idea of doing this here is to ensure that each scraper can act independently; this just does some extra
@@ -148,6 +152,8 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
             # this is bad
             if name == "Yun-Jin Lee":
                 name = "Yun-Jin"
+            elif name == "Nicholas":
+                name = "Nicolas"
 
             for perk in sheet_character['perks']:
                 # perk comes from otz spreadsheet
@@ -164,8 +170,13 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
     transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
 
+    sheet_last_updated = killer_spreadsheet['misc']['last_updated']
+
     return {surv: survivor_perks} | {kill: killer_perks}, \
            {surv: survivor_characters} | {kill: killer_characters}, \
+           {"application_last_updated": current_date,
+            "spreadsheet_last_updated":
+                (datetime(1900, 1, 1) + timedelta(days=sheet_last_updated - 2)).strftime("%d-%m-%Y")} | \
            {surv: survivor_spreadsheet} | {kill: killer_spreadsheet}
 
 
@@ -209,8 +220,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def save_json(file_name, content):
-    current_date = datetime.now().strftime('%d-%m-%Y')
+def save_json(file_name, content, current_date):
 
     with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)

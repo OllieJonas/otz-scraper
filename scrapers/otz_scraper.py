@@ -21,8 +21,12 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     characters_info = _scrape_characters(service, spreadsheet_id, is_survivor, min_characters)
     universal_perks_info = _scrape_universal_perks(service, spreadsheet_id, is_survivor, min_universals)
     guides_info = _scrape_guide_links(service, spreadsheet_id, is_survivor)
+    misc_info = _scrape_misc(service, spreadsheet_id, is_survivor)
 
-    return {"characters": characters_info} | {"universals": universal_perks_info} | {"guides": guides_info}
+    return {"characters": characters_info} | \
+           {"universals": universal_perks_info} | \
+           {"guides": guides_info} | \
+           {"misc": misc_info}
 
 
 def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_characters: int) -> Dict:
@@ -48,6 +52,9 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
 
             return return_dict, list
 
+        elif dt == "availability":
+            return {'value': c['effectiveValue']['stringValue'],
+                    'colour': perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor'])}, str
         else:
             return unidecode(c['effectiveValue']['stringValue'].replace("TR", "").strip()), str
 
@@ -133,6 +140,31 @@ def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> Dict
                          key_extract_func=lambda cell: None,
                          data_extract_func=lambda dt, c: (c['hyperlink'], str)
                          )[0]
+
+
+def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
+    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
+
+    misc = sheet_constants['misc']
+
+    if len(misc) == 0:
+        return {}
+
+    response = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=list(misc.values()),
+                                          includeGridData=True).execute()
+
+    response = response['sheets'][0]['data']
+
+    def data_extract_func(dt, c):
+        if dt == "last_updated":  # always true at the moment, done this to make it obvious how to change stuff
+            return c['effectiveValue']['numberValue'], str
+
+    return _extract_data_from_response(response=response,
+                                       start=min(list(misc.values())),
+                                       cell_structure={0: misc},
+                                       next_start_func=lambda cell, _: cell,
+                                       data_extract_func=data_extract_func,
+                                       key_func=lambda cell: None)[0]
 
 
 def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,

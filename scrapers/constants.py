@@ -24,6 +24,10 @@ SURVIVOR_CONSTANTS = GLOBAL_CONSTANTS | {
         "sounds_survivor_pov": Cell('D', 5),
         "sounds_killer_pov": Cell('D', 9),
     }),
+
+    "misc": util.BiDict({
+
+    })
 }
 
 KILLER_CONSTANTS = GLOBAL_CONSTANTS | {
@@ -37,4 +41,8 @@ KILLER_CONSTANTS = GLOBAL_CONSTANTS | {
         "latest_tier_list": Cell('N', 5),
         "which_killer": Cell('N', 8),
     }),
+
+    "misc": util.BiDict({
+        "last_updated": Cell('G', 4)
+    })
 }
