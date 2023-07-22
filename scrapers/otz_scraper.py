@@ -40,7 +40,8 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
 
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
         if dt == "perk_tiers":
-            return perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), list
+            rgb: dict = c['userEnteredFormat']['backgroundColorStyle']['rgbColor']
+            return util.rgb_dict_to_dict(rgb), list
 
         elif dt == "perk_names":
             return_dict = {
@@ -53,8 +54,10 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
             return return_dict, list
 
         elif dt == "availability":
+            rgb: dict = c['userEnteredFormat']['backgroundColorStyle']['rgbColor']
+
             return {'value': c['effectiveValue']['stringValue'],
-                    'colour': perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor'])}, str
+                    'colour': util.rgb_dict_to_dict(rgb)}, str
         else:
             return unidecode(c['effectiveValue']['stringValue'].replace("TR", "").strip()), str
 

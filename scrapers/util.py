@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
-from typing import ValuesView
+from typing import ValuesView, Dict
 
 import requests
 from bs4 import BeautifulSoup
@@ -71,6 +71,18 @@ def one_dir_up():
 def rgb_to_hex(red: float, green: float, blue: float) -> str:
     """ from here: https://stackoverflow.com/questions/214359/converting-hex-color-to-rgb-and-vice-versa """
     return '#%02x%02x%02x' % (round(red * 255), round(green * 255), round(blue * 255))
+
+
+def rgb_dict_to_dict(rgb: dict) -> Dict:
+    return rgb_to_dict(rgb.get('red', 0.0), rgb.get('green', 0.0), rgb.get('blue', 0.0))
+
+
+def rgb_to_dict(red: float, green: float, blue: float) -> Dict:
+    return {
+        "red": round(red * 255),
+        "green": round(green * 255),
+        "blue": round(blue * 255)
+    }
 
 
 def strip_revision_from_url(url: str) -> str:

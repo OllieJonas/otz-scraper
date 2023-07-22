@@ -37,7 +37,7 @@ SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
     "Self Care": "Self-Care",  # claudette
     "Wake up!": "Wake Up!",  # quentin
     "Mettle of  Man": "Mettle of Man",  # ash, 2 spaces between "of" and "Man"
-    "For The People": "For the People",
+    "For The People": "For the People",  # zarina
 })
 
 
@@ -170,12 +170,15 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
     transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
 
+    # accommodates Google's weird date storage
+    # counts days from 1-1-1900, -2 because Google counts Feb 29th 1900 & 2000 as dates, which didn't happen
+    # fun fact: this is actually to maintain compatability with Excel, which previously did... * the more ya know *
     sheet_update = (datetime(1900, 1, 1) +
                     timedelta(days=killer_spreadsheet['misc']['last_updated'] - 2)).strftime("%d-%m-%Y")
 
     return {surv: survivor_perks} | {kill: killer_perks}, \
            {surv: survivor_characters} | {kill: killer_characters}, \
-           {"updates": {"application": current_date, "spreadsheet": sheet_update}} | \
+           {"last_updated": {"application": current_date, "spreadsheet": sheet_update}} | \
            {surv: survivor_spreadsheet} | {kill: killer_spreadsheet}
 
 

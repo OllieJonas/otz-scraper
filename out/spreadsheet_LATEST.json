@@ -1,6 +1,6 @@
 {
-    "updates": {
-        "application": "21-07-2023",
+    "last_updated": {
+        "application": "22-07-2023",
         "spreadsheet": "21-07-2023"
     },
     "survivors": {
@@ -9,7 +9,11 @@
                 "name": "Dwight",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -18,19 +22,31 @@
                     {
                         "name": "Bond",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a0/IconPerks_bond.png"
                     },
                     {
                         "name": "Prove Thyself",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_proveThyself.png"
                     },
                     {
                         "name": "Leader",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/IconPerks_leader.png"
                     }
                 ],
@@ -40,7 +56,11 @@
                 "name": "Meg",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
@@ -49,19 +69,31 @@
                     {
                         "name": "Quick & Quiet",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_quickAndQuiet.png"
                     },
                     {
                         "name": "Sprint Burst",
                         "is_exhaustion_perk": true,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e4/IconPerks_sprintBurst.png"
                     },
                     {
                         "name": "Adrenaline",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/IconPerks_adrenaline.png"
                     }
                 ],
@@ -71,7 +103,11 @@
                 "name": "Claudette",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
@@ -80,19 +116,31 @@
                     {
                         "name": "Empathy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ae/IconPerks_empathy.png"
                     },
                     {
                         "name": "Botany Knowledge",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1e/IconPerks_botanyKnowledge.png"
                     },
                     {
                         "name": "Self Care",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/IconPerks_self-Care.png"
                     }
                 ],
@@ -102,7 +150,11 @@
                 "name": "Jake",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -111,19 +163,31 @@
                     {
                         "name": "Iron Will",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/IconPerks_ironWill.png"
                     },
                     {
                         "name": "Calm Spirit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6c/IconPerks_calmSpirit.png"
                     },
                     {
                         "name": "Saboteur",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0e/IconPerks_saboteur.png"
                     }
                 ],
@@ -133,7 +197,11 @@
                 "name": "Nea",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
@@ -142,19 +210,31 @@
                     {
                         "name": "Balanced Landing",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5e/IconPerks_balancedLanding.png"
                     },
                     {
                         "name": "Urban Evasion",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/IconPerks_urbanEvasion.png"
                     },
                     {
                         "name": "Streetwise",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/IconPerks_streetwise.png"
                     }
                 ],
@@ -164,7 +244,11 @@
                 "name": "David",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -173,19 +257,31 @@
                     {
                         "name": "We're Gonna Live Forever",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b8/IconPerks_wereGonnaLiveForever.png"
                     },
                     {
                         "name": "Dead Hard",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png"
                     },
                     {
                         "name": "No Mither",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_noMither.png"
                     }
                 ],
@@ -195,7 +291,11 @@
                 "name": "Bill",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
@@ -204,19 +304,31 @@
                     {
                         "name": "Left Behind",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_leftBehind.png"
                     },
                     {
                         "name": "Borrowed Time",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/IconPerks_borrowedTime.png"
                     },
                     {
                         "name": "Unbreakable",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4a/IconPerks_unbreakable.png"
                     }
                 ],
@@ -226,7 +338,11 @@
                 "name": "Ace",
                 "availability": {
                     "value": "Free (Console)",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
@@ -235,19 +351,31 @@
                     {
                         "name": "Open-Handed",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_open-Handed.png"
                     },
                     {
                         "name": "Up the Ante",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/IconPerks_upTheAnte.png"
                     },
                     {
                         "name": "Ace in the Hole",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/24/IconPerks_aceInTheHole.png"
                     }
                 ],
@@ -257,7 +385,11 @@
                 "name": "Feng",
                 "availability": {
                     "value": "Free (Console)",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Loud",
@@ -266,19 +398,31 @@
                     {
                         "name": "Technician",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/62/IconPerks_technician.png"
                     },
                     {
                         "name": "Lithe",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cc/IconPerks_lithe.png"
                     },
                     {
                         "name": "Alert",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/71/IconPerks_alert.png"
                     }
                 ],
@@ -288,7 +432,11 @@
                 "name": "Laurie",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
@@ -297,19 +445,31 @@
                     {
                         "name": "Sole Survivor",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8e/IconPerks_soleSurvivor.png"
                     },
                     {
                         "name": "Object of Obsession",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2b/IconPerks_objectOfObsession.png"
                     },
                     {
                         "name": "Decisive Strike",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_decisiveStrike.png"
                     }
                 ],
@@ -319,7 +479,11 @@
                 "name": "Quentin",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -328,19 +492,31 @@
                     {
                         "name": "Wake up!",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/IconPerks_wakeUp.png"
                     },
                     {
                         "name": "Pharmacy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f1/IconPerks_pharmacy.png"
                     },
                     {
                         "name": "Vigil",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/IconPerks_vigil.png"
                     }
                 ],
@@ -350,7 +526,11 @@
                 "name": "Tapp",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -359,19 +539,31 @@
                     {
                         "name": "Tenacity",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9d/IconPerks_tenacity.png"
                     },
                     {
                         "name": "Detective's Hunch",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7b/IconPerks_detectivesHunch.png"
                     },
                     {
                         "name": "Stake Out",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cd/IconPerks_stakeOut.png"
                     }
                 ],
@@ -381,7 +573,11 @@
                 "name": "Kate",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
@@ -390,19 +586,31 @@
                     {
                         "name": "Dance With Me",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/17/IconPerks_danceWithMe.png"
                     },
                     {
                         "name": "Windows of Opportunity",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/17/IconPerks_windowsOfOpportunity.png"
                     },
                     {
                         "name": "Boil Over",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_boilOver.png"
                     }
                 ],
@@ -412,7 +620,11 @@
                 "name": "Adam",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
@@ -421,19 +633,31 @@
                     {
                         "name": "Diversion",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a6/IconPerks_diversion.png"
                     },
                     {
                         "name": "Deliverance",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7e/IconPerks_deliverance.png"
                     },
                     {
                         "name": "Autodidact",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/96/IconPerks_autodidact.png"
                     }
                 ],
@@ -443,7 +667,11 @@
                 "name": "Jeff",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
@@ -452,19 +680,31 @@
                     {
                         "name": "Breakdown",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6c/IconPerks_breakdown.png"
                     },
                     {
                         "name": "Aftercare",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/IconPerks_aftercare.png"
                     },
                     {
                         "name": "Distortion",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/41/IconPerks_distortion.png"
                     }
                 ],
@@ -474,7 +714,11 @@
                 "name": "Jane",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -483,19 +727,31 @@
                     {
                         "name": "Solidarity",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9e/IconPerks_solidarity.png"
                     },
                     {
                         "name": "Poised",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_poised.png"
                     },
                     {
                         "name": "Head On",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/cb/IconPerks_headOn.png"
                     }
                 ],
@@ -505,7 +761,11 @@
                 "name": "Ash",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
@@ -514,19 +774,31 @@
                     {
                         "name": "Flip-Flop",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_flip-Flop.png"
                     },
                     {
                         "name": "Buckle Up",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/74/IconPerks_buckleUp.png"
                     },
                     {
                         "name": "Mettle of  Man",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_mettleOfMan.png"
                     }
                 ],
@@ -536,7 +808,11 @@
                 "name": "Steve",
                 "availability": {
                     "value": "Not Available",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Loud",
@@ -545,19 +821,31 @@
                     {
                         "name": "Guardian",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_guardian.png"
                     },
                     {
                         "name": "Kinship",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_camaraderie.png"
                     },
                     {
                         "name": "Renewal",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7b/IconPerks_renewal.png"
                     }
                 ],
@@ -567,7 +855,11 @@
                 "name": "Nancy",
                 "availability": {
                     "value": "Not Available",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
@@ -576,19 +868,31 @@
                     {
                         "name": "Situational Awareness",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/da/IconPerks_situationalAwareness.png"
                     },
                     {
                         "name": "Self-Aware",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7c/IconPerks_fixated.png"
                     },
                     {
                         "name": "Inner Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/df/IconPerks_innerHealing.png"
                     }
                 ],
@@ -598,7 +902,11 @@
                 "name": "Yui",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -607,19 +915,31 @@
                     {
                         "name": "Lucky Break",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a7/IconPerks_luckyBreak.png"
                     },
                     {
                         "name": "Any Means Necessary",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_anyMeansNecessary.png"
                     },
                     {
                         "name": "Breakout",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d0/IconPerks_breakout.png"
                     }
                 ],
@@ -629,7 +949,11 @@
                 "name": "Zarina",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
@@ -638,19 +962,31 @@
                     {
                         "name": "Off the Record",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9e/IconPerks_offTheRecord.png"
                     },
                     {
                         "name": "Red Herring",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_redHerring.png"
                     },
                     {
                         "name": "For The People",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_forThePeople.png"
                     }
                 ],
@@ -660,7 +996,11 @@
                 "name": "Cheryl",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -669,19 +1009,31 @@
                     {
                         "name": "Soul Guard",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a5/IconPerks_soulGuard.png"
                     },
                     {
                         "name": "Blood Pact",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c9/IconPerks_bloodPact.png"
                     },
                     {
                         "name": "Repressed Alliance",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_repressedAlliance.png"
                     }
                 ],
@@ -691,7 +1043,11 @@
                 "name": "Felix",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -700,19 +1056,31 @@
                     {
                         "name": "Visionary",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7c/IconPerks_visionary.png"
                     },
                     {
                         "name": "Desperate Measures",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/IconPerks_desperateMeasures.png"
                     },
                     {
                         "name": "Built to Last",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_builtToLast.png"
                     }
                 ],
@@ -722,7 +1090,11 @@
                 "name": "Elodie",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -731,19 +1103,31 @@
                     {
                         "name": "Appraisal",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c1/IconPerks_appraisal.png"
                     },
                     {
                         "name": "Deception",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_deception.png"
                     },
                     {
                         "name": "Power Struggle",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4b/IconPerks_powerStruggle.png"
                     }
                 ],
@@ -753,7 +1137,11 @@
                 "name": "Yun-Jin Lee",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -762,19 +1150,31 @@
                     {
                         "name": "Fast Track",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_fastTrack.png"
                     },
                     {
                         "name": "Smash Hit",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e0/IconPerks_smashHit.png"
                     },
                     {
                         "name": "Self-Preservation",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/43/IconPerks_self-Preservation.png"
                     }
                 ],
@@ -784,7 +1184,11 @@
                 "name": "Jill",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -793,19 +1197,31 @@
                     {
                         "name": "Counterforce",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d1/IconPerks_counterforce.png"
                     },
                     {
                         "name": "Resurgence",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f3/IconPerks_resurgence.png"
                     },
                     {
                         "name": "Blast Mine",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_blastMine.png"
                     }
                 ],
@@ -815,7 +1231,11 @@
                 "name": "Leon",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -824,19 +1244,31 @@
                     {
                         "name": "Bite the Bullet",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a5/IconPerks_biteTheBullet.png"
                     },
                     {
                         "name": "Flashbang",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/db/IconPerks_flashbang.png"
                     },
                     {
                         "name": "Rookie Spirit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2f/IconPerks_rookieSpirit.png"
                     }
                 ],
@@ -846,7 +1278,11 @@
                 "name": "Mikaela",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -855,19 +1291,31 @@
                     {
                         "name": "Clairvoyance",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/IconPerks_clairvoyance.png"
                     },
                     {
                         "name": "Boon: Circle of Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/54/IconPerks_boonCircleOfHealing.png"
                     },
                     {
                         "name": "Boon: Shadow Step",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/IconPerks_boonShadowStep.png"
                     }
                 ],
@@ -877,7 +1325,11 @@
                 "name": "Jonah",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -886,19 +1338,31 @@
                     {
                         "name": "Overcome",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/82/IconPerks_overcome.png"
                     },
                     {
                         "name": "Corrective Action",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4f/IconPerks_correctiveAction.png"
                     },
                     {
                         "name": "Boon: Exponential",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/76/IconPerks_boonExponential.png"
                     }
                 ],
@@ -908,7 +1372,11 @@
                 "name": "Yoichi",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
@@ -917,19 +1385,31 @@
                     {
                         "name": "Parental Guidance",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/IconPerks_parentalGuidance.png"
                     },
                     {
                         "name": "Empathic Connection",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_empathicConnection.png"
                     },
                     {
                         "name": "Boon: Dark Theory",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/60/IconPerks_boonDarkTheory.png"
                     }
                 ],
@@ -939,7 +1419,11 @@
                 "name": "Haddie",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -948,19 +1432,31 @@
                     {
                         "name": "Inner Focus",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7e/IconPerks_innerFocus.png"
                     },
                     {
                         "name": "Residual Manifest",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d0/IconPerks_residualManifest.png"
                     },
                     {
                         "name": "Overzealous",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/99/IconPerks_overzealous.png"
                     }
                 ],
@@ -970,7 +1466,11 @@
                 "name": "Ada",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
@@ -979,19 +1479,31 @@
                     {
                         "name": "Wiretap",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_wiretap.png"
                     },
                     {
                         "name": "Reactive Healing",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_reactiveHealing.png"
                     },
                     {
                         "name": "Low Profile",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fb/IconPerks_lowProfile.png"
                     }
                 ],
@@ -1001,7 +1513,11 @@
                 "name": "Rebecca",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -1010,19 +1526,31 @@
                     {
                         "name": "Better than New",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b1/IconPerks_betterThanNew.png"
                     },
                     {
                         "name": "Reassurance",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5b/IconPerks_reassurance.png"
                     },
                     {
                         "name": "Hyperfocus",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_hyperfocus.png"
                     }
                 ],
@@ -1032,7 +1560,11 @@
                 "name": "Vittorio",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
@@ -1041,19 +1573,31 @@
                     {
                         "name": "Potential Energy",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/07/IconPerks_potentialEnergy.png"
                     },
                     {
                         "name": "Fogwise",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/90/IconPerks_fogwise.png"
                     },
                     {
                         "name": "Quick Gambit",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/IconPerks_quickGambit.png"
                     }
                 ],
@@ -1063,7 +1607,11 @@
                 "name": "Thalita",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
@@ -1072,19 +1620,31 @@
                     {
                         "name": "Friendly Competition",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_friendlyCompetition.png"
                     },
                     {
                         "name": "Teamwork: Power of Two",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2b/IconPerks_teamworkPowerOfTwo.png"
                     },
                     {
                         "name": "Cut Loose",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/02/IconPerks_cutLoose.png"
                     }
                 ],
@@ -1094,7 +1654,11 @@
                 "name": "Renato",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
@@ -1103,19 +1667,31 @@
                     {
                         "name": "Blood Rush",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2c/IconPerks_bloodRush.png"
                     },
                     {
                         "name": "Teamwork: Collective Stealth",
                         "is_exhaustion_perk": false,
-                        "tier": "#85200c",
+                        "tier": {
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a0/IconPerks_teamworkCollectiveStealth.png"
                     },
                     {
                         "name": "Background Player",
                         "is_exhaustion_perk": true,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e8/IconPerks_backgroundPlayer.png"
                     }
                 ],
@@ -1125,7 +1701,11 @@
                 "name": "Gabriel",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
@@ -1134,19 +1714,31 @@
                     {
                         "name": "Troubleshooter",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/IconPerks_troubleshooter.png"
                     },
                     {
                         "name": "Made for This",
                         "is_exhaustion_perk": false,
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c0/IconPerks_madeForThis.png"
                     },
                     {
                         "name": "Scavenger",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_scavenger.png"
                     }
                 ],
@@ -1156,7 +1748,11 @@
                 "name": "Nicholas",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Medium",
@@ -1165,19 +1761,31 @@
                     {
                         "name": "Dramaturgy",
                         "is_exhaustion_perk": true,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/85/IconPerks_dramaturgy.png"
                     },
                     {
                         "name": "Scene Partner",
                         "is_exhaustion_perk": false,
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b4/IconPerks_scenePartner.png"
                     },
                     {
                         "name": "Plot Twist",
                         "is_exhaustion_perk": false,
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/IconPerks_plotTwist.png"
                     }
                 ],
@@ -1258,24 +1866,40 @@
                 "name": "The Trapper",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Unnerving Presence",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a4/IconPerks_unnervingPresence.png"
                     },
                     {
                         "name": "Agitation",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/IconPerks_agitation.png"
                     },
                     {
                         "name": "Brutal Strength",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3d/IconPerks_brutalStrength.png"
                     }
                 ],
@@ -1285,24 +1909,40 @@
                 "name": "The Wraith",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Predator",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/73/IconPerks_predator.png"
                     },
                     {
                         "name": "Bloodhound",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e0/IconPerks_bloodhound.png"
                     },
                     {
                         "name": "Shadowborn",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ac/IconPerks_shadowborn.png"
                     }
                 ],
@@ -1312,24 +1952,40 @@
                 "name": "The Hillbilly",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Enduring",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_enduring.png"
                     },
                     {
                         "name": "Lightborn",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/48/IconPerks_lightborn.png"
                     },
                     {
                         "name": "Tinkerer",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d9/IconPerks_tinkerer.png"
                     }
                 ],
@@ -1339,24 +1995,40 @@
                 "name": "The Nurse",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "movement_speed": "96.25% | 3.85m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Stridor",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/32/IconPerks_stridor.png"
                     },
                     {
                         "name": "Thanatophobia",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_thanatophobia.png"
                     },
                     {
                         "name": "A Nurse's Calling",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_aNursesCalling.png"
                     }
                 ],
@@ -1366,24 +2038,40 @@
                 "name": "The Huntress",
                 "availability": {
                     "value": "Free",
-                    "colour": "#6aa84f"
+                    "colour": {
+                        "red": 106,
+                        "green": 168,
+                        "blue": 79
+                    }
                 },
                 "movement_speed": "110% | 4.4m/s",
                 "terror_radius": "20m  + lullaby",
                 "perks": [
                     {
                         "name": "Beast of Prey",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/77/IconPerks_beastOfPrey.png"
                     },
                     {
                         "name": "Territorial Imperative",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2a/IconPerks_territorialImperative.png"
                     },
                     {
                         "name": "Hex: Huntress Lullaby",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/11/IconPerks_hexHuntressLullaby.png"
                     }
                 ],
@@ -1393,24 +2081,40 @@
                 "name": "The Shape",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "105-115% | 4.6m/s",
                 "terror_radius": "0-16-32m",
                 "perks": [
                     {
                         "name": "Save the Best for Last",
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6a/IconPerks_saveTheBestForLast.png"
                     },
                     {
                         "name": "Play With Your Food",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_playWithYourFood.png"
                     },
                     {
                         "name": "Dying Light",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/48/IconPerks_dyingLight.png"
                     }
                 ],
@@ -1420,24 +2124,40 @@
                 "name": "The Hag",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "110% | 4.4m/s",
                 "terror_radius": "24m",
                 "perks": [
                     {
                         "name": "Hex: The Third Seal",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/36/IconPerks_hexTheThirdSeal.png"
                     },
                     {
                         "name": "Hex: Ruin",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_hexRuin.png"
                     },
                     {
                         "name": "Hex: Devour Hope",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c9/IconPerks_hexDevourHope.png"
                     }
                 ],
@@ -1447,24 +2167,40 @@
                 "name": "The Doctor",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Overwhelming Presence",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_overwhelmingPresence.png"
                     },
                     {
                         "name": "Monitor & Abuse",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/60/IconPerks_monitorAndAbuse.png"
                     },
                     {
                         "name": "Overcharge",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_overcharge.png"
                     }
                 ],
@@ -1474,24 +2210,40 @@
                 "name": "The Cannibal",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Knockout",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_knockOut.png"
                     },
                     {
                         "name": "Barbecue and Chilli",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/51/IconPerks_barbecueAndChilli.png"
                     },
                     {
                         "name": "Franklin's Demise",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/IconPerks_franklinsDemise.png"
                     }
                 ],
@@ -1501,24 +2253,40 @@
                 "name": "The Nightmare",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m  or lullaby",
                 "perks": [
                     {
                         "name": "Fire Up",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5c/IconPerks_fireUp.png"
                     },
                     {
                         "name": "Remember Me",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/62/IconPerks_rememberMe.png"
                     },
                     {
                         "name": "Blood Warden",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_bloodWarden.png"
                     }
                 ],
@@ -1528,24 +2296,40 @@
                 "name": "The Pig",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Hangman's Trick",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_scourgeHookHangmansTrick.png"
                     },
                     {
                         "name": "Surveillance",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/eb/IconPerks_surveillance.png"
                     },
                     {
                         "name": "Make Your Choice",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6b/IconPerks_makeYourChoice.png"
                     }
                 ],
@@ -1555,24 +2339,40 @@
                 "name": "The Clown",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Bamboozle",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/7a/IconPerks_bamboozle.png"
                     },
                     {
                         "name": "Coulrophobia",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/IconPerks_coulrophobia.png"
                     },
                     {
                         "name": "Pop Goes The Weasel",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_popGoesTheWeasel.png"
                     }
                 ],
@@ -1582,24 +2382,40 @@
                 "name": "The Spirit",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "110% | 4.4m/s",
                 "terror_radius": "24m",
                 "perks": [
                     {
                         "name": "Spirit Fury",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a6/IconPerks_spiritFury.png"
                     },
                     {
                         "name": "Hex: Haunted Ground",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c4/IconPerks_hexHauntedGround.png"
                     },
                     {
                         "name": "Rancor",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_rancor.png"
                     }
                 ],
@@ -1609,24 +2425,40 @@
                 "name": "The Legion",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Discordance",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/82/IconPerks_discordance.png"
                     },
                     {
                         "name": "Mad Grit",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/da/IconPerks_madGrit.png"
                     },
                     {
                         "name": "Iron Maiden",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/IconPerks_ironMaiden.png"
                     }
                 ],
@@ -1636,24 +2468,40 @@
                 "name": "The Plague",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Corrupt Intervention",
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/10/IconPerks_corruptIntervention.png"
                     },
                     {
                         "name": "Infectious Fright",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/IconPerks_infectiousFright.png"
                     },
                     {
                         "name": "Dark Devotion",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4f/IconPerks_darkDevotion.png"
                     }
                 ],
@@ -1663,24 +2511,40 @@
                 "name": "The Ghost Face",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "I'm All Ears",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e3/IconPerks_imAllEars.png"
                     },
                     {
                         "name": "Thrilling Tremors",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b8/IconPerks_thrillingTremors.png"
                     },
                     {
                         "name": "Furtive Chase",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_furtiveChase.png"
                     }
                 ],
@@ -1690,24 +2554,40 @@
                 "name": "The Demogorgon",
                 "availability": {
                     "value": "Not Available",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Jolt",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_surge.png"
                     },
                     {
                         "name": "Fearmonger",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_mindbreaker.png"
                     },
                     {
                         "name": "Claustrophobia",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_cruelLimits.png"
                     }
                 ],
@@ -1717,24 +2597,40 @@
                 "name": "The Oni",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Zanshin Tactics",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d3/IconPerks_zanshinTactics.png"
                     },
                     {
                         "name": "Blood Echo",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_bloodEcho.png"
                     },
                     {
                         "name": "Nemesis",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/33/IconPerks_nemesis.png"
                     }
                 ],
@@ -1744,24 +2640,40 @@
                 "name": "The Deathslinger",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "110% | 4.4m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Gearhead",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/IconPerks_gearhead.png"
                     },
                     {
                         "name": "Dead Man's Switch",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c3/IconPerks_deadMansSwitch.png"
                     },
                     {
                         "name": "Hex: Retribution",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ab/IconPerks_hexRetribution.png"
                     }
                 ],
@@ -1771,24 +2683,40 @@
                 "name": "The Executioner",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Forced Penance",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_forcedPenance.png"
                     },
                     {
                         "name": "Trail of Torment",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_trailOfTorment.png"
                     },
                     {
                         "name": "Deathbound",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e7/IconPerks_deathbound.png"
                     }
                 ],
@@ -1798,24 +2726,40 @@
                 "name": "The Blight",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Dragon's Grip",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/IconPerks_dragonsGrip.png"
                     },
                     {
                         "name": "Hex: Blood Favor",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6b/IconPerks_hexBloodFavour.png"
                     },
                     {
                         "name": "Hex: Undying",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_hexUndying.png"
                     }
                 ],
@@ -1825,24 +2769,40 @@
                 "name": "The Twins",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Hoarder",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/23/IconPerks_hoarder.png"
                     },
                     {
                         "name": "Oppression",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a1/IconPerks_oppression.png"
                     },
                     {
                         "name": "Coup de Grâce",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/IconPerks_coupDeGr%C3%A2ce.png"
                     }
                 ],
@@ -1852,24 +2812,40 @@
                 "name": "The Trickster",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "110% | 4.4m/s",
                 "terror_radius": "24m  + lullaby",
                 "perks": [
                     {
                         "name": "Starstruck",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6e/IconPerks_starstruck.png"
                     },
                     {
                         "name": "Hex: Crowd Control",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f1/IconPerks_hexCrowdControl.png"
                     },
                     {
                         "name": "No Way Out",
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_noWayOut.png"
                     }
                 ],
@@ -1879,24 +2855,40 @@
                 "name": "The Nemesis",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Lethal Pursuer",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/61/IconPerks_lethalPursuer.png"
                     },
                     {
                         "name": "Hysteria",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3a/IconPerks_hysteria.png"
                     },
                     {
                         "name": "Eruption",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dd/IconPerks_eruption.png"
                     }
                 ],
@@ -1906,24 +2898,40 @@
                 "name": "The Cenobite",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Deadlock",
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d3/IconPerks_deadlock.png"
                     },
                     {
                         "name": "Hex: Plaything",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hexPlaything.png"
                     },
                     {
                         "name": "Gift of Pain",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/26/IconPerks_scourgeHookGiftOfPain.png"
                     }
                 ],
@@ -1933,24 +2941,40 @@
                 "name": "The Artist",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Grim Embrace",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_grimEmbrace.png"
                     },
                     {
                         "name": "Pain Resonance",
-                        "tier": "#1155cc",
+                        "tier": {
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_scourgeHookPainResonance.png"
                     },
                     {
                         "name": "Hex: Pentimento",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/IconPerks_hexPentimento.png"
                     }
                 ],
@@ -1960,24 +2984,40 @@
                 "name": "The Onryo",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "24m",
                 "perks": [
                     {
                         "name": "Call of Brine",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3b/IconPerks_callOfBrine.png"
                     },
                     {
                         "name": "Floods of Rage",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_scourgeHookFloodsOfRage.png"
                     },
                     {
                         "name": "Merciless Storm",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/36/IconPerks_mercilessStorm.png"
                     }
                 ],
@@ -1987,24 +3027,40 @@
                 "name": "The Dredge",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Dissolution",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1d/IconPerks_dissolution.png"
                     },
                     {
                         "name": "Darkness Revealed",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ed/IconPerks_darknessRevealed.png"
                     },
                     {
                         "name": "Septic Touch",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d8/IconPerks_septicTouch.png"
                     }
                 ],
@@ -2014,24 +3070,40 @@
                 "name": "The Mastermind",
                 "availability": {
                     "value": "500 AC",
-                    "colour": "#85200c"
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "40m",
                 "perks": [
                     {
                         "name": "Superior Anatomy",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4a/IconPerks_superiorAnatomy.png"
                     },
                     {
                         "name": "Awakened Awareness",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/97/IconPerks_awakenedAwareness.png"
                     },
                     {
                         "name": "Terminus",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_terminus.png"
                     }
                 ],
@@ -2041,24 +3113,40 @@
                 "name": "The Knight",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Nowhere to Hide",
-                        "tier": "#38761d",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/29/IconPerks_nowhereToHide.png"
                     },
                     {
                         "name": "Hex: Face the Darkness",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/IconPerks_hexFaceTheDarkness.png"
                     },
                     {
                         "name": "Hubris",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/aa/IconPerks_hubris.png"
                     }
                 ],
@@ -2068,24 +3156,40 @@
                 "name": "The Skull Merchant",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "THWACK!",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_thwack.png"
                     },
                     {
                         "name": "Leverage",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/IconPerks_leverage.png"
                     },
                     {
                         "name": "Game Afoot",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/53/IconPerks_gameAfoot.png"
                     }
                 ],
@@ -2095,24 +3199,40 @@
                 "name": "The Singularity",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
-                    "colour": "#a64d79"
+                    "colour": {
+                        "red": 166,
+                        "green": 77,
+                        "blue": 121
+                    }
                 },
                 "movement_speed": "115% | 4.6m/s",
                 "terror_radius": "32m",
                 "perks": [
                     {
                         "name": "Genetic Limits",
-                        "tier": "#5b0f00",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/IconPerks_geneticLimits.png"
                     },
                     {
                         "name": "Forced Hesitation",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4c/IconPerks_forcedHesitation.png"
                     },
                     {
                         "name": "Machine Learning",
-                        "tier": "#bf9000",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/01/IconPerks_machineLearning.png"
                     }
                 ],
