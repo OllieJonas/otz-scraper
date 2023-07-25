@@ -62,7 +62,7 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
             return unidecode(c['effectiveValue']['stringValue'].replace("TR", "").strip()), str
 
     def key_extract_func(cell):
-        return cell['name'].removeprefix("The ")
+        return cell['name'].removeprefix("The ")  # for killer, just to keep things universal
 
     def key_req_func(d):
         return d['name']
@@ -192,8 +192,9 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
     -------------------------
     Starts at a given cell (:param start), then uses the :param `cell_dict_func` to map that starting cell to the cells
     you wish to gather information about (the result of this is now referred to as 'cell_structure').
-    Fetch all cells between the min and max of cell_structure, apply the :param key_req_func to cell_struct
-    (extracting a key from relevant_cells). Repeat this for the :param min_search_amount (the "known" portion).
+    Fetch cells between the min and max of cell_structure (from Google), apply the :param key_req_func to cell_struct
+    (extracting a key from relevant_cells). Repeat this for the :param min_search_amount (the "known" portion,
+    see comment in args of main for more info).
 
     Once this is done, we then repeat a similar process any number of times (whilst the starting cell isn't empty on
     Google Sheets), adding the responses for these into the known search results.
@@ -208,9 +209,9 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
 
     :param service: Google Sheets API service
     :param spreadsheet_id: Sheet ID
-    :param is_survivor: Whether it's the Survivor Info or the Killer info portion
+    :param is_survivor: Whether we're doing this for Survivors or Killers
     :param sheet_name: Name of the sheet (Used pretty much exclusively for Survivor Guides being on a different sheet)
-    :param search_for_unknown: Whether to search for "unknown" (See comment in args of main for more info)
+    :param search_for_unknown: Whether to search for "unknown"
     :param min_search_amount: Amount of "known" searches
     :param start: Starting cell
     :param next_start_func: Function mapping current cell and iteration no to next cell
@@ -223,8 +224,8 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
 
                             For example:
                                 (cell_dict_func=(cell, _) -> {"name": cell, "tier": cell >> 1},
-                                key_req_func=(dict) -> dict['name']) =>
-                                 relevant_cells={cell: {"name": cell, "tier": cell >> 1}}
+                                key_req_func=(dict) -> dict['tier']) =>
+                                 relevant_cells={cell >> 1: {"name": cell, "tier": cell >> 1}}
 
     :param key_extract_func:  Pretty much identical usage to key_req_func, but used in the data extraction portion.
 
