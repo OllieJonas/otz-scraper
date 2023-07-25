@@ -181,7 +181,60 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
                   key_extract_func: Callable[[dict], str | None],
                   data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
                   ) -> Dict:
-    # wow, this is alot of refactoring lmao
+    """
+    Scrape a given portion of a spreadsheet, based on certain rules.
+
+    More specifically, this works in two parts: Gathering the cell information from the Google Sheet, then extracting
+    that information from the response JSON from Google into something that's usable (i.e. based on a certain structure
+    that's pre-determined).
+
+    SENDING THE REQUEST
+    -------------------------
+    Starts at a given cell (:param start), then uses the :param `cell_dict_func` to map that starting cell to the cells
+    you wish to gather information about (the result of this is now referred to as 'cell_structure').
+    Fetch all cells between the min and max of cell_structure, apply the :param key_req_func to cell_struct
+    (extracting a key from relevant_cells). Repeat this for the :param min_search_amount (the "known" portion).
+
+    Once this is done, we then repeat a similar process any number of times (whilst the starting cell isn't empty on
+    Google Sheets), adding the responses for these into the known search results.
+
+    Once the starting cell is empty, then return both the response from Google and cell_structure.
+
+    EXTRACTING DATA
+    -------------------------
+    From the previous results, we get a "raw" response from Google, and a dictionary mapping cells (in A1 notation) to
+    descriptors of what that information is. Extracting the data simply involves replacing all A1 notation with values
+    from the raw response.
+
+    :param service: Google Sheets API service
+    :param spreadsheet_id: Sheet ID
+    :param is_survivor: Whether it's the Survivor Info or the Killer info portion
+    :param sheet_name: Name of the sheet (Used pretty much exclusively for Survivor Guides being on a different sheet)
+    :param search_for_unknown: Whether to search for "unknown" (See comment in args of main for more info)
+    :param min_search_amount: Amount of "known" searches
+    :param start: Starting cell
+    :param next_start_func: Function mapping current cell and iteration no to next cell
+
+    :param cell_dict_func:  Function mapping starting cell and is_survivor to a dictionary mapping cells to information
+                            descriptors (eg. (cell, _) -> {"name": cell, "tier": cell >> 1})
+
+    :param key_req_func: Function that illustrates what key to use for the relevant_cells return value. If None is the
+                         return value, it will use the index of the current search.
+
+                            For example:
+                                (cell_dict_func=(cell, _) -> {"name": cell, "tier": cell >> 1},
+                                key_req_func=(dict) -> dict['name']) =>
+                                 relevant_cells={cell: {"name": cell, "tier": cell >> 1}}
+
+    :param key_extract_func:  Pretty much identical usage to key_req_func, but used in the data extraction portion.
+
+    :param data_extract_func: Function that maps what information to extract for each cell, based on some data_type.
+                              data_type (str) comes from cell_structure, cell (dict) comes from the raw response.
+                              It would probably be easiest to see some of the above examples of this function to
+                              see how it should be used.
+
+    :return: A map of data_types in cells to the information that's stored in the spreadsheet.
+    """
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
 
     response, cell_structure = _send_request(service=service,
@@ -215,7 +268,7 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
     # I've tried other ways of doing this, being more "economical" in terms of specifying which cells are requested,
     # but this genuinely seems like the best solution for reducing API calls (for each character there's 2 cells wasted)
     request = []
-    relevant_cells = {}
+    cell_structure = {}
 
     curr = start
     i = 0
@@ -231,7 +284,7 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
         request.append(f"{sheet_name}!{cell_min}:{cell_max}")
 
         assignment = key_func(cells)
-        relevant_cells[assignment if assignment is not None else i] = cells
+        cell_structure[assignment if assignment is not None else i] = cells
         curr = next_start_func(curr, i)
 
     response = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=request,
@@ -258,12 +311,12 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
         response = response + resp['sheets'][0]['data']
 
         assignment = key_func(cells)
-        relevant_cells[assignment if assignment is not None else i] = cells
+        cell_structure[assignment if assignment is not None else i] = cells
         curr = next_start_func(curr, i)
 
         i += 1
 
-    return response, relevant_cells
+    return response, cell_structure
 
 
 def _extract_data_from_response(response: dict,
