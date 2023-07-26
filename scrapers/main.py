@@ -54,6 +54,13 @@ def main():
     """
     args = parse_args()
 
+    prepare_final_json = args.prepare_final_json
+
+    # needs to be True to have enough information to prepare final JSONs (if that's what you want to do)
+    should_scrape_perks = args.scrape_perks or prepare_final_json
+    should_scrape_characters = args.scrape_characters or prepare_final_json
+    should_scrape_sheet = args.scrape_spreadsheet or prepare_final_json
+
     current_date = datetime.now().strftime('%d-%m-%Y')
 
     killer_perks = {}
@@ -65,21 +72,21 @@ def main():
     killer_spreadsheet = {}
     survivor_spreadsheet = {}
 
-    if args.scrape_perks:
+    if should_scrape_perks:
         killer_perks = scrape_perks(KILLER_PERKS_URL)
         survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
         # save_json("killer_perks", killer_perks, current_date)
         # save_json("survivor_perks", survivor_perks, current_date)
 
-    if args.scrape_characters:
+    if should_scrape_characters:
         killer_characters = scrape_characters("Killers")
         survivor_characters = scrape_characters("Survivors")
 
         # save_json("killer_characters", killer_characters, current_date)
         # save_json("survivor_characters", survivor_characters, current_date)
 
-    if args.scrape_spreadsheet:
+    if should_scrape_sheet:
         credentials = Credentials.from_service_account_file(args.creds_path)
         service = build('sheets', 'v4', credentials=credentials)
 
@@ -92,17 +99,18 @@ def main():
         # save_json("killer_spreadsheet", killer_spreadsheet, current_date)
         # save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
 
-    perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
-                                                      survivor_characters=survivor_characters,
-                                                      survivor_spreadsheet=survivor_spreadsheet,
-                                                      killer_perks=killer_perks,
-                                                      killer_characters=killer_characters,
-                                                      killer_spreadsheet=killer_spreadsheet,
-                                                      current_date=current_date)
+    if prepare_final_json:
+        perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
+                                                          survivor_characters=survivor_characters,
+                                                          survivor_spreadsheet=survivor_spreadsheet,
+                                                          killer_perks=killer_perks,
+                                                          killer_characters=killer_characters,
+                                                          killer_spreadsheet=killer_spreadsheet,
+                                                          current_date=current_date)
 
-    save_json('perks', killer_perks, current_date)
-    save_json('characters', killer_characters, current_date)
-    save_json('spreadsheet', spreadsheets, current_date)
+        save_json('perks', killer_perks, current_date)
+        save_json('characters', killer_characters, current_date)
+        save_json('spreadsheet', spreadsheets, current_date)
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
@@ -219,6 +227,9 @@ def parse_args() -> argparse.Namespace:
                         help="Whether to scrape the characters wiki page")
     parser.add_argument("--scrape-spreadsheet", default=True, type=bool,
                         help="Whether to scrape the Otzdarva spreadsheet")
+    parser.add_argument("--prepare-final-json", default=True, type=bool,
+                        help="Whether to collate information from characters, perks and spreadsheet to create a final"
+                             "JSON file for front-end usage.")
     return parser.parse_args()
 
 
