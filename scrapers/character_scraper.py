@@ -71,7 +71,7 @@ def _scrape_character(url, character_type):
     info['image_full'] = image_full
     info['wiki_link'] = url
 
-    info['image_half'] = soup.find('span', id='Overview').find_next('a')['href']
+    info['image_half'] = util.strip_revision_from_url(soup.find('span', id='Overview').find_next('a')['href'])
 
     if is_killer:
         info = _scrape_killer(soup, info)
@@ -129,7 +129,7 @@ def _scrape_lore_and_image_full(soup):
             lore_curr.find('span', id='Load-out') is None:
 
         if lore_curr.find('a', class_="image") is not None:
-            image_full = lore_curr.find('a')['href']
+            image_full = util.strip_revision_from_url(lore_curr.find('a')['href'])
         elif lore_curr.name == 'p' and lore_curr.find('i') is not None:
             lore.append(lore_curr.find('i').text)
 
