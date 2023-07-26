@@ -58,7 +58,7 @@ def scrape_perks(url: str, remove_desc_html: bool = False, remove_mini_perk_icon
         upcoming_patch = description.find("div", class_="dynamicTitle")
 
         if remove_mini_perk_icons and description.span is not None:
-            [x.decompose() for x in
+            [x.extract() for x in
              soup.find_all(lambda tag: tag.name == 'span' and 'style' in tag.attrs and 'padding' in tag['style'])
              if x is not None]
 
