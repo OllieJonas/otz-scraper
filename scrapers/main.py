@@ -156,7 +156,9 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
         del survivor_characters[old_key]
 
     def transform_spreadsheet(perks, characters, spreadsheet):
+        # for updating the output JSON with the wiki names, not the sheet ones
         transformed_spreadsheet = {"characters": {}}
+
         # character perks
         for name, sheet_character in spreadsheet['characters'].items():
             # this is bad
@@ -172,8 +174,10 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
                 # perk comes from otz spreadsheet, perk name is used to access otz spreadsheet
                 perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
                 perk['icon'] = perks[name][perk_name]['icon']
+                perk['name'] = perk_name
                 transformed_perks[perk_name] = perk
 
+            sheet_character['name'] = name
             sheet_character['icon'] = characters[name]['icon']
             sheet_character['perks'] = transformed_perks
             transformed_spreadsheet['characters'][name] = sheet_character
@@ -182,6 +186,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
         for name, perk in spreadsheet['universals'].items():
             perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
+            perk['name'] = perk_name
             perk['icon'] = perks['All'][perk_name]['icon']
             transformed_universals[perk_name] = perk
 

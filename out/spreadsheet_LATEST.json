@@ -134,7 +134,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1e/IconPerks_botanyKnowledge.png"
                     },
                     "Self-Care": {
-                        "name": "Self Care",
+                        "name": "Self-Care",
                         "is_exhaustion_perk": false,
                         "tier": {
                             "red": 191,
@@ -490,7 +490,7 @@
                 "cries": "Medium cries",
                 "perks": {
                     "Wake Up!": {
-                        "name": "Wake up!",
+                        "name": "Wake Up!",
                         "is_exhaustion_perk": false,
                         "tier": {
                             "red": 133,
@@ -792,7 +792,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/74/IconPerks_buckleUp.png"
                     },
                     "Mettle of Man": {
-                        "name": "Mettle of  Man",
+                        "name": "Mettle of Man",
                         "is_exhaustion_perk": false,
                         "tier": {
                             "red": 191,
@@ -980,7 +980,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_redHerring.png"
                     },
                     "For the People": {
-                        "name": "For The People",
+                        "name": "For the People",
                         "is_exhaustion_perk": false,
                         "tier": {
                             "red": 56,
@@ -1134,7 +1134,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/S24_charSelect_portrait.png"
             },
             "Yun-Jin": {
-                "name": "Yun-Jin Lee",
+                "name": "Yun-Jin",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -1745,7 +1745,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b3/S37_charSelect_portrait.png"
             },
             "Nicolas": {
-                "name": "Nicholas",
+                "name": "Nicolas",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -1858,7 +1858,7 @@
     "killers": {
         "characters": {
             "Trapper": {
-                "name": "The Trapper",
+                "name": "Trapper",
                 "availability": {
                     "value": "Free",
                     "colour": {
@@ -1901,7 +1901,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9f/K01_charSelect_portrait.png"
             },
             "Wraith": {
-                "name": "The Wraith",
+                "name": "Wraith",
                 "availability": {
                     "value": "Free",
                     "colour": {
@@ -1944,7 +1944,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0d/K02_charSelect_portrait.png"
             },
             "Hillbilly": {
-                "name": "The Hillbilly",
+                "name": "Hillbilly",
                 "availability": {
                     "value": "Free",
                     "colour": {
@@ -1987,7 +1987,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a3/K03_charSelect_portrait.png"
             },
             "Nurse": {
-                "name": "The Nurse",
+                "name": "Nurse",
                 "availability": {
                     "value": "Free",
                     "colour": {
@@ -2030,7 +2030,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/K04_charSelect_portrait.png"
             },
             "Huntress": {
-                "name": "The Huntress",
+                "name": "Huntress",
                 "availability": {
                     "value": "Free",
                     "colour": {
@@ -2073,7 +2073,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1a/K08_charSelect_portrait.png"
             },
             "Shape": {
-                "name": "The Shape",
+                "name": "Shape",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2095,7 +2095,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6a/IconPerks_saveTheBestForLast.png"
                     },
                     "Play with Your Food": {
-                        "name": "Play With Your Food",
+                        "name": "Play with Your Food",
                         "tier": {
                             "red": 191,
                             "green": 144,
@@ -2116,7 +2116,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/04/K05_charSelect_portrait.png"
             },
             "Hag": {
-                "name": "The Hag",
+                "name": "Hag",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2159,7 +2159,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b4/K06_charSelect_portrait.png"
             },
             "Doctor": {
-                "name": "The Doctor",
+                "name": "Doctor",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2202,7 +2202,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ad/K07_charSelect_portrait.png"
             },
             "Cannibal": {
-                "name": "The Cannibal",
+                "name": "Cannibal",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2215,7 +2215,7 @@
                 "terror_radius": "32m",
                 "perks": {
                     "Knock Out": {
-                        "name": "Knockout",
+                        "name": "Knock Out",
                         "tier": {
                             "red": 91,
                             "green": 15,
@@ -2224,7 +2224,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/52/IconPerks_knockOut.png"
                     },
                     "Barbecue & Chilli": {
-                        "name": "Barbecue and Chilli",
+                        "name": "Barbecue & Chilli",
                         "tier": {
                             "red": 56,
                             "green": 118,
@@ -2245,7 +2245,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c6/K09_charSelect_portrait.png"
             },
             "Nightmare": {
-                "name": "The Nightmare",
+                "name": "Nightmare",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2288,7 +2288,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/K10_charSelect_portrait.png"
             },
             "Pig": {
-                "name": "The Pig",
+                "name": "Pig",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2331,7 +2331,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c7/K11_charSelect_portrait.png"
             },
             "Clown": {
-                "name": "The Clown",
+                "name": "Clown",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2362,7 +2362,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/45/IconPerks_coulrophobia.png"
                     },
                     "Pop Goes the Weasel": {
-                        "name": "Pop Goes The Weasel",
+                        "name": "Pop Goes the Weasel",
                         "tier": {
                             "red": 56,
                             "green": 118,
@@ -2374,7 +2374,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e1/K12_charSelect_portrait.png"
             },
             "Spirit": {
-                "name": "The Spirit",
+                "name": "Spirit",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2417,7 +2417,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/K13_charSelect_portrait.png"
             },
             "Legion": {
-                "name": "The Legion",
+                "name": "Legion",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2460,7 +2460,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/K14_charSelect_portrait.png"
             },
             "Plague": {
-                "name": "The Plague",
+                "name": "Plague",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2503,7 +2503,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/68/K15_charSelect_portrait.png"
             },
             "Ghost Face": {
-                "name": "The Ghost Face",
+                "name": "Ghost Face",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2546,7 +2546,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/K16_charSelect_portrait.png"
             },
             "Demogorgon": {
-                "name": "The Demogorgon",
+                "name": "Demogorgon",
                 "availability": {
                     "value": "Not Available",
                     "colour": {
@@ -2589,7 +2589,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/6d/K17_charSelect_portrait.png"
             },
             "Oni": {
-                "name": "The Oni",
+                "name": "Oni",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2632,7 +2632,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/c/c5/K18_charSelect_portrait.png"
             },
             "Deathslinger": {
-                "name": "The Deathslinger",
+                "name": "Deathslinger",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2675,7 +2675,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/K19_charSelect_portrait.png"
             },
             "Executioner": {
-                "name": "The Executioner",
+                "name": "Executioner",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2718,7 +2718,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/95/K20_charSelect_portrait.png"
             },
             "Blight": {
-                "name": "The Blight",
+                "name": "Blight",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2740,7 +2740,7 @@
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/ff/IconPerks_dragonsGrip.png"
                     },
                     "Hex: Blood Favour": {
-                        "name": "Hex: Blood Favor",
+                        "name": "Hex: Blood Favour",
                         "tier": {
                             "red": 56,
                             "green": 118,
@@ -2761,7 +2761,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0b/K21_charSelect_portrait.png"
             },
             "Twins": {
-                "name": "The Twins",
+                "name": "Twins",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2804,7 +2804,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/03/K22_charSelect_portrait.png"
             },
             "Trickster": {
-                "name": "The Trickster",
+                "name": "Trickster",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2847,7 +2847,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/3e/K23_charSelect_portrait.png"
             },
             "Nemesis": {
-                "name": "The Nemesis",
+                "name": "Nemesis",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2890,7 +2890,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/84/K24_charSelect_portrait.png"
             },
             "Cenobite": {
-                "name": "The Cenobite",
+                "name": "Cenobite",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -2933,7 +2933,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/35/K25_charSelect_portrait.png"
             },
             "Artist": {
-                "name": "The Artist",
+                "name": "Artist",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -2976,7 +2976,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/19/K26_charSelect_portrait.png"
             },
             "Onryo": {
-                "name": "The Onryo",
+                "name": "Onryo",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -3019,7 +3019,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e2/K27_charSelect_portrait.png"
             },
             "Dredge": {
-                "name": "The Dredge",
+                "name": "Dredge",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -3062,7 +3062,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/49/K28_charSelect_portrait.png"
             },
             "Mastermind": {
-                "name": "The Mastermind",
+                "name": "Mastermind",
                 "availability": {
                     "value": "500 AC",
                     "colour": {
@@ -3105,7 +3105,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/87/K29_charSelect_portrait.png"
             },
             "Knight": {
-                "name": "The Knight",
+                "name": "Knight",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -3148,7 +3148,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/44/K30_charSelect_portrait.png"
             },
             "Skull Merchant": {
-                "name": "The Skull Merchant",
+                "name": "Skull Merchant",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -3191,7 +3191,7 @@
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/K31_charSelect_portrait.png"
             },
             "Singularity": {
-                "name": "The Singularity",
+                "name": "Singularity",
                 "availability": {
                     "value": "500 AC / 9,000 IS",
                     "colour": {
@@ -3272,7 +3272,7 @@
             },
             "Monstrous Shrine": {
                 "tier": "#5b0f00",
-                "name": "Scourge Hook: Monstrous Shrine",
+                "name": "Monstrous Shrine",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/IconPerks_scourgeHookMonstrousShrine.png"
             },
             "Sloppy Butcher": {
