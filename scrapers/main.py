@@ -76,15 +76,16 @@ def main():
         killer_perks = scrape_perks(KILLER_PERKS_URL)
         survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
 
-        # save_json("killer_perks", killer_perks, current_date)
-        # save_json("survivor_perks", survivor_perks, current_date)
+        if not prepare_final_json:
+            save_json("perks", survivor_perks | killer_perks, current_date)
 
     if should_scrape_characters:
         killer_characters = scrape_characters("Killers")
         survivor_characters = scrape_characters("Survivors")
 
-        # save_json("killer_characters", killer_characters, current_date)
-        # save_json("survivor_characters", survivor_characters, current_date)
+        if not prepare_final_json:
+            save_json("killer_characters", killer_characters, current_date)
+            save_json("survivor_characters", survivor_characters, current_date)
 
     if should_scrape_sheet:
         credentials = Credentials.from_service_account_file(args.creds_path)
@@ -96,8 +97,9 @@ def main():
         survivor_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
                                           args.min_characters, args.min_universals)
 
-        # save_json("killer_spreadsheet", killer_spreadsheet, current_date)
-        # save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
+        if not prepare_final_json:
+            save_json("killer_spreadsheet", killer_spreadsheet, current_date)
+            save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
 
     if prepare_final_json:
         perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
@@ -244,11 +246,11 @@ def parse_args() -> argparse.Namespace:
                         help='the minimum amount of universal (base) perks to search for on the Otz spreadsheet.')
     parser.add_argument("--scrape-perks", default=True, type=bool,
                         help="Whether to scrape the perks wiki page")
-    parser.add_argument("--scrape-characters", default=True, type=bool,
+    parser.add_argument("--scrape-characters", default=False, type=bool,
                         help="Whether to scrape the characters wiki page")
-    parser.add_argument("--scrape-spreadsheet", default=True, type=bool,
+    parser.add_argument("--scrape-spreadsheet", default=False, type=bool,
                         help="Whether to scrape the Otzdarva spreadsheet")
-    parser.add_argument("--prepare-final-json", default=True, type=bool,
+    parser.add_argument("--prepare-final-json", default=False, type=bool,
                         help="Whether to collate information from characters, perks and spreadsheet to create a final"
                              "JSON file for front-end usage.")
     return parser.parse_args()
