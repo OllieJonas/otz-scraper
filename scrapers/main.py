@@ -114,8 +114,8 @@ def main():
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
-                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict, current_date) -> Tuple[
-    dict, dict, dict]:
+                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict, current_date) -> \
+        Tuple[dict, dict, dict]:
     """
     prepare Spreadsheet JSON for usage on the front-end.
     The idea of doing this here is to ensure that each scraper can act independently; this just does some extra
@@ -156,7 +156,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
         del survivor_characters[old_key]
 
     def transform_spreadsheet(perks, characters, spreadsheet):
-        transformed_spreadsheet = {}
+        transformed_spreadsheet = {"characters": {}}
         # character perks
         for name, sheet_character in spreadsheet['characters'].items():
             # this is bad
@@ -176,7 +176,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
             sheet_character['icon'] = characters[name]['icon']
             sheet_character['perks'] = transformed_perks
-            transformed_spreadsheet[name] = sheet_character
+            transformed_spreadsheet['characters'][name] = sheet_character
 
         transformed_universals = {}
 
