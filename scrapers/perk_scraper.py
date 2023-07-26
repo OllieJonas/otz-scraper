@@ -11,7 +11,7 @@ def _build_perk_json() -> dict:
     }
 
 
-def scrape_perks(url: str, remove_desc_html: bool = True, remove_mini_perk_icons: bool = False) -> dict:
+def scrape_perks(url: str, remove_desc_html: bool = False, remove_mini_perk_icons: bool = False) -> dict:
     """
     Scrape perk information from DBD perk table wiki pages. Works for all characters (i.e. both Killers and Survivors).
 
@@ -62,6 +62,8 @@ def scrape_perks(url: str, remove_desc_html: bool = True, remove_mini_perk_icons
 
         if remove_desc_html:
             description = description.text
+        else:
+            description = description.prettify()
 
         if upcoming_patch:
             patch_split = upcoming_patch.text.split(":")  # quite dodgy; should probably be using regex but here we are
