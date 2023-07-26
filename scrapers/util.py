@@ -3,7 +3,8 @@ from __future__ import annotations
 import json
 import os
 import re
-from typing import ValuesView, Dict
+import typing
+from typing import ValuesView, Dict, Hashable
 
 import requests
 from bs4 import BeautifulSoup
@@ -87,3 +88,12 @@ def rgb_to_dict(red: float, green: float, blue: float) -> Dict:
 
 def strip_revision_from_url(url: str) -> str:
     return url.split(".png")[0] + ".png"
+
+
+def update_key(d: Dict, old: Hashable, new: Hashable) -> Dict:
+    if old == new:
+        return d
+
+    d[new] = d[old]
+    del d[old]
+    return d

@@ -108,13 +108,14 @@ def main():
                                                           killer_spreadsheet=killer_spreadsheet,
                                                           current_date=current_date)
 
-        save_json('perks', killer_perks, current_date)
-        save_json('characters', killer_characters, current_date)
+        save_json('perks', perks, current_date)
+        save_json('characters', characters, current_date)
         save_json('spreadsheet', spreadsheets, current_date)
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
-                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict, current_date) -> Tuple[dict, dict, dict]:
+                    killer_perks: dict, killer_characters: dict, killer_spreadsheet: dict, current_date) -> Tuple[
+    dict, dict, dict]:
     """
     prepare Spreadsheet JSON for usage on the front-end.
     The idea of doing this here is to ensure that each scraper can act independently; this just does some extra
@@ -139,7 +140,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     create_character_from(survivor_perks, "Steve", "Guardian", "Kinship", "Renewal")
     create_character_from(survivor_perks, "Nancy", "Situational Awareness", "Self-Aware", "Inner Healing")
 
-    # Tapp gets saved with David (isn't it like writing rule no 1 not to have characters w/ the same name smh BHVR)
+    # Tapp gets saved with David King (isn't it like writing rule no 1 not to have characters w/ the same name smh BHVR)
     create_character_from(survivor_perks, "Tapp", "Tenacity", "Detective's Hunch", "Stake Out", old_name="David",
                           replace=True)
 
@@ -155,39 +156,54 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
         del survivor_characters[old_key]
 
     def transform_spreadsheet(perks, characters, spreadsheet):
+        transformed_spreadsheet = {}
         # character perks
         for name, sheet_character in spreadsheet['characters'].items():
             # this is bad
             if name == "Yun-Jin Lee":
                 name = "Yun-Jin"
+
             elif name == "Nicholas":
                 name = "Nicolas"
 
+            transformed_perks = {}
+
             for perk in sheet_character['perks']:
-                # perk comes from otz spreadsheet
-                # perk name is used to access otz spreadsheet
+                # perk comes from otz spreadsheet, perk name is used to access otz spreadsheet
                 perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
                 perk['icon'] = perks[name][perk_name]['icon']
+                transformed_perks[perk_name] = perk
 
             sheet_character['icon'] = characters[name]['icon']
+            sheet_character['perks'] = transformed_perks
+            transformed_spreadsheet[name] = sheet_character
+
+        transformed_universals = {}
 
         for name, perk in spreadsheet['universals'].items():
             perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
             perk['icon'] = perks['All'][perk_name]['icon']
+            transformed_universals[perk_name] = perk
 
-    transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
-    transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
+        transformed_spreadsheet['universals'] = transformed_universals
 
-    # accommodates Google's weird date storage
+        return transformed_spreadsheet
+
+    transformed_survivor_spreadsheet = transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
+    transformed_killer_spreadsheet = transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
+
+    # capitalise Cries in survivors (can't do it in CSS because you end up with m/S in killers, which is v wrong)
+
+    # accommodates Google Sheet's date storage stuff
     # counts days from 1-1-1900, -2 because Google counts Feb 29th 1900 & 2000 as dates, which didn't happen
     # fun fact: this is actually to maintain compatability with Excel, which previously did... * the more ya know *
     sheet_update = (datetime(1900, 1, 1) +
                     timedelta(days=killer_spreadsheet['misc']['last_updated'] - 2)).strftime("%d-%m-%Y")
 
-    return {surv: survivor_perks} | {kill: killer_perks}, \
-           {surv: survivor_characters} | {kill: killer_characters}, \
-           {"last_updated": {"application": current_date, "spreadsheet": sheet_update}} | \
-           {surv: survivor_spreadsheet} | {kill: killer_spreadsheet}
+    update_dict = {"last_updated": {"application": current_date, "spreadsheet": sheet_update}}
+
+    return survivor_perks | killer_perks, survivor_characters | killer_characters, \
+           update_dict | {surv: transformed_survivor_spreadsheet} | {kill: transformed_killer_spreadsheet}
 
 
 def parse_args() -> argparse.Namespace:
@@ -234,7 +250,6 @@ def parse_args() -> argparse.Namespace:
 
 
 def save_json(file_name, content, current_date):
-
     with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
 
