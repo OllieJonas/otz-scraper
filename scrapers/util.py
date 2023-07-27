@@ -86,6 +86,14 @@ def rgb_to_dict(red: float, green: float, blue: float) -> Dict:
     }
 
 
+def divide_list(input_list, N):
+    avg = len(input_list) // N
+    remainder = len(input_list) % N
+
+    return [input_list[i * avg + min(i, remainder):(i + 1) * avg + min(i + 1, remainder)]
+            for i in range(N)]
+
+
 def strip_revision_from_url(url: str) -> str:
     return url.split(".png")[0] + ".png"
 

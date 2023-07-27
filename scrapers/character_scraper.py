@@ -1,6 +1,10 @@
+import threading
+from typing import Dict
+
+from unidecode import unidecode
+
 import util
 from scrapers import constants
-from unidecode import unidecode
 
 
 def _build_survivor_json():
@@ -30,6 +34,43 @@ def _build_killer_json():
         },
         "lore": "",
     }
+
+
+def scrape_characters_mt(character_type: str, no_workers: int) -> Dict:
+    """
+    Scrape perks, but using threads! Very simple threading here; work is allocated evenly and in-order
+    (eg. [job 1, job 2, job 3], no_threads=3 -> thread 1 gets job 1, thread 2 gets job 2, thread 3 gets job 3.)
+
+    There is basically no thread safety here, but given that every worker should be doing separate characters,
+    I don't think this is much of an issue.
+    """
+    if no_workers == 1:
+        return scrape_characters(character_type)
+
+    print(f"Starting scraping Character Wiki for {character_type} (no-workers={no_workers})...")
+
+    url = f"https://deadbydaylight.fandom.com/wiki/{character_type}"
+    # done sync
+    wiki_links = _scrape_wiki_links(url, character_type)
+    wiki_links = [(wl, i) for i, wl in enumerate(wiki_links)]
+    work_allocs = util.divide_list(wiki_links, no_workers)
+
+    characters = [None] * len(wiki_links)
+
+    def worker_func(_work_alloc, _characters):
+        for work in _work_alloc:
+            ch_info = _scrape_character(work[0], character_type)
+            characters[work[1]] = ch_info
+
+    workers = [threading.Thread(target=worker_func, args=(work_alloc, characters)) for work_alloc in
+               work_allocs]
+
+    [worker.start() for worker in workers]
+    [worker.join() for worker in workers]
+
+    characters = {ch['name']: ch for ch in characters}
+
+    return characters
 
 
 def scrape_characters(character_type):
@@ -79,12 +120,7 @@ def _scrape_character(url, character_type):
     return info
 
 
-def _scrape_survivor(soup, info):
-    return info
-
-
 def _scrape_killer(soup, info):
-
     info_table = soup.find("table", class_="infoboxtable")
     info['former_name'] = info_table.find('td', class_="valueColumn").text.strip()
     info['height'] = info_table.find_all(lambda tag: tag.name == 'td' and tag.text.startswith("Height"))[0] \
@@ -134,4 +170,3 @@ def _scrape_lore_and_image_full(soup):
             lore.append(lore_curr.find('i').text)
 
     return "\n".join(lore), image_full
-

@@ -9,7 +9,7 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 import util
-from character_scraper import scrape_characters
+from character_scraper import scrape_characters_mt
 from otz_scraper import scrape_otz
 from perk_scraper import scrape_perks
 
@@ -80,12 +80,11 @@ def main():
             save_json("perks", survivor_perks | killer_perks, current_date)
 
     if should_scrape_characters:
-        killer_characters = scrape_characters("Killers")
-        survivor_characters = scrape_characters("Survivors")
+        killer_characters = scrape_characters_mt("Killers", no_workers=args.no_workers)
+        survivor_characters = scrape_characters_mt("Survivors", no_workers=args.no_workers)
 
         if not prepare_final_json:
-            save_json("killer_characters", killer_characters, current_date)
-            save_json("survivor_characters", survivor_characters, current_date)
+            save_json("characters", survivor_characters | killer_characters, current_date)
 
     if should_scrape_sheet:
         credentials = Credentials.from_service_account_file(args.creds_path)
@@ -244,15 +243,20 @@ def parse_args() -> argparse.Namespace:
                         help='the minimum amount of characters to search for on the Otz spreadsheet.')
     parser.add_argument("--min-universals", default=12, type=int,
                         help='the minimum amount of universal (base) perks to search for on the Otz spreadsheet.')
-    parser.add_argument("--scrape-perks", default=True, type=bool,
-                        help="Whether to scrape the perks wiki page")
-    parser.add_argument("--scrape-characters", default=False, type=bool,
-                        help="Whether to scrape the characters wiki page")
-    parser.add_argument("--scrape-spreadsheet", default=False, type=bool,
-                        help="Whether to scrape the Otzdarva spreadsheet")
-    parser.add_argument("--prepare-final-json", default=False, type=bool,
+    parser.add_argument("--no-workers", default=16, type=int,
+                        help='number of workers to use for character scraper. '
+                             'recommended amount is the number of cores you have (including hyper-threading); '
+                             'any more may cause slowdown!')
+    parser.add_argument("--prepare-final-json", default=True, type=bool,
                         help="Whether to collate information from characters, perks and spreadsheet to create a final"
                              "JSON file for front-end usage.")
+    parser.add_argument("--scrape-perks", default=True, type=bool,
+                        help="Whether to scrape the perks wiki page")
+    parser.add_argument("--scrape-characters", default=True, type=bool,
+                        help="Whether to scrape the characters wiki page")
+    parser.add_argument("--scrape-spreadsheet", default=True, type=bool,
+                        help="Whether to scrape the Otzdarva spreadsheet")
+
     return parser.parse_args()
 
 
