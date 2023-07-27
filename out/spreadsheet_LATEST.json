@@ -17,7 +17,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Bond": {
                         "name": "Bond",
@@ -64,7 +64,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Quick & Quiet": {
                         "name": "Quick & Quiet",
@@ -111,7 +111,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Empathy": {
                         "name": "Empathy",
@@ -158,7 +158,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Iron Will": {
                         "name": "Iron Will",
@@ -205,7 +205,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Balanced Landing": {
                         "name": "Balanced Landing",
@@ -252,7 +252,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "We're Gonna Live Forever": {
                         "name": "We're Gonna Live Forever",
@@ -299,7 +299,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Left Behind": {
                         "name": "Left Behind",
@@ -346,7 +346,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Open-Handed": {
                         "name": "Open-Handed",
@@ -393,7 +393,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Loud",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Technician": {
                         "name": "Technician",
@@ -440,7 +440,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Sole Survivor": {
                         "name": "Sole Survivor",
@@ -487,7 +487,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Wake Up!": {
                         "name": "Wake Up!",
@@ -534,7 +534,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Tenacity": {
                         "name": "Tenacity",
@@ -581,7 +581,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Dance With Me": {
                         "name": "Dance With Me",
@@ -628,7 +628,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Diversion": {
                         "name": "Diversion",
@@ -675,7 +675,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Breakdown": {
                         "name": "Breakdown",
@@ -722,7 +722,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Solidarity": {
                         "name": "Solidarity",
@@ -769,7 +769,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Loud",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Flip-Flop": {
                         "name": "Flip-Flop",
@@ -816,7 +816,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Loud",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Guardian": {
                         "name": "Guardian",
@@ -863,7 +863,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Situational Awareness": {
                         "name": "Situational Awareness",
@@ -910,7 +910,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Lucky Break": {
                         "name": "Lucky Break",
@@ -957,7 +957,7 @@
                 },
                 "stealth": "Good Stealth",
                 "noise": "Medium",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Off the Record": {
                         "name": "Off the Record",
@@ -1004,7 +1004,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Soul Guard": {
                         "name": "Soul Guard",
@@ -1051,7 +1051,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Visionary": {
                         "name": "Visionary",
@@ -1098,7 +1098,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Appraisal": {
                         "name": "Appraisal",
@@ -1145,7 +1145,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Fast Track": {
                         "name": "Fast Track",
@@ -1192,7 +1192,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Counterforce": {
                         "name": "Counterforce",
@@ -1239,7 +1239,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Bite the Bullet": {
                         "name": "Bite the Bullet",
@@ -1286,7 +1286,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Clairvoyance": {
                         "name": "Clairvoyance",
@@ -1333,7 +1333,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Overcome": {
                         "name": "Overcome",
@@ -1380,7 +1380,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Parental Guidance": {
                         "name": "Parental Guidance",
@@ -1427,7 +1427,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Loud cries",
+                "cries": "Loud Cries",
                 "perks": {
                     "Inner Focus": {
                         "name": "Inner Focus",
@@ -1474,7 +1474,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Wiretap": {
                         "name": "Wiretap",
@@ -1521,7 +1521,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Better than New": {
                         "name": "Better than New",
@@ -1568,7 +1568,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Medium",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Potential Energy": {
                         "name": "Potential Energy",
@@ -1615,7 +1615,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Friendly Competition": {
                         "name": "Friendly Competition",
@@ -1662,7 +1662,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Quiet",
-                "cries": "Medium cries",
+                "cries": "Medium Cries",
                 "perks": {
                     "Blood Rush": {
                         "name": "Blood Rush",
@@ -1709,7 +1709,7 @@
                 },
                 "stealth": "Medium Stealth",
                 "noise": "Quiet",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Troubleshooter": {
                         "name": "Troubleshooter",
@@ -1756,7 +1756,7 @@
                 },
                 "stealth": "Bad Stealth",
                 "noise": "Medium",
-                "cries": "Quiet cries",
+                "cries": "Quiet Cries",
                 "perks": {
                     "Dramaturgy": {
                         "name": "Dramaturgy",

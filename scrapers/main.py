@@ -178,6 +178,10 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
                 perk['name'] = perk_name
                 transformed_perks[perk_name] = perk
 
+            # capitalise "cries"
+            if 'cries' in sheet_character:
+                sheet_character['cries'] = sheet_character['cries'].title()
+
             sheet_character['name'] = name
             sheet_character['icon'] = characters[name]['icon']
             sheet_character['perks'] = transformed_perks
