@@ -102,7 +102,7 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
 
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
         if dt == "tier":
-            return perk_colour_to_hex(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), str
+            return util.rgb_dict_to_dict(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), str
         elif dt == "name":
             return c['effectiveValue']['stringValue'], str
 

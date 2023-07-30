@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "27-07-2023",
+        "application": "30-07-2023",
         "spreadsheet": "21-07-2023"
     },
     "survivors": {
@@ -1794,62 +1794,110 @@
         },
         "universals": {
             "Dark Sense": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "Dark Sense",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/92/IconPerks_darkSense.png"
             },
             "Déjà Vu": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "Déjà Vu",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/89/IconPerks_dejaVu.png"
             },
             "Hope": {
-                "tier": "#1155cc",
+                "tier": {
+                    "red": 17,
+                    "green": 85,
+                    "blue": 204
+                },
                 "name": "Hope",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hope.png"
             },
             "Kindred": {
-                "tier": "#1155cc",
+                "tier": {
+                    "red": 17,
+                    "green": 85,
+                    "blue": 204
+                },
                 "name": "Kindred",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a8/IconPerks_kindred.png"
             },
             "Lightweight": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Lightweight",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/67/IconPerks_lightweight.png"
             },
             "No One Left Behind": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "No One Left Behind",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/IconPerks_noOneLeftBehind.png"
             },
             "Plunderer's Instinct": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Plunderer's Instinct",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/28/IconPerks_plunderersInstinct.png"
             },
             "Premonition": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Premonition",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/39/IconPerks_premonition.png"
             },
             "Resilience": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "Resilience",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_resilience.png"
             },
             "Slippery Meat": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Slippery Meat",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/03/IconPerks_slipperyMeat.png"
             },
             "Small Game": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Small Game",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dc/IconPerks_smallGame.png"
             },
             "Spine Chill": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Spine Chill",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_spineChill.png"
             }
@@ -3236,62 +3284,110 @@
         },
         "universals": {
             "Bitter Murmur": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Bitter Murmur",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_bitterMurmur.png"
             },
             "Deerstalker": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Deerstalker",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/01/IconPerks_deerstalker.png"
             },
             "Distressing": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Distressing",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_distressing.png"
             },
             "Hex: No One Escapes Death": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "Hex: No One Escapes Death",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/IconPerks_hexNoOneEscapesDeath.png"
             },
             "Hex: Thrill of the Hunt": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Hex: Thrill of the Hunt",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/02/IconPerks_hexThrillOfTheHunt.png"
             },
             "Insidious": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Insidious",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/40/IconPerks_insidious.png"
             },
             "Iron Grasp": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Iron Grasp",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_ironGrasp.png"
             },
             "Monstrous Shrine": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Monstrous Shrine",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/IconPerks_scourgeHookMonstrousShrine.png"
             },
             "Sloppy Butcher": {
-                "tier": "#38761d",
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
                 "name": "Sloppy Butcher",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_sloppyButcher.png"
             },
             "Shattered Hope": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Shattered Hope",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/aa/IconPerks_shatteredHope.png"
             },
             "Spies from the Shadows": {
-                "tier": "#bf9000",
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
                 "name": "Spies from the Shadows",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b1/IconPerks_spiesFromTheShadows.png"
             },
             "Unrelenting": {
-                "tier": "#5b0f00",
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
                 "name": "Unrelenting",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_unrelenting.png"
             }
