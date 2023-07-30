@@ -212,7 +212,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
     update_dict = {"last_updated": {"application": current_date, "spreadsheet": sheet_update}}
 
-    return survivor_perks | killer_perks, survivor_characters | killer_characters, \
+    return {surv: survivor_perks} | {kill: killer_perks}, survivor_characters | killer_characters, \
            update_dict | {surv: transformed_survivor_spreadsheet} | {kill: transformed_killer_spreadsheet}
 
 
