@@ -41,7 +41,7 @@ class BiDict(dict):
             self.inverse[self[key]].remove(key)
 
         super(BiDict, self).__setitem__(key, value)
-        self.inverse[value] = key
+        self._set_inverse(key, value)
 
     def __delitem__(self, key):
         if self[key] in self.inverse and not self.inverse[self[key]]:
