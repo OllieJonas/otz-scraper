@@ -29,7 +29,10 @@ class BiDict(dict):
 
     def _set_inverse(self, key, value):
         if value in self.inverse:
-            self.inverse[value] = [self.inverse[value], key]
+            if type(self.inverse[value]) is not list:
+                self.inverse[value] = [self.inverse[value]]
+
+            self.inverse[value] = self.inverse[value] + [key]
         else:
             self.inverse[value] = key
 
@@ -111,12 +114,3 @@ def update_key(d: Dict, old: Hashable, new: Hashable) -> Dict:
     d[new] = d[old]
     del d[old]
     return d
-
-
-if __name__ == "__main__":
-    bi_dict = BiDict({
-        "A": 1,
-        "B": 2,
-        "C": 1
-    })
-    print(bi_dict.inverse)
