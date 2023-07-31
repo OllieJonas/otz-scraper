@@ -19,11 +19,7 @@ SURVIVOR_CONSTANTS = GLOBAL_CONSTANTS | {
     "start": 19,
     "character_row_skip": 12,
     "base_perks_start_col": 'W',
-
-    "guides": util.BiDict({
-        "sounds_survivor_pov": Cell('D', 5),
-        "sounds_killer_pov": Cell('D', 9),
-    }),
+    "guides_start": Cell('D', 4),
 
     "misc": util.BiDict({
 
@@ -36,11 +32,7 @@ KILLER_CONSTANTS = GLOBAL_CONSTANTS | {
     "start": 20,
     "character_row_skip": 13,
     "base_perks_start_col": 'V',
-
-    "guides": util.BiDict({
-        "latest_tier_list": Cell('N', 5),
-        "which_killer": Cell('N', 8),
-    }),
+    "guides_start": Cell('N', 4),
 
     "misc": util.BiDict({
         "last_updated": Cell('G', 4)

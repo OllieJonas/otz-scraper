@@ -1,7 +1,33 @@
 {
     "last_updated": {
-        "application": "30-07-2023",
+        "application": "31-07-2023",
         "spreadsheet": "21-07-2023"
+    },
+    "guides": {
+        "survivors": [
+            {
+                "title": "Survivor Sounds compared",
+                "hyperlink": "https://youtu.be/NsmXuzal1Kk",
+                "link_text": "[watch here]"
+            },
+            {
+                "title": "Survivor Sounds compared",
+                "hyperlink": "https://youtu.be/E-SmIJu5Kcw",
+                "link_text": "[watch here]"
+            }
+        ],
+        "killers": [
+            {
+                "title": "Latest Tier List",
+                "hyperlink": "https://youtu.be/whmrILaplk8",
+                "link_text": "[watch here]"
+            },
+            {
+                "title": "Which Killer should I play?",
+                "hyperlink": "https://otzdarva.com/whichkiller",
+                "link_text": "[quiz here]"
+            }
+        ]
     },
     "survivors": {
         "characters": {

@@ -124,25 +124,35 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
                          )
 
 
-def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
+def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> List:
     sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
-    guides = sheet_constants['guides']
+    guides_start = sheet_constants['guides_start']
 
     sheet_name = 'Survivor Sound & Stealth' if is_survivor else 'Killer Info'
 
-    return _scrape_sheet(service=service,
-                         spreadsheet_id=spreadsheet_id,
-                         is_survivor=is_survivor,
-                         sheet_name=sheet_name,
-                         search_for_unknown=False,
-                         min_search_amount=1,
-                         start=min(list(guides.values())),
-                         next_start_func=lambda cell, _: cell,  # don't need this, so might as well make it identity
-                         cell_dict_func=lambda cell, _: guides,
-                         key_req_func=lambda cell: None,
-                         key_extract_func=lambda cell: None,
-                         data_extract_func=lambda dt, c: (c['hyperlink'], str)
-                         )[0]
+    def data_extract_func(dt, c):
+        if dt == "title" or dt == "link_text":
+            return c['effectiveValue']['stringValue'], str
+        else:
+            return c['hyperlink'], str
+
+    return list(_scrape_sheet(service=service,
+                              spreadsheet_id=spreadsheet_id,
+                              is_survivor=is_survivor,
+                              sheet_name=sheet_name,
+                              search_for_unknown=False,
+                              min_search_amount=2,
+                              start=guides_start,
+                              next_start_func=lambda cell, _: cell + (4 if is_survivor else 3),
+                              cell_dict_func=lambda cell, _: util.BiDict({
+                                  "title": cell,
+                                  "hyperlink": cell + 1,
+                                  "link_text": cell + 1,
+                              }),
+                              key_req_func=lambda cell: None,
+                              key_extract_func=lambda cell: None,
+                              data_extract_func=data_extract_func
+                              ).values())
 
 
 def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
@@ -217,7 +227,7 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
     :param next_start_func: Function mapping current cell and iteration no to next cell
 
     :param cell_dict_func:  Function mapping starting cell and is_survivor to a dictionary mapping cells to information
-                            descriptors (eg. (cell, _) -> {"name": cell, "tier": cell >> 1})
+                            descriptors (eg. (cell, is_survivor) -> {"name": cell, "tier": cell >> 1})
 
     :param key_req_func: Function that illustrates what key to use for the relevant_cells return value. If None is the
                          return value, it will use the index of the current search.
@@ -330,27 +340,32 @@ def _extract_data_from_response(response: dict,
 
     curr = start
 
-    for i, (relevant_cells, character_response_data) in enumerate(
+    for i, (relevant_cells, response_data) in enumerate(
             zip(cell_structure.values(), response)):
         info = {}
 
         relevant_cells = relevant_cells.inverse
 
-        character_cell_sheets = character_response_data['rowData']
+        cell_sheets = response_data['rowData']
 
-        for row_idx, row in enumerate(character_cell_sheets):
+        for row_idx, row in enumerate(cell_sheets):
             row = row['values']
             for col_idx, col in enumerate(row):
                 curr_cell = (curr >> col_idx) + row_idx
 
                 if curr_cell in relevant_cells:
                     data_type = relevant_cells[curr_cell]
-                    extracted, type_ = data_extract_func(data_type, col)
 
-                    if type_ == list:
-                        info.setdefault(data_type, []).append(extracted)
-                    else:
-                        info[data_type] = extracted
+                    if not type(data_type) == list:
+                        data_type = [data_type]
+
+                    for dt in data_type:
+                        extracted, type_ = data_extract_func(dt, col)
+
+                        if type_ == list:
+                            info.setdefault(dt, []).append(extracted)
+                        else:
+                            info[dt] = extracted
 
         assignment = key_func(info)
         infos[assignment if assignment is not None else i] = info

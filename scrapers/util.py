@@ -23,9 +23,15 @@ class BiDict(dict):
         for key, value in self.items():
             if isinstance(value, list):
                 for v in value:
-                    self.inverse[v] = key
+                    self._set_inverse(key, v)
             else:
-                self.inverse[value] = key
+                self._set_inverse(key, value)
+
+    def _set_inverse(self, key, value):
+        if value in self.inverse:
+            self.inverse[value] = [self.inverse[value], key]
+        else:
+            self.inverse[value] = key
 
     def __setitem__(self, key, value):
         if key in self:
@@ -105,3 +111,12 @@ def update_key(d: Dict, old: Hashable, new: Hashable) -> Dict:
     d[new] = d[old]
     del d[old]
     return d
+
+
+if __name__ == "__main__":
+    bi_dict = BiDict({
+        "A": 1,
+        "B": 2,
+        "C": 1
+    })
+    print(bi_dict.inverse)
