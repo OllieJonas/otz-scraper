@@ -202,8 +202,6 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     transformed_survivor_spreadsheet = transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
     transformed_killer_spreadsheet = transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
 
-    # capitalise Cries in survivors (can't do it in CSS because you end up with m/S in killers, which is v wrong)
-
     # accommodates Google Sheet's date storage stuff
     # counts days from 1-1-1900, -2 because Google counts Feb 29th 1900 & 2000 as dates, which didn't happen
     # fun fact: this is actually to maintain compatability with Excel, which previously did... * the more ya know *
@@ -226,7 +224,7 @@ def parse_args() -> argparse.Namespace:
                         help='service account credentials path (for google sheets API)')
 
     # The Google Sheets API has a rate limit of 60 reqs/min per user. Unfortunately, we don't necessarily know how many
-    # characters there are on the sheet. At time of writing (10/7/23), there are 32 killers and 32 survivors.
+    # characters there are on the sheet. At time of writing (10/7/23), there are 32 killers and 38 survivors.
     # 32 killers + 38 survivors = 70 characters > 60 reqs/min, so we need to do some kind of batching.
 
     # We could update how many characters there are manually, but I don't really want to HAVE to keep
