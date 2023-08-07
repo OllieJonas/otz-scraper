@@ -25,6 +25,6 @@ This program is primarily made for preparing a JSON file to use for the front-en
 - __min-universals:__ The minimum number of base perks to search for on the Otz spreadsheet (defaults to 12, the minimum amount of base perks between Survivors and Killers).
 - __no-workers:__ The number of workers to use for the character scraper. This should be no higher than the number of cores you have on your computer (including hyper-threading).
 - __prepare-final-json:__ Whether to prepare the final JSON file for the website (defaults to True). If this is set to True, then the below three arguments will also default to True (all three are needed for the final JSON)
-- __scrape-perks:__ Whether to scrape the DBD perk wiki (default to True).
-- __scrape-characters:__ Whether to scrape characters from the DBD wiki (default to True).
-- __scrape-spreadsheet:__ Whether to scrape the Otzdarva spreadsheet (default to True).
+- __scrape-perks:__ Whether to scrape the DBD perk wiki (defaults to True).
+- __scrape-characters:__ Whether to scrape characters from the DBD wiki (defaults to True).
+- __scrape-spreadsheet:__ Whether to scrape the Otzdarva spreadsheet (defaults to True).
