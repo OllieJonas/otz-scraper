@@ -93,10 +93,6 @@ def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_min
         perk['description'] = description
         perk['is_upcoming_patch'] = upcoming_patch is not None
 
-        # some really annoying hard-coded cases where it differs from the spreadsheet and the wiki
-        # changing the perk names on the scraper to the spreadsheet, purely because it's much easier to follow in the
-        # code (should probably be the other way around but oh well)
-
         # otz doesn't include scourge hook in perk names
         perk_name = perk_name.replace("Scourge Hook: ", "").strip()
         perk['name'] = perk_name
