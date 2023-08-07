@@ -46,7 +46,7 @@ def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_min
     print(f"Starting scraping Wiki ({character_type}) for Perks...")
 
     url = _get_url(character_type)
-    soup = util.get_content(character_type)
+    soup = util.get_content(url)
 
     perks = {}
 
