@@ -17,7 +17,7 @@ This program is primarily made for preparing a JSON file to use for the front-en
 
 1. Clone repo
 2. Install requirements (also found in requirements.txt)
-3. Place credentials.json for the Google Sheets API in root directory of project (for more information on this, there's a guide [here](https://medium.com/@a.marenkov/how-to-get-credentials-for-google-sheets-456b7e88c430) on how to obtain these)
+3. Place credentials.json for the Google Sheets API into the root directory of this project (for more information on this, there's a guide [here](https://medium.com/@a.marenkov/how-to-get-credentials-for-google-sheets-456b7e88c430) on how to obtain these)
 4. Run ```main.py``` in scrapers
  
 ## Program Arguments
