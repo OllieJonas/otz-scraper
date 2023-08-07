@@ -1,5 +1,10 @@
+from datetime import datetime
+
 import util
 from unidecode import unidecode
+
+KILLER_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Killer_Perks"
+SURVIVOR_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Survivor_Perks"
 
 
 def _build_perk_json() -> dict:
@@ -11,13 +16,17 @@ def _build_perk_json() -> dict:
     }
 
 
-def scrape_perks(url: str, remove_desc_html: bool = False, remove_mini_perk_icons: bool = True) -> dict:
+def _get_url(character_type):
+    return SURVIVOR_PERKS_URL if character_type == "Survivors" else KILLER_PERKS_URL
+
+
+def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_mini_perk_icons: bool = True) -> dict:
     """
     Scrape perk information from DBD perk table wiki pages. Works for all characters (i.e. both Killers and Survivors).
 
     Uses BeautifulSoup, so no "real" rate limits here.
 
-    :param url: URL for DBD Wiki Page perk table.
+    :param character_type: Either "Killers" or "Survivors"
     :param remove_desc_html: Whether to remove any in-line HTML in the perk description.
     :param remove_mini_perk_icons: Whether to remove the mini icons in perk descriptions (e.g., A Nurse's Calling has
                                    a mini icon after 'Auras' in its description on the wiki).
@@ -34,9 +43,10 @@ def scrape_perks(url: str, remove_desc_html: bool = False, remove_mini_perk_icon
         }
     }
     """
-    print(f"Starting scraping Wiki ({url}) for Perks...")
+    print(f"Starting scraping Wiki ({character_type}) for Perks...")
 
-    soup = util.get_content(url)
+    url = _get_url(character_type)
+    soup = util.get_content(character_type)
 
     perks = {}
 
@@ -95,5 +105,14 @@ def scrape_perks(url: str, remove_desc_html: bool = False, remove_mini_perk_icon
             perks[character_name] = {}
 
         perks[character_name][perk_name] = perk
-
     return perks
+
+
+if __name__ == "__main__":
+    killer_characters = scrape_perks('Killers')
+    survivor_characters = scrape_perks('Survivors')
+    current_date = datetime.now().strftime('%d-%m-%Y')
+
+    util.make_dirs()
+
+    util.save_json("characters.json", killer_characters | survivor_characters, current_date)

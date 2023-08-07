@@ -15,13 +15,6 @@ from character_scraper import scrape_characters_mt
 from otz_scraper import scrape_otz
 from perk_scraper import scrape_perks
 
-KILLER_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Killer_Perks"
-SURVIVOR_PERKS_URL = "https://deadbydaylight.fandom.com/wiki/Survivor_Perks"
-
-# for Lore, Killer Power, etc.
-KILLER_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Killers"
-SURVIVOR_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Survivors"
-
 OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
 
 # # differences in names between Otz's spreadsheet and the Wiki.
@@ -74,18 +67,18 @@ def main():
     survivor_spreadsheet = {}
 
     if should_scrape_perks:
-        killer_perks = scrape_perks(KILLER_PERKS_URL)
-        survivor_perks = scrape_perks(SURVIVOR_PERKS_URL)
+        killer_perks = scrape_perks("Killers")
+        survivor_perks = scrape_perks("Survivors")
 
         if not prepare_final_json:
-            save_json("perks", survivor_perks | killer_perks, current_date)
+            util.save_json("perks", survivor_perks | killer_perks, current_date)
 
     if should_scrape_characters:
         killer_characters = scrape_characters_mt("Killers", no_workers=args.no_workers)
         survivor_characters = scrape_characters_mt("Survivors", no_workers=args.no_workers)
 
         if not prepare_final_json:
-            save_json("characters", survivor_characters | killer_characters, current_date)
+            util.save_json("characters", survivor_characters | killer_characters, current_date)
 
     if should_scrape_sheet:
         credentials = Credentials.from_service_account_file(args.creds_path)
@@ -98,8 +91,8 @@ def main():
                                           args.min_characters, args.min_universals)
 
         if not prepare_final_json:
-            save_json("killer_spreadsheet", killer_spreadsheet, current_date)
-            save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
+            util.save_json("killer_spreadsheet", killer_spreadsheet, current_date)
+            util.save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
 
     if prepare_final_json:
         perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
@@ -110,9 +103,9 @@ def main():
                                                           killer_spreadsheet=killer_spreadsheet,
                                                           current_date=current_date)
 
-        save_json('perks', perks, current_date)
-        save_json('characters', characters, current_date)
-        save_json('spreadsheet', spreadsheets, current_date)
+        util.save_json('perks', perks, current_date)
+        util.save_json('characters', characters, current_date)
+        util.save_json('spreadsheet', spreadsheets, current_date)
 
 
 def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_spreadsheet: dict,
@@ -304,14 +297,6 @@ def parse_args() -> argparse.Namespace:
                         help="Whether to scrape the Otzdarva spreadsheet")
 
     return parser.parse_args()
-
-
-def save_json(file_name, content, current_date):
-    with open(f'{util.one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
-        json.dump(content, f, ensure_ascii=False, indent=4)
-
-    with open(f'{util.one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
-        json.dump(content, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

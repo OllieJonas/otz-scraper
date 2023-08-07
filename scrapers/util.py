@@ -114,3 +114,21 @@ def update_key(d: Dict, old: Hashable, new: Hashable) -> Dict:
     d[new] = d[old]
     del d[old]
     return d
+
+
+def make_dirs():
+    try:
+        os.mkdir(f'{one_dir_up()}/out/')
+        os.mkdir(f'{one_dir_up()}/out/archive/')
+    except FileExistsError:
+        pass
+    except Exception as e:
+        print(f'An unknown error has occurred whilst making the out and archive directories! ({str(e)})')
+
+
+def save_json(file_name, content, current_date):
+    with open(f'{one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
+        json.dump(content, f, ensure_ascii=False, indent=4)
+
+    with open(f'{one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
+        json.dump(content, f, ensure_ascii=False, indent=4)

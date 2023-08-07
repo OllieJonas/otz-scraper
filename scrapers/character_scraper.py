@@ -1,4 +1,5 @@
 import threading
+from datetime import datetime
 from typing import Dict
 
 from unidecode import unidecode
@@ -50,7 +51,7 @@ def scrape_characters_mt(character_type: str, no_workers: int) -> Dict:
     print(f"Starting scraping Character Wiki for {character_type} (no-workers={no_workers})...")
 
     url = f"https://deadbydaylight.fandom.com/wiki/{character_type}"
-    # done sync
+
     wiki_links = _scrape_wiki_links(url, character_type)
     wiki_links = [(wl, i) for i, wl in enumerate(wiki_links)]
     work_allocs = util.divide_list(wiki_links, no_workers)
@@ -170,3 +171,13 @@ def _scrape_lore_and_image_full(soup):
             lore.append(lore_curr.find('i').text)
 
     return "\n".join(lore), image_full
+
+
+if __name__ == "__main__":
+    killer_characters = scrape_characters('Killers')
+    survivor_characters = scrape_characters('Survivors')
+    current_date = datetime.now().strftime('%d-%m-%Y')
+
+    util.make_dirs()
+
+    util.save_json("characters.json", killer_characters | survivor_characters, current_date)
