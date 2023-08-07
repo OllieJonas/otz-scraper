@@ -45,7 +45,7 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
 
         elif dt == "perk_names":
             return_dict = {
-                'name': c['effectiveValue']['stringValue']
+                'name': c['effectiveValue']['stringValue'].replace("Scourge Hook: ", "")
             }
 
             if is_survivor:
@@ -104,7 +104,7 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
         if dt == "tier":
             return util.rgb_dict_to_dict(c['userEnteredFormat']['backgroundColorStyle']['rgbColor']), str
         elif dt == "name":
-            return c['effectiveValue']['stringValue'], str
+            return c['effectiveValue']['stringValue'].replace("Scourge Hook: ", ""), str
 
     return _scrape_sheet(service=service,
                          spreadsheet_id=spreadsheet_id,

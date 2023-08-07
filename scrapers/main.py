@@ -8,6 +8,8 @@ from typing import Tuple
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
+from Levenshtein import distance
+
 import util
 from character_scraper import scrape_characters_mt
 from otz_scraper import scrape_otz
@@ -21,24 +23,23 @@ KILLER_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Killers"
 SURVIVOR_CHARACTERS_URL = "https://deadbydaylight.fandom.com/wiki/Survivors"
 
 OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
-TEST_SPREADSHEET_ID = "1aNc3RqnjkAkxYX2msRzHahFVszkvCJl5PpR4ept7lpI"
 
-# differences in names between Otz's spreadsheet and the Wiki.
-SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
-    # killer
-    "Play With Your Food": "Play with Your Food",  # shape
-    "Knockout": "Knock Out",  # cannibal
-    "Barbecue and Chilli": "Barbecue & Chilli",  # cannibal
-    "Pop Goes The Weasel": "Pop Goes the Weasel",  # clown
-    "Hex: Blood Favor": "Hex: Blood Favour",  # blight
-    "Scourge Hook: Monstrous Shrine": "Monstrous Shrine",  # universal
-
-    # survivor
-    "Self Care": "Self-Care",  # claudette
-    "Wake up!": "Wake Up!",  # quentin
-    "Mettle of  Man": "Mettle of Man",  # ash, 2 spaces between "of" and "Man"
-    "For The People": "For the People",  # zarina
-})
+# # differences in names between Otz's spreadsheet and the Wiki.
+# SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
+#     # killer
+#     "Play With Your Food": "Play with Your Food",  # shape
+#     "Knockout": "Knock Out",  # cannibal
+#     "Barbecue and Chilli": "Barbecue & Chilli",  # cannibal
+#     "Pop Goes The Weasel": "Pop Goes the Weasel",  # clown
+#     "Hex: Blood Favor": "Hex: Blood Favour",  # blight
+#     "Scourge Hook: Monstrous Shrine": "Monstrous Shrine",  # universal
+#
+#     # survivor
+#     "Self Care": "Self-Care",  # claudette
+#     "Wake up!": "Wake Up!",  # quentin
+#     "Mettle of  Man": "Mettle of Man",  # ash, 2 spaces between "of" and "Man"
+#     "For The People": "For the People",  # zarina
+# })
 
 
 def main():
@@ -145,6 +146,18 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     create_character_from(survivor_perks, "Tapp", "Tenacity", "Detective's Hunch", "Stake Out", old_name="David",
                           replace=True)
 
+    sheet_perks = set(util.flatten_list(
+        [perk['name'] for ch in survivor_spreadsheet['characters'].values() for perk in ch['perks']] +
+        [perk['name'] for ch in killer_spreadsheet['characters'].values() for perk in ch['perks']] +
+        list(survivor_spreadsheet['universals'].keys()) +
+        list(killer_spreadsheet['universals'].keys())
+    ))
+
+    wiki_perks = set(util.flatten_list([list(ch.keys()) for ch in survivor_perks.values()] +
+                                       [list(ch.keys()) for ch in killer_perks.values()]))
+
+    perk_discrepancies = generate_perk_discrepancies_dict(sheet_perks, wiki_perks)
+
     # otz only uses the first names of survivors (with some exceptions)
     for old_key, value in survivor_characters.copy().items():
 
@@ -173,7 +186,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
             for perk in sheet_character['perks']:
                 # perk comes from otz spreadsheet, perk name is used to access otz spreadsheet
-                perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
+                perk_name = perk_discrepancies.get(perk['name'], perk['name'])
                 perk['icon'] = perks[name][perk_name]['icon']
                 perk['name'] = perk_name
                 transformed_perks[perk_name] = perk
@@ -190,7 +203,7 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
         transformed_universals = {}
 
         for name, perk in spreadsheet['universals'].items():
-            perk_name = SPREADSHEET_TO_WIKI_DISCREPANCIES.get(perk['name'], perk['name'])
+            perk_name = perk_discrepancies.get(perk['name'], perk['name'])
             perk['name'] = perk_name
             perk['icon'] = perks['All'][perk_name]['icon']
             transformed_universals[perk_name] = perk
@@ -214,6 +227,35 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
     return {surv: survivor_perks} | {kill: killer_perks}, survivor_characters | killer_characters, \
            update_dict | guides_dict | {surv: transformed_survivor_spreadsheet} | {kill: transformed_killer_spreadsheet}
+
+
+def generate_perk_discrepancies_dict(sheet_perks, wiki_perks):
+    """
+    There are some minor discrepancies between the Spreadsheet and the Wiki (e.g. Play With Your Food vs Play with
+    Your Food). We could work these out manually (which would be a lot faster), but it makes the application brittle.
+
+    This generates a dictionary mapping names in the sheet to names in the Wiki for any that aren't exactly the same
+    using Levenshtein distance (see here: https://en.wikipedia.org/wiki/Levenshtein_distance).
+    """
+    discrepancies = {}
+
+    for sheet_perk in sheet_perks:
+        best_match = sheet_perk
+
+        if sheet_perk not in wiki_perks:
+            min_levenshtein = 100
+
+            for wiki_perk in wiki_perks:
+                leven = distance(sheet_perk, wiki_perk)
+                if min_levenshtein >= leven:
+                    min_levenshtein = leven
+                    best_match = wiki_perk
+
+            discrepancies[sheet_perk] = best_match
+
+        wiki_perks.discard(best_match)  # get rid of it from wiki perks bc we already have a match
+
+    return discrepancies
 
 
 def parse_args() -> argparse.Namespace:

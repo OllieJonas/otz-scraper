@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "31-07-2023",
+        "application": "07-08-2023",
         "spreadsheet": "21-07-2023"
     },
     "guides": {
@@ -19,7 +19,7 @@
         "killers": [
             {
                 "title": "Latest Tier List",
-                "hyperlink": "https://youtu.be/whmrILaplk8",
+                "hyperlink": "https://www.youtube.com/watch?v=LJSjlGcjc78&feature=youtu.be",
                 "link_text": "[watch here]"
             },
             {
@@ -811,9 +811,9 @@
                         "name": "Buckle Up",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 56,
-                            "green": 118,
-                            "blue": 29
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/74/IconPerks_buckleUp.png"
                     },
