@@ -11,7 +11,7 @@ This program is primarily made for preparing a JSON file to use for the front-en
 - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
 - [Levenshtein](https://pypi.org/project/Levenshtein/)
 - [Google API Python Client](https://pypi.org/project/google-api-python-client/)
-- Unidecode (https://pypi.org/project/Unidecode/)
+- [Unidecode](https://pypi.org/project/Unidecode/)
 
 ## Installation
 
