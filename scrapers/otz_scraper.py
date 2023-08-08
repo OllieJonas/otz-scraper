@@ -23,8 +23,6 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     guides_info = _scrape_guide_links(service, spreadsheet_id, is_survivor)
     misc_info = _scrape_misc(service, spreadsheet_id, is_survivor)
 
-    print(universal_perks_info)
-
     return {"characters": characters_info} | \
            {"universals": universal_perks_info} | \
            {"guides": guides_info} | \
