@@ -715,9 +715,9 @@
                     "name": "Buckle Up",
                     "is_exhaustion_perk": false,
                     "tier": {
-                        "red": 56,
-                        "green": 118,
-                        "blue": 29
+                        "red": 17,
+                        "green": 85,
+                        "blue": 204
                     }
                 },
                 {
@@ -1731,6 +1731,22 @@
                 "blue": 0
             },
             "name": "Spine Chill"
+        },
+        "This Is Not Happening": {
+            "tier": {
+                "red": 91,
+                "green": 15,
+                "blue": 0
+            },
+            "name": "This Is Not Happening"
+        },
+        "We'll Make It": {
+            "tier": {
+                "red": 56,
+                "green": 118,
+                "blue": 29
+            },
+            "name": "We'll Make It"
         }
     },
     "guides": [

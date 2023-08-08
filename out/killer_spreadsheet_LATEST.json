@@ -1306,13 +1306,13 @@
             },
             "name": "Iron Grasp"
         },
-        "Scourge Hook: Monstrous Shrine": {
+        "Monstrous Shrine": {
             "tier": {
                 "red": 91,
                 "green": 15,
                 "blue": 0
             },
-            "name": "Scourge Hook: Monstrous Shrine"
+            "name": "Monstrous Shrine"
         },
         "Sloppy Butcher": {
             "tier": {
@@ -1345,12 +1345,20 @@
                 "blue": 0
             },
             "name": "Unrelenting"
+        },
+        "Whispers": {
+            "tier": {
+                "red": 191,
+                "green": 144,
+                "blue": 0
+            },
+            "name": "Whispers"
         }
     },
     "guides": [
         {
             "title": "Latest Tier List",
-            "hyperlink": "https://youtu.be/whmrILaplk8",
+            "hyperlink": "https://www.youtube.com/watch?v=LJSjlGcjc78&feature=youtu.be",
             "link_text": "[watch here]"
         },
         {

@@ -23,6 +23,8 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
     guides_info = _scrape_guide_links(service, spreadsheet_id, is_survivor)
     misc_info = _scrape_misc(service, spreadsheet_id, is_survivor)
 
+    print(universal_perks_info)
+
     return {"characters": characters_info} | \
            {"universals": universal_perks_info} | \
            {"guides": guides_info} | \
@@ -315,7 +317,10 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
         request = [f"{sheet_name}!{cell_min}:{cell_max}"]
         resp = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=request, includeGridData=True).execute()
 
-        if 'effectiveValue' not in resp['sheets'][0]['data'][0]['rowData'][0]['values'][0]:  # jesus christ google lmao
+        root_cell = resp['sheets'][0]['data'][0]['rowData'][0]['values'][0]
+
+        if 'effectiveValue' not in root_cell and \
+                ('userEnteredFormat' in root_cell and not root_cell['userEnteredFormat']['backgroundColor']):
             search_for_unknown = False
             break
 
@@ -354,6 +359,7 @@ def _extract_data_from_response(response: dict,
                 curr_cell = (curr >> col_idx) + row_idx
 
                 if curr_cell in relevant_cells:
+
                     data_type = relevant_cells[curr_cell]
 
                     if not type(data_type) == list:

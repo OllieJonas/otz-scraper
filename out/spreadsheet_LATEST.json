@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "07-08-2023",
+        "application": "08-08-2023",
         "spreadsheet": "21-07-2023"
     },
     "guides": {
@@ -1926,6 +1926,24 @@
                 },
                 "name": "Spine Chill",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_spineChill.png"
+            },
+            "This Is Not Happening": {
+                "tier": {
+                    "red": 91,
+                    "green": 15,
+                    "blue": 0
+                },
+                "name": "This Is Not Happening",
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/IconPerks_thisIsNotHappening.png"
+            },
+            "We'll Make It": {
+                "tier": {
+                    "red": 56,
+                    "green": 118,
+                    "blue": 29
+                },
+                "name": "We'll Make It",
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8a/IconPerks_wellMakeIt.png"
             }
         }
     },
@@ -3416,6 +3434,15 @@
                 },
                 "name": "Unrelenting",
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_unrelenting.png"
+            },
+            "Whispers": {
+                "tier": {
+                    "red": 191,
+                    "green": 144,
+                    "blue": 0
+                },
+                "name": "Whispers",
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_whispers.png"
             }
         }
     }
