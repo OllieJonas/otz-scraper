@@ -1,6 +1,6 @@
 # otz-scraper
 
-Simple scraper for the Otzdarva Killer and Survivor Info spreadsheet for Dead by Daylight (DBD). 
+Scraper for the Otzdarva Killer and Survivor Info spreadsheet for Dead by Daylight (DBD). 
 
 More specifically, this scrapes three "types" of sites: Characters ([Example](https://deadbydaylight.fandom.com/wiki/Evan_MacMillan)), Perks ([Example](https://deadbydaylight.fandom.com/wiki/Survivor_Perks)), and the Otzdarva Quick Info for DBD Spreadsheet ([Here](https://otzdarva.com/spreadsheet)). For an example of what the output of each of these scrapers does, please refer to ```out/characters_LATEST.json```, ```out/perks_LATEST.json```, and ```out/spreadsheet_LATEST.json``` respectively.
 
