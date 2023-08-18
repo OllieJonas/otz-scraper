@@ -12,6 +12,7 @@ def _build_perk_json() -> dict:
         "name": "",
         "icon": "",
         "description": "",
+        "description_raw": "",
         "is_upcoming_patch": False
     }
 
@@ -20,14 +21,13 @@ def _get_url(character_type):
     return SURVIVOR_PERKS_URL if character_type == "Survivors" else KILLER_PERKS_URL
 
 
-def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_mini_perk_icons: bool = True) -> dict:
+def scrape_perks(character_type: str, remove_mini_perk_icons: bool = True) -> dict:
     """
     Scrape perk information from DBD perk table wiki pages. Works for all characters (i.e. both Killers and Survivors).
 
     Uses BeautifulSoup, so no "real" rate limits here.
 
     :param character_type: Either "Killers" or "Survivors"
-    :param remove_desc_html: Whether to remove any in-line HTML in the perk description.
     :param remove_mini_perk_icons: Whether to remove the mini icons in perk descriptions (e.g., A Nurse's Calling has
                                    a mini icon after 'Auras' in its description on the wiki).
 
@@ -37,6 +37,7 @@ def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_min
             <perk_name> (str): {
                 icon (str):
                 description (str):
+                description_raw (str):
                 is_upcoming_patch (bool):
                 patch_ver (only if is_up_coming_patch is True) (str):
             }
@@ -74,23 +75,21 @@ def scrape_perks(character_type: str, remove_desc_html: bool = False, remove_min
                     span.replace_with('')
                     span.extract()
 
-        if remove_desc_html:
-            description = description.text
-        else:
-            description = description.prettify()
+        description_html = description.prettify().replace("\xa0", "")  # remove NBSP's in string
+        description_text = description.text.replace("\xa0", "")
 
         if upcoming_patch:
             patch_split = upcoming_patch.text.split(":")  # quite dodgy; should probably be using regex but here we are
             patch_ver = patch_split[1].strip()
             perk['patch_ver'] = patch_ver
 
-            if remove_desc_html:  # need to add a \n between the patch ver and perk desc when removing the HTML content.
-                patch_idx = description.find(patch_ver) + len(patch_ver)
-                description = description[:patch_idx] + "\n" + description[patch_idx:]
+            patch_idx = description_text.find(patch_ver) + len(patch_ver)
+            description_text = description_text[:patch_idx] + "\n" + description_text[patch_idx:]
 
         # create perk dict
         perk['icon'] = icon
-        perk['description'] = description
+        perk['description'] = description_html
+        perk['description_raw'] = description_text
         perk['is_upcoming_patch'] = upcoming_patch is not None
 
         # otz doesn't include scourge hook in perk names
