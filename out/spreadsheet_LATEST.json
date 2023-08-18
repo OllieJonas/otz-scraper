@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "08-08-2023",
+        "application": "18-08-2023",
         "spreadsheet": "21-07-2023"
     },
     "guides": {
@@ -2886,8 +2886,8 @@
                     "Coup de Grâce": {
                         "name": "Coup de Grâce",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/IconPerks_coupDeGr%C3%A2ce.png"
