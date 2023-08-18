@@ -15,8 +15,6 @@ from character_scraper import scrape_characters_mt
 from otz_scraper import scrape_otz
 from perk_scraper import scrape_perks
 
-OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
-
 # # differences in names between Otz's spreadsheet and the Wiki.
 # SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
 #     # killer
@@ -33,6 +31,7 @@ OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
 #     "Mettle of  Man": "Mettle of Man",  # ash, 2 spaces between "of" and "Man"
 #     "For The People": "For the People",  # zarina
 # })
+from scrapers import constants
 
 
 def scrape_all(args):
@@ -54,6 +53,7 @@ def scrape_all(args):
     should_scrape_sheet = args.scrape_spreadsheet or prepare_final_json
 
     current_date = datetime.now().strftime('%d-%m-%Y')
+    otz_spreadsheet_id = constants.OTZ_SPREADSHEET_ID
 
     killer_perks = {}
     survivor_perks = {}
@@ -82,10 +82,10 @@ def scrape_all(args):
         credentials = Credentials.from_service_account_file(args.creds_path)
         service = build('sheets', 'v4', credentials=credentials)
 
-        killer_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'killer',
+        killer_spreadsheet = scrape_otz(service, otz_spreadsheet_id, 'killer',
                                         args.min_characters, args.min_universals)
 
-        survivor_spreadsheet = scrape_otz(service, OTZ_SPREADSHEET_ID, 'survivor',
+        survivor_spreadsheet = scrape_otz(service, otz_spreadsheet_id, 'survivor',
                                           args.min_characters, args.min_universals)
 
         if not prepare_final_json:

@@ -1,6 +1,8 @@
 from scrapers.cell import Cell
 import util
 
+OTZ_SPREADSHEET_ID = "1uk0OnioNZgLly_Y9pZ1o0p3qYS9-mpknkv3DlkXAxGA"
+
 CHARACTER_TYPES = ["killer", "survivor"]
 
 DBD_WIKI_BASE_LINK = 'https://deadbydaylight.fandom.com/wiki/'

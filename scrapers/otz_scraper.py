@@ -409,3 +409,28 @@ def _get_cells_for_character(start: Cell, is_survivor: bool) -> util.BiDict:
 
 def perk_colour_to_hex(perk_colour: dict) -> str:
     return util.rgb_to_hex(perk_colour.get('red', 0.0), perk_colour.get('green', 0.0), perk_colour.get('blue', 0.0))
+
+
+if __name__ == "__main__":
+    import cli
+    from datetime import datetime
+
+    from google.oauth2.service_account import Credentials
+    from googleapiclient.discovery import build
+
+    util.make_dirs()
+    args = cli.parse()
+
+    current_date = datetime.now().strftime('%d-%m-%Y')
+    otz_spreadsheet_id = constants.OTZ_SPREADSHEET_ID
+
+    credentials = Credentials.from_service_account_file(args.creds_path)
+    service = build('sheets', 'v4', credentials=credentials)
+
+    killer_spreadsheet = scrape_otz(service, otz_spreadsheet_id, 'killer',
+                                    args.min_characters, args.min_universals)
+
+    survivor_spreadsheet = scrape_otz(service, otz_spreadsheet_id, 'survivor',
+                                      args.min_characters, args.min_universals)
+
+
