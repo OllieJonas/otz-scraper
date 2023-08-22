@@ -61,7 +61,8 @@ def requires_refresh(service, current_date, refresh_rate_days):
 
 
 def has_sheet_been_updated(service, program_last_update,
-                           last_update_cell='G4', spreadsheet_id=constants.OTZ_SPREADSHEET_ID):
+                           last_update_cell=constants.KILLER_CONSTANTS['misc']['last_updated'],
+                           spreadsheet_id=constants.OTZ_SPREADSHEET_ID):
     response = service.spreadsheets().get(spreadsheetId=spreadsheet_id, ranges=[last_update_cell], includeGridData=True
                                           ).execute()['sheets'][0]['data'][0]['rowData'][0]['values'][0]
 

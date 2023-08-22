@@ -17,6 +17,7 @@ from perk_scraper import scrape_perks
 
 from scrapers import constants, cli
 
+
 # # differences in names between Otz's spreadsheet and the Wiki.
 # SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
 #     # killer
