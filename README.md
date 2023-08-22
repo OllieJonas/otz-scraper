@@ -24,7 +24,8 @@ This program is primarily made for preparing a JSON file to use for the front-en
 - __min-characters:__ The minimum number of characters to search for on the Otz spreadsheet (defaults to 32, the total number of Killers). Any beyond this should be found, but this number should be as high as possible to reduce calls to the Sheets API.
 - __min-universals:__ The minimum number of base perks to search for on the Otz spreadsheet (defaults to 12, the minimum amount of base perks between Survivors and Killers).
 - __no-workers:__ The number of workers to use for the character scraper. This should be no higher than the number of cores you have on your computer (including hyper-threading).
-- __prepare-final-json:__ Whether to prepare the final JSON file for the website (defaults to True). If this is set to True, then the below three arguments will also default to True (all three are needed for the final JSON)
-- __scrape-perks:__ Whether to scrape the DBD perk wiki (defaults to True).
-- __scrape-characters:__ Whether to scrape characters from the DBD wiki (defaults to True).
-- __scrape-spreadsheet:__ Whether to scrape the Otzdarva spreadsheet (defaults to True).
+- __ignore-prepare-final-json:__ If specified, a final JSON file for the website will not be created. If this isn't specified, then it will also default __ignore-perk-scraper__, __ignore-character-scraper__ and __ignore-sheet-scraper__ to True, (all three are needed for the final JSON).
+- __ignore-perk-scraper:__ If specified, the perk scraper (scrapes perk information from the DBD Wiki) will not run.
+- __ignore-character-scraper:__ If specified, the character scraper (scrapes character information from the DBD Wiki) will not run.
+- __ignore-sheet-scraper:__ If specified, the sheet scraper (scrapes character/perk tiers from the Otzdarva spreadsheet) will not run.
+- __force__: The program will not run if the Spreadsheet hasn't been updated since its last run (this is taken from the Otzdarva 'Last Updated' value on the spreadsheet). If specified, the program will ignore this and run anyway.

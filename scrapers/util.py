@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from datetime import datetime, timedelta
 from typing import ValuesView, Dict, Hashable
 
 import requests
@@ -115,6 +116,13 @@ def update_key(d: Dict, old: Hashable, new: Hashable) -> Dict:
     return d
 
 
+# accommodates Google Sheet's date storage stuff
+# counts days from 1-1-1900, -2 because Google counts Feb 29th 1900 & 2000 as dates, which didn't happen
+# fun fact: this is actually to maintain compatability with Excel, which previously did... * the more ya know *
+def datetime_from_google_sheets(days):
+    return datetime(1900, 1, 1) + timedelta(days=days - 2)
+
+
 def make_dirs():
     try:
         os.mkdir(f'{one_dir_up()}/out/')
@@ -126,8 +134,9 @@ def make_dirs():
 
 
 def save_json(file_name, content, current_date):
-    with open(f'{one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
-        json.dump(content, f, ensure_ascii=False, indent=4)
+    if current_date is not None:
+        with open(f'{one_dir_up()}/out/archive/{file_name}_{current_date}.json', 'w', encoding='utf-8') as f:
+            json.dump(content, f, ensure_ascii=False, indent=4)
 
     with open(f'{one_dir_up()}/out/{file_name}_LATEST.json', 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=4)
