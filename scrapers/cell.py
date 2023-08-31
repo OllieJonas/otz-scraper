@@ -58,7 +58,8 @@ class Cell:
 
     def __lt__(self, other):
         """
-        Implemented this one because sorted() uses it; the others aren't really relevant here
+        Implemented this one because sorted() uses it; the others aren't really relevant here (though very trivial to
+        do if you wanted to).
         """
         if self.col < other.col:
             return True

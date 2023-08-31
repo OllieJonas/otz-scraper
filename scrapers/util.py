@@ -12,7 +12,8 @@ from bs4 import BeautifulSoup
 
 class BiDict(dict):
     """
-    Simple bi-directional dictionary.
+    Simple bi-directional dictionary. If the value for a key is a list of items, then the reverse will be all of those
+    items pointing to the same value.
     """
 
     def __init__(self, *args, **kwargs):

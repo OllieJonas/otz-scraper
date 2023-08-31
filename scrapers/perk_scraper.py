@@ -18,7 +18,7 @@ def _build_perk_json() -> dict:
 
 
 def _get_url(character_type):
-    return SURVIVOR_PERKS_URL if character_type == "Survivors" else KILLER_PERKS_URL
+    return SURVIVOR_PERKS_URL if character_type == "survivors" else KILLER_PERKS_URL
 
 
 def scrape_perks(character_type: str, remove_mini_perk_icons: bool = True) -> dict:

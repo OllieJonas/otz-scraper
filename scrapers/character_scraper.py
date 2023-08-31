@@ -1,4 +1,7 @@
+import os
 import threading
+import json
+
 from datetime import datetime
 from typing import Dict
 
@@ -37,24 +40,39 @@ def _build_killer_json():
     }
 
 
-def scrape_characters_mt(character_type: str, no_workers: int) -> Dict:
+CHARACTERS_LATEST = None
+
+
+def scrape_characters_mt(character_type: str, no_workers: int, force_refresh: bool = False) -> Dict:
     """
     Scrape perks, but using threads! Very simple threading here; work is allocated evenly and in-order
     (eg. [job 1, job 2, job 3], no_threads=3 -> thread 1 gets job 1, thread 2 gets job 2, thread 3 gets job 3.)
 
-    There is basically no thread safety here, but given that every worker should be doing separate characters,
-    I don't think this is much of an issue.
+    Character scrapers (each individual wiki link) takes a while to run (and are very unlikely to change between
+    each run), so it's probably a good idea to check if any have already been scraped, so we're not repeating ourselves.
+
+    There is basically no thread safety here, but given that every worker should be doing separate characters &
+    contributing to the list separately with no shared data, I don't think this is much of an issue.
     """
     if no_workers == 1:
         return scrape_characters(character_type)
 
-    print(f"Starting scraping Character Wiki for {character_type} (no-workers={no_workers})...")
+    ct_caps = character_type.capitalize()
 
-    url = f"https://deadbydaylight.fandom.com/wiki/{character_type}"
+    print(f"Starting scraping Character Wiki for {ct_caps} (no-workers={no_workers})...")
 
-    wiki_links = _scrape_wiki_links(url, character_type)
+    url = f"https://deadbydaylight.fandom.com/wiki/{ct_caps}"
+
+    already_scraped_list, prev_characters = _generate_already_scraped_list(character_type, force_refresh)
+
+    wiki_links = _scrape_wiki_links(url, ct_caps)
+    wiki_links = [wl for wl in wiki_links if wl not in already_scraped_list]
     wiki_links = [(wl, i) for i, wl in enumerate(wiki_links)]
-    work_allocs = util.divide_list(wiki_links, no_workers)
+
+    if len(wiki_links) == 0:
+        return {character_type: prev_characters}
+
+    work_allocs = util.divide_list(wiki_links, min(no_workers, len(wiki_links)))
 
     characters = [None] * len(wiki_links)
 
@@ -71,16 +89,18 @@ def scrape_characters_mt(character_type: str, no_workers: int) -> Dict:
 
     characters = {ch['name']: ch for ch in characters}
 
-    return characters
+    # needs character_type: X to cross-reference old run
+    return {character_type: prev_characters | characters}
 
 
-def scrape_characters(character_type):
+def scrape_characters(character_type, force_refresh=False):
+    already_scraped_list = _generate_already_scraped_list(character_type, force_refresh)
+
     url = f"https://deadbydaylight.fandom.com/wiki/{character_type}"
 
     print(f"Starting scraping Character Wiki for {character_type}...")
 
     wiki_links = _scrape_wiki_links(url, character_type)
-    # character = _scrape_character(wiki_links[1], character_type)
     characters = [_scrape_character(wl, character_type) for i, wl in enumerate(wiki_links)]
     characters = {ch['name']: ch for ch in characters}
 
@@ -171,6 +191,25 @@ def _scrape_lore_and_image_full(soup):
             lore.append(lore_curr.find('i').text)
 
     return "\n".join(lore), image_full
+
+
+def _generate_already_scraped_list(character_type, force_refresh: bool):
+    global CHARACTERS_LATEST
+
+    if force_refresh:
+        return [], {}
+
+    path = f'{util.one_dir_up()}/out/characters_LATEST.json'
+
+    if not os.path.exists(path):
+        return [], {}
+
+    if CHARACTERS_LATEST is None:
+        with open(path, encoding='utf-8') as f:
+            CHARACTERS_LATEST = json.load(f)
+
+    return [ch['wiki_link'] for ch in CHARACTERS_LATEST[character_type].values() if 'wiki_link' in ch], \
+           CHARACTERS_LATEST[character_type]
 
 
 if __name__ == "__main__":

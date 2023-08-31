@@ -16,7 +16,7 @@ def scrape_otz(service, spreadsheet_id: str, character_type: str, min_characters
 
     print(f"Starting scraping Otzdarva spreadsheet for {character_type.capitalize()}...")
 
-    is_survivor = character_type == 'survivor'
+    is_survivor = character_type == 'survivors'
 
     characters_info = _scrape_characters(service, spreadsheet_id, is_survivor, min_characters)
     universal_perks_info = _scrape_universal_perks(service, spreadsheet_id, is_survivor, min_universals)

@@ -17,6 +17,8 @@ from perk_scraper import scrape_perks
 
 from scrapers import constants, cli
 
+KILLER, SURVIVOR = "killers", "survivors"
+
 
 # # differences in names between Otz's spreadsheet and the Wiki.
 # SPREADSHEET_TO_WIKI_DISCREPANCIES = util.BiDict({
@@ -71,15 +73,15 @@ def scrape_all(args=None, current_date=None, sheets_service=None):
     survivor_spreadsheet = {}
 
     if should_scrape_perks:
-        killer_perks = scrape_perks("Killers")
-        survivor_perks = scrape_perks("Survivors")
+        killer_perks = scrape_perks(KILLER)
+        survivor_perks = scrape_perks(SURVIVOR)
 
         if not prepare_final_json:
             util.save_json("perks", survivor_perks | killer_perks, current_date)
 
     if should_scrape_characters:
-        killer_characters = scrape_characters_mt("Killers", no_workers=args.no_workers)
-        survivor_characters = scrape_characters_mt("Survivors", no_workers=args.no_workers)
+        killer_characters = scrape_characters_mt(KILLER, no_workers=args.no_workers)
+        survivor_characters = scrape_characters_mt(SURVIVOR, no_workers=args.no_workers)
 
         if not prepare_final_json:
             util.save_json("characters", survivor_characters | killer_characters, current_date)
@@ -89,10 +91,10 @@ def scrape_all(args=None, current_date=None, sheets_service=None):
             credentials = Credentials.from_service_account_file(args.creds_path)
             sheets_service = build('sheets', 'v4', credentials=credentials)
 
-        killer_spreadsheet = scrape_otz(sheets_service, otz_spreadsheet_id, 'killer',
+        killer_spreadsheet = scrape_otz(sheets_service, otz_spreadsheet_id, KILLER,
                                         args.min_characters, args.min_universals)
 
-        survivor_spreadsheet = scrape_otz(sheets_service, otz_spreadsheet_id, 'survivor',
+        survivor_spreadsheet = scrape_otz(sheets_service, otz_spreadsheet_id, SURVIVOR,
                                           args.min_characters, args.min_universals)
 
         if not prepare_final_json:
@@ -100,7 +102,7 @@ def scrape_all(args=None, current_date=None, sheets_service=None):
             util.save_json("survivor_spreadsheet", survivor_spreadsheet, current_date)
 
     if prepare_final_json:
-        perks, characters, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
+        perks, chars, spreadsheets = transform_dicts(survivor_perks=survivor_perks,
                                                           survivor_characters=survivor_characters,
                                                           survivor_spreadsheet=survivor_spreadsheet,
                                                           killer_perks=killer_perks,
@@ -109,7 +111,7 @@ def scrape_all(args=None, current_date=None, sheets_service=None):
                                                           current_date=current_date)
 
         util.save_json('perks', perks, current_date)
-        util.save_json('characters', characters, current_date)
+        util.save_json('characters', chars, current_date)
         util.save_json('spreadsheet', spreadsheets, current_date)
         util.save_json('last_updated', spreadsheets['last_updated'], None)
 
@@ -123,8 +125,6 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
     processing once all of them have been scraped, and isn't necessary for this application to produce
     "correct" outputs.
     """
-    surv = "survivors"
-    kill = "killers"
 
     def create_character_from(perks, new_name, perk1, perk2, perk3, old_name="All", replace=False):
         perks[new_name] = {perk1: perks[old_name][perk1]} \
@@ -157,62 +157,24 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
     perk_discrepancies = generate_perk_discrepancies_dict(sheet_perks, wiki_perks)
 
+    new_survivor_characters = {SURVIVOR: {}}
+
     # otz only uses the first names of survivors (with some exceptions)
-    for old_key, value in survivor_characters.copy().items():
+    for old_key, value in survivor_characters[SURVIVOR].items():
+        key_split = old_key.split(" ")
 
         if old_key == "David Tapp":  # david tapp is Tapp on the sheet, David in perks and David Tapp in chars. help :(
-            new_key = old_key.split(" ")[1]
+            new_key = key_split[1]
         else:
-            new_key = old_key.split(" ")[0]
+            new_key = key_split[0]
 
-        survivor_characters[new_key] = value
-        del survivor_characters[old_key]
+        new_survivor_characters[SURVIVOR][new_key] = value
 
-    def transform_spreadsheet(perks, characters, spreadsheet):
-        # for updating the output JSON with the wiki names, not the sheet ones
-        transformed_spreadsheet = {"characters": {}}
+    transformed_survivor_spreadsheet = transform_spreadsheet(survivor_perks, new_survivor_characters[SURVIVOR],
+                                                             survivor_spreadsheet, perk_discrepancies)
 
-        # character perks
-        for name, sheet_character in spreadsheet['characters'].items():
-            # this is bad
-            if name == "Yun-Jin Lee":
-                name = "Yun-Jin"
-
-            elif name == "Nicholas":
-                name = "Nicolas"
-
-            transformed_perks = {}
-
-            for perk in sheet_character['perks']:
-                # perk comes from otz spreadsheet, perk name is used to access otz spreadsheet
-                perk_name = perk_discrepancies.get(perk['name'], perk['name'])
-                perk['icon'] = perks[name][perk_name]['icon']
-                perk['name'] = perk_name
-                transformed_perks[perk_name] = perk
-
-            # capitalise "cries"
-            if 'cries' in sheet_character:
-                sheet_character['cries'] = sheet_character['cries'].title()
-
-            sheet_character['name'] = name
-            sheet_character['icon'] = characters[name]['icon']
-            sheet_character['perks'] = transformed_perks
-            transformed_spreadsheet['characters'][name] = sheet_character
-
-        transformed_universals = {}
-
-        for name, perk in spreadsheet['universals'].items():
-            perk_name = perk_discrepancies.get(perk['name'], perk['name'])
-            perk['name'] = perk_name
-            perk['icon'] = perks['All'][perk_name]['icon']
-            transformed_universals[perk_name] = perk
-
-        transformed_spreadsheet['universals'] = transformed_universals
-
-        return transformed_spreadsheet
-
-    transformed_survivor_spreadsheet = transform_spreadsheet(survivor_perks, survivor_characters, survivor_spreadsheet)
-    transformed_killer_spreadsheet = transform_spreadsheet(killer_perks, killer_characters, killer_spreadsheet)
+    transformed_killer_spreadsheet = transform_spreadsheet(killer_perks, killer_characters[KILLER],
+                                                           killer_spreadsheet, perk_discrepancies)
 
     sheet_update = util.datetime_from_google_sheets(killer_spreadsheet['misc']['last_updated']).strftime('%d-%m-%Y')
 
@@ -220,8 +182,9 @@ def transform_dicts(survivor_perks: dict, survivor_characters: dict, survivor_sp
 
     guides_dict = {"guides": {"survivors": survivor_spreadsheet['guides'], "killers": killer_spreadsheet['guides']}}
 
-    return {surv: survivor_perks} | {kill: killer_perks}, survivor_characters | killer_characters, \
-           update_dict | guides_dict | {surv: transformed_survivor_spreadsheet} | {kill: transformed_killer_spreadsheet}
+    return {SURVIVOR: survivor_perks} | {KILLER: killer_perks}, new_survivor_characters | killer_characters, \
+           update_dict | guides_dict | {SURVIVOR: transformed_survivor_spreadsheet} | {
+               KILLER: transformed_killer_spreadsheet}
 
 
 def generate_perk_discrepancies_dict(sheet_perks, wiki_perks):
@@ -251,6 +214,50 @@ def generate_perk_discrepancies_dict(sheet_perks, wiki_perks):
         wiki_perks.discard(best_match)  # get rid of it from wiki perks bc we already have a match
 
     return discrepancies
+
+
+def transform_spreadsheet(perks, characters, spreadsheet, perk_discrepancies):
+    # for updating the output JSON with the wiki names, not the sheet ones
+    transformed_spreadsheet = {"characters": {}}
+
+    # character perks
+    for name, sheet_character in spreadsheet['characters'].items():
+        # this is bad
+        if name == "Yun-Jin Lee":
+            name = "Yun-Jin"
+
+        elif name == "Nicholas":
+            name = "Nicolas"
+
+        transformed_perks = {}
+
+        for perk in sheet_character['perks']:
+            # perk comes from otz spreadsheet, perk name is used to access otz spreadsheet
+            perk_name = perk_discrepancies.get(perk['name'], perk['name'])
+            perk['icon'] = perks[name][perk_name]['icon']
+            perk['name'] = perk_name
+            transformed_perks[perk_name] = perk
+
+        # capitalise "cries"
+        if 'cries' in sheet_character:
+            sheet_character['cries'] = sheet_character['cries'].title()
+
+        sheet_character['name'] = name
+        sheet_character['icon'] = characters[name]['icon']
+        sheet_character['perks'] = transformed_perks
+        transformed_spreadsheet['characters'][name] = sheet_character
+
+    transformed_universals = {}
+
+    for name, perk in spreadsheet['universals'].items():
+        perk_name = perk_discrepancies.get(perk['name'], perk['name'])
+        perk['name'] = perk_name
+        perk['icon'] = perks['All'][perk_name]['icon']
+        transformed_universals[perk_name] = perk
+
+    transformed_spreadsheet['universals'] = transformed_universals
+
+    return transformed_spreadsheet
 
 
 if __name__ == "__main__":
