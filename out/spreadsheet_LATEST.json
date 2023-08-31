@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "22-08-2023",
+        "application": "31-08-2023",
         "spreadsheet": "21-07-2023"
     },
     "guides": {
@@ -1816,6 +1816,53 @@
                     }
                 },
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/16/S38_charSelect_portrait.png"
+            },
+            "Ellen": {
+                "name": "Ellen",
+                "availability": {
+                    "value": "500 AC",
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
+                },
+                "stealth": "X",
+                "noise": "X",
+                "cries": "X",
+                "perks": {
+                    "Chemical Trap": {
+                        "name": "Chemical Trap",
+                        "is_exhaustion_perk": false,
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_chemicalTrap.png"
+                    },
+                    "Light-Footed": {
+                        "name": "Light-Footed",
+                        "is_exhaustion_perk": false,
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e5/IconPerks_light-Footed.png"
+                    },
+                    "Lucky Star": {
+                        "name": "Lucky Star",
+                        "is_exhaustion_perk": false,
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/08/IconPerks_luckyStar.png"
+                    }
+                },
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/36/S39_charSelect_portrait.png"
             }
         },
         "universals": {
@@ -2886,9 +2933,9 @@
                     "Coup de Grâce": {
                         "name": "Coup de Grâce",
                         "tier": {
-                            "red": 191,
-                            "green": 144,
-                            "blue": 0
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/IconPerks_coupDeGr%C3%A2ce.png"
                     }
@@ -2972,9 +3019,9 @@
                     "Eruption": {
                         "name": "Eruption",
                         "tier": {
-                            "red": 191,
-                            "green": 144,
-                            "blue": 0
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dd/IconPerks_eruption.png"
                     }
@@ -3324,6 +3371,49 @@
                     }
                 },
                 "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5d/K32_charSelect_portrait.png"
+            },
+            "Xenomorph": {
+                "name": "Xenomorph",
+                "availability": {
+                    "value": "500 AC",
+                    "colour": {
+                        "red": 133,
+                        "green": 32,
+                        "blue": 12
+                    }
+                },
+                "movement_speed": "115% | 4.6m/s",
+                "terror_radius": "32-24m",
+                "perks": {
+                    "Rapid Brutality": {
+                        "name": "Rapid Brutality",
+                        "tier": {
+                            "red": 91,
+                            "green": 15,
+                            "blue": 0
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d4/IconPerks_rapidBrutality.png"
+                    },
+                    "Alien Instinct": {
+                        "name": "Alien Instinct",
+                        "tier": {
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/34/IconPerks_alienInstinct.png"
+                    },
+                    "Ultimate Weapon": {
+                        "name": "Ultimate Weapon",
+                        "tier": {
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
+                        },
+                        "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8a/IconPerks_ultimateWeapon.png"
+                    }
+                },
+                "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dc/K33_charSelect_portrait.png"
             }
         },
         "universals": {
