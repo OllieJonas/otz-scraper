@@ -1,6 +1,6 @@
 {
     "last_updated": {
-        "application": "31-08-2023",
+        "application": "10-09-2023",
         "spreadsheet": "21-07-2023"
     },
     "guides": {
@@ -539,9 +539,9 @@
                         "name": "Vigil",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 133,
-                            "green": 32,
-                            "blue": 12
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/46/IconPerks_vigil.png"
                     }
@@ -623,9 +623,9 @@
                         "name": "Windows of Opportunity",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 56,
-                            "green": 118,
-                            "blue": 29
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/17/IconPerks_windowsOfOpportunity.png"
                     },
@@ -952,9 +952,9 @@
                         "name": "Any Means Necessary",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 191,
-                            "green": 144,
-                            "blue": 0
+                            "red": 56,
+                            "green": 118,
+                            "blue": 29
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_anyMeansNecessary.png"
                     },
@@ -1150,9 +1150,9 @@
                         "name": "Power Struggle",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 133,
-                            "green": 32,
-                            "blue": 12
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4b/IconPerks_powerStruggle.png"
                     }
@@ -1177,9 +1177,9 @@
                         "name": "Fast Track",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 191,
-                            "green": 144,
-                            "blue": 0
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_fastTrack.png"
                     },
@@ -1281,9 +1281,9 @@
                         "name": "Flashbang",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 133,
-                            "green": 32,
-                            "blue": 12
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/db/IconPerks_flashbang.png"
                     },
@@ -1358,8 +1358,8 @@
                     }
                 },
                 "stealth": "Medium Stealth",
-                "noise": "Medium",
-                "cries": "Loud Cries",
+                "noise": "Quiet",
+                "cries": "Medium Cries",
                 "perks": {
                     "Overcome": {
                         "name": "Overcome",
@@ -1498,7 +1498,7 @@
                         "blue": 12
                     }
                 },
-                "stealth": "Bad Stealth",
+                "stealth": "Medium Stealth",
                 "noise": "Quiet",
                 "cries": "Quiet Cries",
                 "perks": {
@@ -1694,9 +1694,9 @@
                         "name": "Blood Rush",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 56,
-                            "green": 118,
-                            "blue": 29
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/2c/IconPerks_bloodRush.png"
                     },
@@ -1798,9 +1798,9 @@
                         "name": "Scene Partner",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 191,
-                            "green": 144,
-                            "blue": 0
+                            "red": 133,
+                            "green": 32,
+                            "blue": 12
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b4/IconPerks_scenePartner.png"
                     },
@@ -1827,9 +1827,9 @@
                         "blue": 12
                     }
                 },
-                "stealth": "X",
-                "noise": "X",
-                "cries": "X",
+                "stealth": "Medium Stealth",
+                "noise": "Medium",
+                "cries": "Medium Cries",
                 "perks": {
                     "Chemical Trap": {
                         "name": "Chemical Trap",
@@ -1845,9 +1845,9 @@
                         "name": "Light-Footed",
                         "is_exhaustion_perk": false,
                         "tier": {
-                            "red": 56,
-                            "green": 118,
-                            "blue": 29
+                            "red": 191,
+                            "green": 144,
+                            "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/e5/IconPerks_light-Footed.png"
                     },
@@ -1958,8 +1958,8 @@
             },
             "Small Game": {
                 "tier": {
-                    "red": 191,
-                    "green": 144,
+                    "red": 91,
+                    "green": 15,
                     "blue": 0
                 },
                 "name": "Small Game",
@@ -2408,8 +2408,8 @@
                     "Remember Me": {
                         "name": "Remember Me",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/62/IconPerks_rememberMe.png"
@@ -2442,8 +2442,8 @@
                     "Hangman's Trick": {
                         "name": "Hangman's Trick",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_scourgeHookHangmansTrick.png"
@@ -2503,9 +2503,9 @@
                     "Pop Goes the Weasel": {
                         "name": "Pop Goes the Weasel",
                         "tier": {
-                            "red": 56,
-                            "green": 118,
-                            "blue": 29
+                            "red": 17,
+                            "green": 85,
+                            "blue": 204
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/0f/IconPerks_popGoesTheWeasel.png"
                     }
@@ -2786,8 +2786,8 @@
                     "Gearhead": {
                         "name": "Gearhead",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fd/IconPerks_gearhead.png"
@@ -3087,8 +3087,8 @@
                     "Grim Embrace": {
                         "name": "Grim Embrace",
                         "tier": {
-                            "red": 191,
-                            "green": 144,
+                            "red": 91,
+                            "green": 15,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_grimEmbrace.png"
@@ -3216,8 +3216,8 @@
                     "Superior Anatomy": {
                         "name": "Superior Anatomy",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/4a/IconPerks_superiorAnatomy.png"
@@ -3388,8 +3388,8 @@
                     "Rapid Brutality": {
                         "name": "Rapid Brutality",
                         "tier": {
-                            "red": 91,
-                            "green": 15,
+                            "red": 191,
+                            "green": 144,
                             "blue": 0
                         },
                         "icon": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/d4/IconPerks_rapidBrutality.png"
