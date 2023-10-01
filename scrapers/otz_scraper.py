@@ -38,6 +38,9 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
         return _get_next_character_start(cell, i,
                                          row_skip=sheet_constants['character_row_skip'])
 
+    def cell_dict_func(cell):
+        return _get_cells_for_character(cell, is_survivor)
+
     def data_extract_func(dt: str, c: dict) -> (dict, list[Type[str | list]]):
         if dt == "perk_tiers":
             rgb: dict = c['userEnteredFormat']['backgroundColorStyle']['rgbColor']
@@ -67,19 +70,18 @@ def _scrape_characters(service, spreadsheet_id: str, is_survivor: bool, min_char
     def key_req_func(d):
         return d['name']
 
-    sheet = _scrape_sheet(service=service,
-                          spreadsheet_id=spreadsheet_id,
-                          is_survivor=is_survivor,
-                          sheet_name=sheet_constants['sheet_name'],
-                          search_for_unknown=True,
-                          min_search_amount=min_characters,
-                          start=start,
-                          next_start_func=next_start_func,
-                          cell_dict_func=_get_cells_for_character,
-                          key_req_func=key_req_func,
-                          key_extract_func=key_extract_func,
-                          data_extract_func=data_extract_func
-                          )
+    sheet = _scrape_knowns_and_unknowns(service=service,
+                                        spreadsheet_id=spreadsheet_id,
+                                        sheet_name=sheet_constants['sheet_name'],
+                                        search_for_unknown=True,
+                                        min_search_amount=min_characters,
+                                        start=start,
+                                        next_start_func=next_start_func,
+                                        cell_dict_func=cell_dict_func,
+                                        key_req_func=key_req_func,
+                                        key_extract_func=key_extract_func,
+                                        data_extract_func=data_extract_func
+                                        )
 
     # grouping perk_tiers and perk_names, could probably rework code to make this work but that's more effort than
     # just hacking it at the end lmao
@@ -106,22 +108,21 @@ def _scrape_universal_perks(service, spreadsheet_id: str, is_survivor: bool, min
         elif dt == "name":
             return c['effectiveValue']['stringValue'].replace("Scourge Hook: ", ""), str
 
-    return _scrape_sheet(service=service,
-                         spreadsheet_id=spreadsheet_id,
-                         is_survivor=is_survivor,
-                         sheet_name=sheet_constants['sheet_name'],
-                         search_for_unknown=True,
-                         min_search_amount=min_universals,
-                         start=start,
-                         next_start_func=lambda cell, _: cell + 1,
-                         cell_dict_func=lambda cell, _: util.BiDict({
+    return _scrape_knowns_and_unknowns(service=service,
+                                       spreadsheet_id=spreadsheet_id,
+                                       sheet_name=sheet_constants['sheet_name'],
+                                       search_for_unknown=True,
+                                       min_search_amount=min_universals,
+                                       start=start,
+                                       next_start_func=lambda cell, _: cell + 1,
+                                       cell_dict_func=lambda cell, _: util.BiDict({
                              "name": cell >> 1,
                              "tier": cell,
                          }),
-                         key_req_func=lambda _: None,
-                         key_extract_func=lambda cell: cell['name'],
-                         data_extract_func=data_extract_func
-                         )
+                                       key_req_func=lambda _: None,
+                                       key_extract_func=lambda cell: cell['name'],
+                                       data_extract_func=data_extract_func
+                                       )
 
 
 def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> List:
@@ -136,23 +137,22 @@ def _scrape_guide_links(service, spreadsheet_id: str, is_survivor: bool) -> List
         else:
             return c['hyperlink'], str
 
-    return list(_scrape_sheet(service=service,
-                              spreadsheet_id=spreadsheet_id,
-                              is_survivor=is_survivor,
-                              sheet_name=sheet_name,
-                              search_for_unknown=False,
-                              min_search_amount=2,
-                              start=guides_start,
-                              next_start_func=lambda cell, _: cell + (4 if is_survivor else 3),
-                              cell_dict_func=lambda cell, _: util.BiDict({
+    return list(_scrape_knowns_and_unknowns(service=service,
+                                            spreadsheet_id=spreadsheet_id,
+                                            sheet_name=sheet_name,
+                                            search_for_unknown=False,
+                                            min_search_amount=2,
+                                            start=guides_start,
+                                            next_start_func=lambda cell, _: cell + (4 if is_survivor else 3),
+                                            cell_dict_func=lambda cell, _: util.BiDict({
                                   "title": cell,
                                   "hyperlink": cell + 1,
                                   "link_text": cell + 1,
                               }),
-                              key_req_func=lambda cell: None,
-                              key_extract_func=lambda cell: None,
-                              data_extract_func=data_extract_func
-                              ).values())
+                                            key_req_func=lambda cell: None,
+                                            key_extract_func=lambda cell: None,
+                                            data_extract_func=data_extract_func
+                                            ).values())
 
 
 def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
@@ -180,62 +180,55 @@ def _scrape_misc(service, spreadsheet_id: str, is_survivor: bool) -> Dict:
                                        key_func=lambda cell: None)[0]
 
 
-def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
-                  sheet_name: str,
-                  search_for_unknown: bool,
-                  min_search_amount: int,
-                  start: Cell,
-                  next_start_func: Callable[[Cell, int], Cell],
-                  cell_dict_func: Callable[[Cell, bool], util.BiDict],
-                  key_req_func: Callable[[dict], str | None],
-                  key_extract_func: Callable[[dict], str | None],
-                  data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
-                  ) -> Dict:
+def _scrape_knowns_and_unknowns(service, spreadsheet_id: str,
+                                sheet_name: str,
+                                search_for_unknown: bool,
+                                min_search_amount: int,
+                                start: Cell,
+                                next_start_func: Callable[[Cell, int], Cell],
+                                cell_dict_func: Callable[[Cell], util.BiDict],
+                                key_req_func: Callable[[dict], str | None],
+                                key_extract_func: Callable[[dict], str | None],
+                                data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
+                                ) -> Dict:
     """
-    Scrape a given portion of a spreadsheet, based on certain rules.
+    Scrapes a sheet from a Google Spreadsheet where the "structure" of the data repeats for either a known or unknown
+    amount of times.
 
-    More specifically, this works in two parts: Gathering the cell information from the Google Sheet, then extracting
-    that information from the response JSON from Google into something that's usable (i.e. based on a certain structure
-    that's pre-determined).
+    In the case of the Otzdarva spreadsheet, there exists a number of characters where the layout of data
+    (i.e. what information about the character is in what cell relative to a given "starting" cell) is repeated over
+    an unknown number of times. This function allows you to define this layout of information relative to a given
+    starting position, with labels, (defined in :param cell_dict_func, an example of this mapping can be seen in
+    :func:`_get_cells_for_character`), which will then be scraped from the sheet denoted by :param spreadsheet_id
+    and :param sheet_name, and return a dictionary mapping each layout to the info contained within that relative
+    mapping from the starting cell (in other words, replace the A1 notation from the :param cell_dict_func with the
+    relevant info for each time there is a grouping of cells like this).
 
-    SENDING THE REQUEST
-    -------------------------
-    Starts at a given cell (:param start), then uses the :param `cell_dict_func` to map that starting cell to the cells
-    you wish to gather information about (the result of this is now referred to as 'cell_structure').
-    Fetch cells between the min and max of cell_structure (from Google), apply the :param key_req_func to cell_struct
-    (extracting a key from relevant_cells). Repeat this for the :param min_search_amount (the "known" portion,
-    see comment in args of main for more info).
+    The way that this function deals with an unknown amount of repeated cell layouts existing is by searching for a
+    guaranteed "known" amount (set by :param min_search_amount), then repeatedly using the next_start_func until there
+    is nothing there (This "unknown" portion can be toggled with :param search_for_unknown).
 
-    Once this is done, we then repeat a similar process any number of times (whilst the starting cell isn't empty on
-    Google Sheets), adding the responses for these into the known search results.
-
-    Once the starting cell is empty, then return both the response from Google and cell_structure.
-
-    EXTRACTING DATA
-    -------------------------
-    From the previous results, we get a "raw" response from Google, and a dictionary mapping cells (in A1 notation) to
-    descriptors of what that information is. Extracting the data simply involves replacing all A1 notation with values
-    from the raw response.
+    This function is incredibly abstract & generic (just a fancy way of saying over-engineered), and would work for any
+    situation where this kind of "I need to scrape a spreadsheet that has information repeated in the same structure"
+    (essentially every part of the spreadsheet is scraped using this function)
 
     :param service: Google Sheets API service
     :param spreadsheet_id: Sheet ID
-    :param is_survivor: Whether we're doing this for Survivors or Killers
     :param sheet_name: Name of the sheet (Used pretty much exclusively for Survivor Guides being on a different sheet)
-    :param search_for_unknown: Whether to search for "unknown"
+    :param search_for_unknown: Whether to search for "unknown" portions
     :param min_search_amount: Amount of "known" searches
-    :param start: Starting cell
-    :param next_start_func: Function mapping current cell and iteration no to next cell
-
+    :param start: The starting cell
+    :param next_start_func: Function mapping current cell and the current iteration index to the next starting cell
     :param cell_dict_func:  Function mapping starting cell and is_survivor to a dictionary mapping cells to information
-                            descriptors (eg. (cell, is_survivor) -> {"name": cell, "tier": cell >> 1})
+                            descriptors (eg. (cell) -> {"name": cell, "tier": cell >> 1})
 
     :param key_req_func: Function that illustrates what key to use for the relevant_cells return value. If None is the
                          return value, it will use the index of the current search.
 
                             For example:
-                                (cell_dict_func=(cell, _) -> {"name": cell, "tier": cell >> 1},
-                                key_req_func=(dict) -> dict['tier']) =>
-                                 relevant_cells={cell >> 1: {"name": cell, "tier": cell >> 1}}
+                                (cell_dict_func=(cell) -> {"name": cell, "tier": cell >> 1}, key_req_func=(dict)
+                                 -> dict['tier']) =>
+                                 relevant_cells={ > cell >> 1 <: {"name": cell, "tier": cell >> 1}}
 
     :param key_extract_func:  Pretty much identical usage to key_req_func, but used in the data extraction portion.
 
@@ -246,7 +239,6 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
 
     :return: A map of data_types in cells to the information that's stored in the spreadsheet.
     """
-    sheet_constants = constants.SURVIVOR_CONSTANTS if is_survivor else constants.KILLER_CONSTANTS
 
     response, cell_structure = _send_request(service=service,
                                              spreadsheet_id=spreadsheet_id,
@@ -254,10 +246,10 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
                                              sheet_name=sheet_name,
                                              search_for_unknown=search_for_unknown,
                                              min_known_search_size=min_search_amount,
-                                             is_survivor=is_survivor,
                                              next_start_func=next_start_func,
                                              cell_dict_func=cell_dict_func,
-                                             key_func=key_req_func)
+                                             key_func=key_req_func
+                                             )
 
     info = _extract_data_from_response(response=response,
                                        start=start,
@@ -271,13 +263,29 @@ def _scrape_sheet(service, spreadsheet_id: str, is_survivor: bool,
 
 
 def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, search_for_unknown: bool,
-                  min_known_search_size: int, is_survivor: bool,
+                  min_known_search_size: int,
                   next_start_func: Callable[[Cell, int], Cell],
-                  cell_dict_func: Callable[[Cell, bool], util.BiDict],
+                  cell_dict_func: Callable[[Cell], util.BiDict],
                   key_func: Callable[[dict], str | None]
                   ):
-    # I've tried other ways of doing this, being more "economical" in terms of specifying which cells are requested,
-    # but this genuinely seems like the best solution for reducing API calls (for each character there's 2 cells wasted)
+    """
+    This function forms the first part of the :func:`_scrape_sheet` function, which gets the information from the
+    Google Sheet.
+
+    Starts at a given cell (:param start), then uses the :param `cell_dict_func` to map that starting cell to the cells
+    you wish to gather information about (the result of this is now referred to as 'cell_structure').
+    Fetch cells between the min and max of cell_structure (from Google), apply the :param key_req_func to the
+    cell_structure (extracting a key from relevant_cells).
+
+    Repeat this for the :param min_search_amount (the "known" portion, see comment in args of main for more info).
+
+    Once this is done, we then repeat a similar process any number of times (whilst the starting cell isn't empty on
+    Google Sheets), adding the responses for these into the known search results.
+
+    Once the starting cell is empty, then return both the response from Google and cell_structure.
+
+    All parameters are already defined in :func:`_scrape_sheet`.
+    """
     request = []
     cell_structure = {}
 
@@ -286,7 +294,7 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
 
     # "known"
     for i in range(min_known_search_size):
-        cells = cell_dict_func(curr, is_survivor)
+        cells = cell_dict_func(curr)
 
         cell_ranges = util.flatten_list(cells.values())
 
@@ -304,11 +312,11 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
     response = response['sheets'][0]['data']
 
     # "unknown"
-    i += 1
-
     # TODO: Refactor below code and above into functions for re-use (the two look suspiciously similar...)
     while search_for_unknown:
-        cells = cell_dict_func(curr, is_survivor)
+        i += 1
+
+        cells = cell_dict_func(curr)
         cell_ranges = util.flatten_list(cells.values())
         cell_min, cell_max = min(cell_ranges), max(cell_ranges)
 
@@ -328,8 +336,6 @@ def _send_request(service, spreadsheet_id: str, start: Cell, sheet_name: str, se
         cell_structure[assignment if assignment is not None else i] = cells
         curr = next_start_func(curr, i)
 
-        i += 1
-
     return response, cell_structure
 
 
@@ -339,6 +345,13 @@ def _extract_data_from_response(response: dict,
                                 next_start_func: Callable[[Cell, int], Cell],
                                 data_extract_func: Callable[[str, dict], Tuple[dict, (Type[str] | Type[List])]],
                                 key_func: Callable[[dict], str | None]) -> dict:
+    """
+    Transforms  a "raw" response from Google, and a dictionary mapping cells (in A1 notation) to
+    descriptors of what that information is. Extracting the data simply involves replacing all A1 notation with values
+    from the raw response.
+
+    All parameters are already defined in :func:`_scrape_sheet`.
+    """
     infos = {}
 
     curr = start
